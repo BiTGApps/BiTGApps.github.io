@@ -1,64 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./app.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BiTGApps</title>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./app.css" />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="BiTGApps" />
 
-<body>
+      <h1 class="title">BiTGApps</h1>
+    </header>
 
-    <section class="hero">
-        <div class="hero__inner wrap">
-            <div class="branding">
-                <img src="./images/logo.png" alt="BitGApps Logo">
-                <h1>BiTGApps</h1>
-            </div>
-            <div class="downloads">
-                <h3>Downloads</h3>
-                <ul>
-                    <li>Android Platform ARM - <a href="https://www.pling.com/p/1364196/" target="_blank">Click Here</a></li>
-                    <li>Android Platform ARM64 - <a href="https://www.pling.com/p/1364195/" target="_blank">Click Here</a></li>
-                    <li>BiTGApps Config - <a href="https://www.pling.com/p/1379287/" target="_blank">Click Here</a></li>
-                    <li>BiTGApps Addon ARM - <a href="https://www.pling.com/p/1419477/" target="_blank">Click Here</a></li>
-                    <li>BiTGApps Addon ARM64 - <a href="https://www.pling.com/p/1419480/" target="_blank">Click Here</a></li>
-                    <li>Android APK - <a href="https://www.pling.com/p/1364199/" target="_blank">Click Here</a></li>
-                </ul>
-            </div>
+    <div class="downloads">
+      <h2 class="downloads-title">Downloads</h2>
+      <div class="download-item" x-data="{ open: false }">
+        <div class="dropdown">
+          <button @click="open = !open" @click.away="open = false">
+            BiTGApps
+            <svg
+              :class="{'rotate': open}"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="ml-1 inline-block fill-current text-gray-500 w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"
+              />
+            </svg>
+          </button>
+
+          <ul
+            x-show="open"
+            x-show="open"
+            x-transition:enter="t-enter"
+            x-transition:enter-start="t-enter-start"
+            x-transition:enter-end="t-enter-end"
+            x-transition:leave="t-leave"
+            x-transition:leave-end="t-leave-end"
+          >
+            <li>
+              <a href="https://www.pling.com/p/1364196/">ARM</a>
+            </li>
+            <li>
+              <a href="https://www.pling.com/p/1364195/">ARM64</a>
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
+
+      <div class="download-item" x-data="{ open: false }">
+        <div class="dropdown">
+          <button @click="open = !open" @click.away="open = false">
+            Addons
+            <svg
+              :class="{'rotate': open}"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="ml-1 inline-block fill-current text-gray-500 w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"
+              />
+            </svg>
+          </button>
+
+          <ul
+            x-show="open"
+            x-show="open"
+            x-transition:enter="t-enter"
+            x-transition:enter-start="t-enter-start"
+            x-transition:enter-end="t-enter-end"
+            x-transition:leave="t-leave"
+            x-transition:leave-end="t-leave-end"
+          >
+            <li>
+              <a href="https://www.pling.com/p/1419477/">ARM</a>
+            </li>
+            <li>
+              <a href="https://www.pling.com/p/1419480/">ARM64</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="download-item" x-data="{ open: false }">
+        <div class="dropdown">
+          <button @click="open = !open" @click.away="open = false">
+            Config
+            <svg
+              :class="{'rotate': open}"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="ml-1 inline-block fill-current text-gray-500 w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"
+              />
+            </svg>
+          </button>
+
+          <ul
+            x-show="open"
+            x-transition:enter="t-enter"
+            x-transition:enter-start="t-enter-start"
+            x-transition:enter-end="t-enter-end"
+            x-transition:leave="t-leave"
+            x-transition:leave-end="t-leave-end"
+          >
+            <li>
+              <a href="https://www.pling.com/p/1379287/">Click Here</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="download-item" x-data="{ open: false }">
+        <div class="dropdown">
+          <button @click="open = !open" @click.away="open = false">
+            APK
+            <svg
+              :class="{'rotate': open}"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="ml-1 inline-block fill-current text-gray-500 w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"
+              />
+            </svg>
+          </button>
+
+          <ul
+            x-show="open"
+            x-show="open"
+            x-transition:enter="t-enter"
+            x-transition:enter-start="t-enter-start"
+            x-transition:enter-end="t-enter-end"
+            x-transition:leave="t-leave"
+            x-transition:leave-end="t-leave-end"
+          >
+            <li>
+              <a href="https://www.pling.com/p/1364199/">Click Here</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <section class="links">
-        <div class="links__inner wrap">
-            <ul>
-                <li><a href="https://forum.xda-developers.com/android/software/custom-bitgapps-android-t4012165"
-                        class="xda" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path
-                                d="M14.547 6.502a.193.193 0 00-.131.19v2.396h-3.617c-.783 0-1.421.208-1.887.64-.468.436-.701 1.066-.701 1.852v3.416c-.01.089-.024.184-.024.285 0 .482.142.933.417 1.328.277.4.659.673 1.115.795.254.07.606.096 1.092.096h1.779c.86 0 1.529-.198 1.992-.617.463-.42.687-1.043.688-1.828V6.693a.193.193 0 00-.19-.19h-.475a.193.193 0 00-.058-.001zM.2 9.086a.193.193 0 00-.02.002.193.193 0 00-.095.308l3.049 3.915-3.096 3.878a.193.193 0 00.154.309h.641a.193.193 0 00.154-.07l2.692-3.416 2.68 3.416a.193.193 0 00.154.07h.629a.193.193 0 00.154-.309L4.238 13.3l3-3.903a.193.193 0 00-.154-.308h-.64a.193.193 0 00-.155.07l-2.61 3.428-2.644-3.428a.193.193 0 00-.154-.07H.24a.193.193 0 00-.04-.002zm16.986 0a.193.193 0 00-.019.002.193.193 0 00-.13.19v.486a.193.193 0 00.189.19h4.4c.541 0 .913.125 1.15.357.238.23.37.59.37 1.115v.332h-3.844c-.686 0-1.26.21-1.672.629-.412.418-.617.985-.617 1.672v1.197c0 .569.17 1.07.51 1.459.003.004.008.007.011.012.432.512 1.06.771 1.815.771h2.408c.706 0 1.281-.21 1.672-.64.386-.426.57-1.01.57-1.721V11.52c0-.784-.211-1.41-.664-1.827-.453-.416-1.118-.605-1.957-.605h-4.152a.193.193 0 00-.04-.002zm-6.402.879h3.631v5.066c0 .495-.143.846-.404 1.104-.257.254-.655.433-1.221.498h-.156a.193.193 0 00-.024 0 1 1 0 01-.142.012h-1.672c-.683 0-1.13-.153-1.363-.381-.233-.23-.381-.659-.381-1.34v-3.309c0-.649.234-1.102.713-1.424v.012c.217-.142.556-.238 1.02-.238zm8.483 2.644v.002h3.867v2.645c0 .495-.12.828-.332 1.045-.212.217-.538.344-1.022.344h-2.467a1.27 1.27 0 01-.224-.024c-.43-.075-.732-.238-.926-.463-.194-.225-.297-.525-.297-.937v-1.176c0-.43.108-.747.297-.973.187-.223.47-.37.877-.437h.012c.112-.017.187-.026.215-.026z" />
-                        </svg> XDA Post</a></li>
-                <li><a href="https://github.com/BiTGApps" class="github">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path
-                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                        </svg> GitHub</a></li>
-                <li><a href="https://www.paypal.com/paypalme2/kartikverma443" class="donate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path
-                                d="M6.908 24H3.804c-.664 0-1.086-.529-.936-1.18l.149-.674h2.071c.666 0 1.336-.533 1.482-1.182l1.064-4.592c.15-.648.816-1.18 1.48-1.18h.883c3.789 0 6.734-.779 8.84-2.34s3.16-3.6 3.16-6.135c0-1.125-.195-2.055-.588-2.789 0-.016-.016-.031-.016-.046l.135.075c.75.465 1.32 1.064 1.711 1.814.404.75.598 1.68.598 2.791 0 2.535-1.049 4.574-3.164 6.135-2.1 1.545-5.055 2.324-8.834 2.324h-.9c-.66 0-1.334.525-1.484 1.186L8.39 22.812c-.149.645-.81 1.17-1.47 1.17L6.908 24zm-2.677-2.695H1.126c-.663 0-1.084-.529-.936-1.18L4.563 1.182C4.714.529 5.378 0 6.044 0h6.465c1.395 0 2.609.098 3.648.289 1.035.189 1.92.519 2.684.99.736.465 1.322 1.072 1.697 1.818.389.748.584 1.68.584 2.797 0 2.535-1.051 4.574-3.164 6.119-2.1 1.561-5.056 2.326-8.836 2.326h-.883c-.66 0-1.328.524-1.478 1.169L5.7 20.097c-.149.646-.817 1.172-1.485 1.172l.016.036zm7.446-17.369h-1.014c-.666 0-1.332.529-1.48 1.178l-.93 4.02c-.15.648.27 1.179.93 1.179h.766c1.664 0 2.97-.343 3.9-1.021.929-.686 1.395-1.654 1.395-2.912 0-.83-.301-1.445-.9-1.84-.6-.404-1.5-.605-2.686-.605l.019.001z" />
-                        </svg> Donate</a></li>
-            </ul>
-        </div>
+      <div class="links__inner wrap">
+        <ul>
+          <li>
+            <a
+              href="https://forum.xda-developers.com/android/software/custom-bitgapps-android-t4012165"
+              class="xda"
+              target="_blank"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M14.547 6.502a.193.193 0 00-.131.19v2.396h-3.617c-.783 0-1.421.208-1.887.64-.468.436-.701 1.066-.701 1.852v3.416c-.01.089-.024.184-.024.285 0 .482.142.933.417 1.328.277.4.659.673 1.115.795.254.07.606.096 1.092.096h1.779c.86 0 1.529-.198 1.992-.617.463-.42.687-1.043.688-1.828V6.693a.193.193 0 00-.19-.19h-.475a.193.193 0 00-.058-.001zM.2 9.086a.193.193 0 00-.02.002.193.193 0 00-.095.308l3.049 3.915-3.096 3.878a.193.193 0 00.154.309h.641a.193.193 0 00.154-.07l2.692-3.416 2.68 3.416a.193.193 0 00.154.07h.629a.193.193 0 00.154-.309L4.238 13.3l3-3.903a.193.193 0 00-.154-.308h-.64a.193.193 0 00-.155.07l-2.61 3.428-2.644-3.428a.193.193 0 00-.154-.07H.24a.193.193 0 00-.04-.002zm16.986 0a.193.193 0 00-.019.002.193.193 0 00-.13.19v.486a.193.193 0 00.189.19h4.4c.541 0 .913.125 1.15.357.238.23.37.59.37 1.115v.332h-3.844c-.686 0-1.26.21-1.672.629-.412.418-.617.985-.617 1.672v1.197c0 .569.17 1.07.51 1.459.003.004.008.007.011.012.432.512 1.06.771 1.815.771h2.408c.706 0 1.281-.21 1.672-.64.386-.426.57-1.01.57-1.721V11.52c0-.784-.211-1.41-.664-1.827-.453-.416-1.118-.605-1.957-.605h-4.152a.193.193 0 00-.04-.002zm-6.402.879h3.631v5.066c0 .495-.143.846-.404 1.104-.257.254-.655.433-1.221.498h-.156a.193.193 0 00-.024 0 1 1 0 01-.142.012h-1.672c-.683 0-1.13-.153-1.363-.381-.233-.23-.381-.659-.381-1.34v-3.309c0-.649.234-1.102.713-1.424v.012c.217-.142.556-.238 1.02-.238zm8.483 2.644v.002h3.867v2.645c0 .495-.12.828-.332 1.045-.212.217-.538.344-1.022.344h-2.467a1.27 1.27 0 01-.224-.024c-.43-.075-.732-.238-.926-.463-.194-.225-.297-.525-.297-.937v-1.176c0-.43.108-.747.297-.973.187-.223.47-.37.877-.437h.012c.112-.017.187-.026.215-.026z"
+                ></path>
+              </svg>
+              XDA Post</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/BiTGApps" class="github">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                ></path>
+              </svg>
+              GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.paypal.com/paypalme2/kartikverma443"
+              class="donate"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M6.908 24H3.804c-.664 0-1.086-.529-.936-1.18l.149-.674h2.071c.666 0 1.336-.533 1.482-1.182l1.064-4.592c.15-.648.816-1.18 1.48-1.18h.883c3.789 0 6.734-.779 8.84-2.34s3.16-3.6 3.16-6.135c0-1.125-.195-2.055-.588-2.789 0-.016-.016-.031-.016-.046l.135.075c.75.465 1.32 1.064 1.711 1.814.404.75.598 1.68.598 2.791 0 2.535-1.049 4.574-3.164 6.135-2.1 1.545-5.055 2.324-8.834 2.324h-.9c-.66 0-1.334.525-1.484 1.186L8.39 22.812c-.149.645-.81 1.17-1.47 1.17L6.908 24zm-2.677-2.695H1.126c-.663 0-1.084-.529-.936-1.18L4.563 1.182C4.714.529 5.378 0 6.044 0h6.465c1.395 0 2.609.098 3.648.289 1.035.189 1.92.519 2.684.99.736.465 1.322 1.072 1.697 1.818.389.748.584 1.68.584 2.797 0 2.535-1.051 4.574-3.164 6.119-2.1 1.561-5.056 2.326-8.836 2.326h-.883c-.66 0-1.328.524-1.478 1.169L5.7 20.097c-.149.646-.817 1.172-1.485 1.172l.016.036zm7.446-17.369h-1.014c-.666 0-1.332.529-1.48 1.178l-.93 4.02c-.15.648.27 1.179.93 1.179h.766c1.664 0 2.97-.343 3.9-1.021.929-.686 1.395-1.654 1.395-2.912 0-.83-.301-1.445-.9-1.84-.6-.404-1.5-.605-2.686-.605l.019.001z"
+                ></path>
+              </svg>
+              Donate</a
+            >
+          </li>
+        </ul>
+      </div>
     </section>
 
     <footer>
-        Copyright © 2019-2020 The BiTGApps Project
-        <section class="disclaimer">
-          <div class="container">
-            <span>Android is a Trademark of Google Inc.</span>
-          </div>
-        </section>
+      <h5>Copyright © 2020-2021 | The BiTGApps Project</h5>
+      <span>Android is a Trademark of Google Inc.</span>
     </footer>
-</body>
-
+  </body>
 </html>

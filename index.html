@@ -50,10 +50,10 @@
             x-transition:leave-end="t-leave-end"
           >
             <li>
-              <a href="https://www.pling.com/p/1442464/">ARM</a>
+              <a href="https://www.pling.com/p/1462973/">ARM</a>
             </li>
             <li>
-              <a href="https://www.pling.com/p/1442467/">ARM64</a>
+              <a href="https://www.pling.com/p/1462970/">ARM64</a>
             </li>
           </ul>
         </div>
@@ -86,13 +86,43 @@
             x-transition:leave-end="t-leave-end"
           >
             <li>
-              <a href="https://www.pling.com/p/1419477/">ARM</a>
+              <a href="https://www.pling.com/p/1462965/">ARM</a>
             </li>
             <li>
-              <a href="https://www.pling.com/p/1419480/">ARM64</a>
+              <a href="https://www.pling.com/p/1462964/">ARM64</a>
             </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="download-item" x-data="{ open: false }">
+        <div class="dropdown">
+          <button @click="open = !open" @click.away="open = false">
+            Addons
+            <svg
+              :class="{'rotate': open}"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="ml-1 inline-block fill-current text-gray-500 w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"
+              />
+            </svg>
+          </button>
+
+          <ul
+            x-show="open"
+            x-show="open"
+            x-transition:enter="t-enter"
+            x-transition:enter-start="t-enter-start"
+            x-transition:enter-end="t-enter-end"
+            x-transition:leave="t-leave"
+            x-transition:leave-end="t-leave-end"
+          >
             <li>
-              <a href="https://www.pling.com/p/1438495/">Misc</a>
+              <a href="https://www.pling.com/p/1462968/">Click Here</a>
             </li>
           </ul>
         </div>
@@ -124,7 +154,7 @@
             x-transition:leave-end="t-leave-end"
           >
             <li>
-              <a href="https://www.pling.com/p/1379287/">Click Here</a>
+              <a href="https://www.pling.com/p/1462963/">Click Here</a>
             </li>
           </ul>
         </div>
@@ -157,7 +187,7 @@
             x-transition:leave-end="t-leave-end"
           >
             <li>
-              <a href="https://www.pling.com/p/1364199/">Click Here</a>
+              <a href="https://www.pling.com/p/1462962/">Click Here</a>
             </li>
           </ul>
         </div>
@@ -207,7 +237,7 @@
     </section>
 
     <footer>
-      <h5>Copyright © 2020-2021 | The BiTGApps Project</h5>
+      <h5>Copyright © 2018-2021 | The BiTGApps Project</h5>
       <span>Android is a Trademark of Google Inc.</span>
     </footer>
   </body>

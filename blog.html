@@ -11,6 +11,13 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6267983170319694" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-76BW4XC058"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-76BW4XC058');
+    </script>
   </head>
   <body>
     <div class="container">
@@ -84,14 +91,14 @@
             <h2 class="blog-post-title mb-1">Inodes Count</h2>
             <p class="blog-post-meta">MAY 03, 2023 - TheHitMan7</p>
             <h6><span class="badge rounded-pill text-bg-secondary">What is an inode</span></h6>
-            <p>
+            <p class="text-justify">
               An inode is a data structure that keeps track of all the files and directories within a Linux or UNIX-based filesystem.
               So, every file and directory in a filesystem is allocated an inode, which is identified by an integer known as “inode number”.
               These unique identifiers store metadata about each file and directory.
             </p>
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">No space left on device</span></h6>
-            <p>
+            <p class="text-justify">
               On surface level, it may looks like system partition has enough free space for BiTGApps installation. But inodes count is a different story.
               The disk free command shows total/used/available disk space for each filesystem, or all currently mounted filesystems.
             </p>
@@ -110,7 +117,7 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             <p>This mean you have reached the inode limit and more files cannot be added.</p>
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">BiTGApps Installation</span></h6>
-            <p>
+            <p class="text-justify">
               BiTGApps installer backend wouldn<span>&#39;</span>t exit installation on 100%
               inodes count. You might get the installation done but behind the
               scene it throws error, no space left on device, which isn<span>&#39;</span>t visible
@@ -123,7 +130,7 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             <p>When inode count is not configured in device tree, can lead to error, no space left on device.</p>
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">Troubleshoot Installation</span></h6>
-            <p>
+            <p class="text-justify">
               Facing bootloop even with successful BiTGApps installation then this might be the case.
               To confirm this, we need recovery.log after installation is complete. You can pull it using below command:
             </p>
@@ -138,7 +145,7 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             <h2 class="blog-post-title mb-1">BiTGApps App</h2>
             <p class="blog-post-meta">MAY 03, 2023 - TheHitMan7</p>
             <h6><span class="badge rounded-pill text-bg-secondary">User Interface</span></h6>
-            <p>
+            <p class="text-justify">
               BiTGApps App user interface built with ease-of-use in mind.
               Instructions that make it clear what to do once user lands on App home screen.
               App also support Material You theme engine for devices running Android 12 or above.
@@ -158,7 +165,7 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">Installation</span></h6>
             <p>It should be done manually from recovery like TWRP. App does not support auto installation.<p>
-            <p class="fw-light">
+            <p class="fw-light text-justify">
               In some past versions of app, we have built-in installer and updater functionality.
               Let user directly install and upgrade to latest version of BiTGApps. No doubt its a nice feature
               to have but growing complexity with backend makes it overtime unreliable including we want BiTGApps
@@ -170,7 +177,7 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             <h2 class="blog-post-title mb-1">Privileged Permissions</h2>
             <p class="blog-post-meta">MAY 03, 2023 - TheHitMan7</p>
             <h6><span class="badge rounded-pill text-bg-secondary">Android Permissions</span></h6>
-            <p>
+            <p class="text-justify">
               Android permissions provide controls that increase user awareness and limit an app’s access to sensitive data.
               Privileged apps are system apps that are located in a priv-app directory on one of the system image partitions.
               Configuring permissions on Android 8.0 and lower includes allowlisting, without which privileged apps are disabled,
@@ -180,7 +187,7 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             <pre style="color:#E90064"><code>Some system apps are more system than others.</code></pre>
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">Missing Permissions</span></h6>
-            <p>
+            <p class="text-justify">
               When permissions are missing from system configuration XML files in the etc/permissions directory, the device
               stuck in an endless bootloop. 
               All violations must be addressed by adding the missing permissions to the appropriate allowlists.
@@ -188,7 +195,7 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             </p>
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">BiTGApps Installation</span></h6>
-            <p>
+            <p class="text-justify">
               Privileged permissions are already defined for all priv-app included in BiTGApps installer.
               However it is not possible for us to test installer on every supported Android version.
               Facing bootloop even with successful BiTGApps installation then this might be the case.

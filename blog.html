@@ -75,7 +75,7 @@
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-success">Privileged</strong>
               <h3 class="mb-0">Permissions</h3>
-              <div class="mb-1 text-muted">MAY 05, 2023</div>
+              <div class="mb-1 text-muted">MAY 07, 2023</div>
               <p class="mb-2">Implementors must explicitly grant or deny all privileged permissions or the device won<span>&#39;</span>t boot.</p>
               <p class="card-text"><span class="bi me-2" width="30" height="30" role="img"><i class="fa-brands fa-readme"></i></span> READ BELOW</p>
             </div>
@@ -96,6 +96,7 @@
               So, every file and directory in a filesystem is allocated an inode, which is identified by an integer known as “inode number”.
               These unique identifiers store metadata about each file and directory.
             </p>
+            <p class="fw-light" style="color:#E90064">Read below to understand, how insufficient inodes count affect BiTGApps installation.</p>
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">No space left on device</span></h6>
             <p class="text-justify">
@@ -118,7 +119,7 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">BiTGApps Installation</span></h6>
             <p class="text-justify">
-              BiTGApps installer backend wouldn<span>&#39;</span>t exit installation on 100%
+              BiTGApps installer backend wouldn<span>&#39;</span>t exit installation on insufficient
               inodes count. You might get the installation done but behind the
               scene it throws error, no space left on device, which isn<span>&#39;</span>t visible
               on recovery screen during installation.
@@ -172,10 +173,19 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
               to be installed before first boot. So that everything should setup properly and chances of breaking
               something is negligible.
             </p>
+            <h6><span class="badge rounded-pill text-bg-secondary">Translation</span></h6>
+            <p>You can help to translate the BiTGApps App!<p>
+            <p class="fw-light text-justify">
+              Feel free to <a href="https://help.github.com/articles/fork-a-repo/">fork</a> and give us a
+              <a href="https://help.github.com/articles/creating-a-pull-request/">pull request</a> with your translation!
+              It is easiest to make a translation using the <a href="https://developer.android.com/studio/write/translations-editor.html">Android Studio</a>
+              translation tool, or with your favorite XML-text editor.
+            </p>
+            <p>Learn more about translation strings from <a href="https://developers.helpshift.com/android/i18n/">Helpshift for Android</a>.</p>
           </article>
           <article class="blog-post">
             <h2 class="blog-post-title mb-1">Privileged Permissions</h2>
-            <p class="blog-post-meta">MAY 05, 2023 - TheHitMan7</p>
+            <p class="blog-post-meta">MAY 07, 2023 - TheHitMan7</p>
             <h6><span class="badge rounded-pill text-bg-secondary">Android Permissions</span></h6>
             <p class="text-justify">
               Android permissions provide controls that increase user awareness and limit an app<span>&#39;</span>s access to sensitive data.
@@ -196,7 +206,7 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">BiTGApps Installation</span></h6>
             <p class="text-justify">
-              Privileged permissions are already defined for all priv-app included in BiTGApps installer.
+              Privileged permissions are already defined for all Privileged Apps included in BiTGApps installer.
               However it is not possible for us to test installer on every supported Android version.
               Facing bootloop even with successful BiTGApps installation then this might be the case.
             </p>

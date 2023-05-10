@@ -24,6 +24,33 @@
       gtag('js', new Date());
       gtag('config', 'G-76BW4XC058');
     </script>
+    <script>
+      async function detectAdBlock() {
+        let adBlockEnabled = false
+        const googleAdUrl = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+        try {
+          await fetch(new Request(googleAdUrl)).catch(_ => adBlockEnabled = true)
+        } catch (e) {
+          adBlockEnabled = true
+        } finally {
+          console.log(`AdBlock Enabled: ${adBlockEnabled}`)
+        }
+        if (adBlockEnabled == true) {
+          document.getElementById("adblock").innerHTML = `
+            <div class="container">
+              <div class="card rounded alert-warning">
+                <h5 class="card-header"><strong>AdBlock Detected!</strong></h5>
+                <div class="card-body">
+                  <p class="card-text">Please turn off Ad Blocker for sustainability of BiTGApps.</p>
+                </div>
+              </div>
+            </div>
+            <br />
+          `;
+        }
+      }
+      detectAdBlock()
+    </script>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
@@ -119,6 +146,7 @@
           <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/BiTGApps/BiTGApps.github.io@master/images/banner.png" />
         </div>
       </div>
+      <div id="adblock"></div>
       <div class="container">
         <div class="card border-dark rounded alert-success">
           <h5 class="card-header">The BiTGApps Project</h5>
@@ -131,7 +159,7 @@
       <br />
       <div class="container">
         <h2 class="text-center"><span class="badge badge-pill badge-secondary">About</span></h2>
-        <div class="card border-success rounded bg-light">
+        <div class="card border-dark rounded bg-light">
           <div class="card-body text-justify">
             BiTGApps is a customized Google Apps Package to sideload Google Apps in Custom Android OS.
             It comes with many useful features and easy installation. Configuration file can be used

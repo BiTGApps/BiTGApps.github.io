@@ -116,7 +116,27 @@
     <main role="main">
       <div class="jumbotron" style="background-color:#efddfb">
         <div class="container">
-          <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/BiTGApps/BiTGApps.github.io@master/images/banner.png" />
+          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/BiTGApps/BiTGApps.github.io@master/images/banner.png" />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/BiTGApps/BiTGApps.github.io@master/images/banner.png" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+          <!--<img class="img-fluid" src="https://cdn.jsdelivr.net/gh/BiTGApps/BiTGApps.github.io@master/images/banner.png" />-->
         </div>
       </div>
       <div id="adblock"></div>

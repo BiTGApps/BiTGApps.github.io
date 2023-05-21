@@ -60,7 +60,10 @@
           <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width:280px;">
             <a href="https://bitgapps.io" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
               <img width="50" src="images/sidebar.png" />
-              <span class="fs-4">BiTGApps</span>
+              <div class="lh-1">
+                <h1 class="fs-6 mb-0 text-dark lh-1">BiTGApps</h1>
+                <small style="color:#0081B4">Since 2018</small>
+              </div>
             </a>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
@@ -114,6 +117,26 @@
       </div>
     </nav>
     <main role="main">
+      <div class="container-fluid">
+        <div id="latest" class="my-3 p-3 rounded shadow-sm" style="background-color:#f0f0f0">
+          <button id="close" type="button" class="close" data-bs-dismiss="latest">&times;</button>
+          <h6 class="border-bottom pb-2 mb-0">Latest Release</h6>
+          <div class="d-flex text-muted pt-3">
+            <svg class="flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007bff"/></svg>
+            <p class="pb-3 mb-0 small lh-sm">
+              <strong class="d-block text-gray-dark">BiTGApps v2.1</strong>
+              This release has BiTGApps installer backend re-worked, fixes internal issues with installation and bootloop in some cases.
+            </p>
+          </div>
+          <div class="d-flex text-muted pt-3">
+            <svg class="flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#e83e8c"/></svg>
+            <p class="pb-3 mb-0 small lh-sm">
+              <strong class="d-block text-gray-dark">Contributors</strong>
+              This update is made possible with the countless efforts of <strong class="text-gray-dark">@fuyukihidekii</strong> and <strong class="text-gray-dark">@ayu_2805</strong>. Get latest release from below.
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="jumbotron" style="background-color:#efddfb">
         <div class="container">
           <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -139,7 +162,7 @@
           <!--<img class="img-fluid" src="https://cdn.jsdelivr.net/gh/BiTGApps/BiTGApps.github.io@master/images/banner.png" />-->
         </div>
       </div>
-      <div id="adblock"></div>
+      <!--<div id="adblock"></div>-->
       <div class="container">
         <div class="card border-0 rounded alert-success">
           <h5 class="card-header">The BiTGApps Project</h5>
@@ -546,6 +569,13 @@
       $(document).ready(function(){
         $("#staticAdsModal").modal('show');
       });
+    </script>
+    <script>
+      $(function () {
+        $('#close').on('click', function () {
+          $('#latest').hide();
+        })
+      })
     </script>
   </body>
 </html>

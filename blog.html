@@ -254,34 +254,29 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             <h6><span class="badge rounded-pill text-bg-secondary">Debloater Features</span></h6>
               <ul class="icon-list mt-3 ps-0">
               <li class="d-flex align-items-start mb-1">It can remove apps from system, product &#38; system_ext partitions.</li>
-              <li class="d-flex align-items-start mb-1">It can handle folder name like, If system has ModuleMetaData folder then you just need to write module in debloater config.</li>
+              <li class="d-flex align-items-start mb-1">It can handle folder name like, If system has "ModuleMetaData" folder then you just need to write "module" in debloater config.</li>
               <li class="d-flex align-items-start mb-1">It can also take care of capital &#38; small letters in name. You don't have to write something specifically in debloater config.</li>
               <li class="d-flex align-items-start mb-1">
                 Add debloater list to OTA survival script, upon ROM upgrade the same set of apps will be removed, leaving sufficient space
-                for BiTGApps restore. At this stage, we don't need debloater config which makes it easy to use.
+                for BiTGApps restore. At this stage, we don&#39;t need debloater config which makes it easy to use.
               </li>
               <li class="d-flex align-items-start mb-1">Once created debloater config can be used with multiple ROMs.</li>
               </ul>
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">Debloater Configuration</span></h6>
-            <p>This feature is built with ease of use in mind. You just need to add Apps List in debloater config.</p>
+            <p>This feature is built with ease-of-use in mind. You just need to add Apps List in debloater config.</p>
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">How to Create</span></h6>
 <h6 class="fw-light">Few things to be noted:</h6>
 <div class="list-group w-auto">
   <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
     <div class="d-flex gap-2 w-100 justify-content-between">
-
         <p class="mb-0 opacity-75">"@" is used as separator between list.</p>
-
     </div>
   </div>
   <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-
     <div class="d-flex gap-2 w-100 justify-content-between">
-
         <p class="mb-0 opacity-75">There shouldn't be "@" in the start &amp; end of the list.</p>
-
     </div>
   </div>
 </div>
@@ -293,25 +288,25 @@ storage will not work. Because of encrypted data partition. You need to re-pack 
 un-packed GApps package else it won’t work.
 </p>
 <hr>
-<h6 class="fw-light">Default list is empty like below :</h6>
-<pre style="color:#f44336"><code>LIST=""</code></pre>
+<h6 class="fw-light">There is no initial Apps List :</h6>
+<pre style="color:#1572A1"><code>LIST=""</code></pre>
 
-<h6 class="fw-light">Create like this :</h6>
-<pre style="color:#f44336"><code>LIST="dialer@contacts@latinime@clock"</code></pre>
+<h6 class="fw-light">Add Apps List like this :</h6>
+<pre style="color:#1572A1"><code>LIST="dialer@contacts@latinime@clock"</code></pre>
 
 <p class="fw-light">If you're using short name instead of full name then you need to take care of few stuffs.</p>
 
 <p class="fw-light">Suppose there is <span class="fw-normal">ModuleMetaData</span> folder and there is also another
   folder has name <span class="fw-normal">Module</span> and the debloater list is like below :</p>
 
-<pre style="color:#f44336"><code>LIST="module@dialer@clock"</code></pre>
+<pre style="color:#1572A1"><code>LIST="module@dialer@clock"</code></pre>
 
 <p class="fw-light text-break">
-Both <span class="fw-normal">ModuleMetaData</span> which you wanted to remove but also <span class="fw-normal">Module</span> folder will be
-removed which you don't want. So make sure to create list with little diversity.
+Both <span class="fw-normal">ModuleMetaData</span> and <span class="fw-normal">Module</span> folder will be
+removed. So make sure to create Apps List with little variation.
 You can use <span class="fw-normal">modulemeta</span> instead of just <span class="fw-normal">module</span> to get things right.
 </p>
-<pre style="color:#f44336"><code>LIST="modulemeta@dialer@clock"</code></pre>
+<pre style="color:#1572A1"><code>LIST="modulemeta@dialer@clock"</code></pre>
 <hr>
 <p class="font-monospace">General discussion and Helpdesk</p>
 

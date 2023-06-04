@@ -240,7 +240,7 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             <p class="fw-normal">When troubleshooting, make sure that you have just ROM and BiTGApps installed.</p>
             <p class="fw-light">Avoid using Custom Kernel, Magisk or other modifications.</p>
           </article>
-<!--
+
           <article class="blog-post">
             <h2 class="blog-post-title mb-1">BiTGApps Debloater</h2>
             <p class="blog-post-meta">JUNE 04, 2023 - TheHitMan7</p>
@@ -249,7 +249,7 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
               Debloater came useful, when you want to install BiTGApps but running out of some couple MB<span>&#39;</span>s in System.
               This allows you to remove selected System Apps. You can even use this to remove System Apps, you think of less value or left unused.
             </p>
-            <pre style="color:#E90064"><code>Install BiTGApps with ease.</code></pre>
+            <pre style="color:#E90064"><code>Debloater is built with ease-of-use in mind.</code></pre>
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">Debloater Features</span></h6>
               <ul class="icon-list mt-3 ps-0">
@@ -264,13 +264,64 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
               </ul>
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">Debloater Configuration</span></h6>
-            <p class="text-justify">
-              This feature is built with ease of use in mind. You just need to add Apps List in debloater config.
-            </p>
+            <p>This feature is built with ease of use in mind. You just need to add Apps List in debloater config.</p>
             <hr>
             <h6><span class="badge rounded-pill text-bg-secondary">How to Create</span></h6>
+<h6 class="fw-light">Few things to be noted:</h6>
+<div class="list-group w-auto">
+  <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <div class="d-flex gap-2 w-100 justify-content-between">
+
+        <p class="mb-0 opacity-75">"@" is used as separator between list.</p>
+
+    </div>
+  </div>
+  <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+
+    <div class="d-flex gap-2 w-100 justify-content-between">
+
+        <p class="mb-0 opacity-75">There shouldn't be "@" in the start &amp; end of the list.</p>
+
+    </div>
+  </div>
+</div>
+<p class="mt-2 text-justify text-break">
+You can Create or Edit configuation file in Android or Linux machine, for Windows OS Text-File-Format must be UNIX/OSX.
+Notepad++ can be used to Create or Edit on Windows OS. On Android, you can have text editor of your choice. Notepadqq can be used on Linux distro.
+This file must be placed in your device internal storage before installation. With LineageOS Recovery and similar, Adding configuation file to internal
+storage will not work. Because of encrypted data partition. You need to re-pack GApps package with file. The file must goes in root of
+un-packed GApps package else it won’t work.
+</p>
+<hr>
+<h6 class="fw-light">Default list is empty like below :</h6>
+<pre style="color:#f44336"><code>LIST=""</code></pre>
+
+<h6 class="fw-light">Create like this :</h6>
+<pre style="color:#f44336"><code>LIST="dialer@contacts@latinime@clock"</code></pre>
+
+<p class="fw-light">If you're using short name instead of full name then you need to take care of few stuffs.</p>
+
+<p class="fw-light">Suppose there is <span class="fw-normal">ModuleMetaData</span> folder and there is also another
+  folder has name <span class="fw-normal">Module</span> and the debloater list is like below :</p>
+
+<pre style="color:#f44336"><code>LIST="module@dialer@clock"</code></pre>
+
+<p class="fw-light text-break">
+Both <span class="fw-normal">ModuleMetaData</span> which you wanted to remove but also <span class="fw-normal">Module</span> folder will be
+removed which you don't want. So make sure to create list with little diversity.
+You can use <span class="fw-normal">modulemeta</span> instead of just <span class="fw-normal">module</span> to get things right.
+</p>
+<pre style="color:#f44336"><code>LIST="modulemeta@dialer@clock"</code></pre>
+<hr>
+<p class="font-monospace">General discussion and Helpdesk</p>
+
+<a href="https://forum.xda-developers.com/t/custom-gapps-bitgapps-for-android.4012165"><img src="https://www.svgrepo.com/show/331651/xda-developers.svg" width="45px" /></a>
+<a href="https://t.me/BiTGAppsChat"><img src="https://www.vectorlogo.zone/logos/telegram/telegram-icon.svg" width="45px" /></a>
+<a href="https://discord.gg/2p4QEmAtaE"><img src="https://www.vectorlogo.zone/logos/discordapp/discordapp-icon.svg" width="45px" /></a>
+<a href="https://www.reddit.com/r/BiTGApps"><img src="https://www.vectorlogo.zone/logos/reddit/reddit-icon.svg" width="45px" /></a>
+<a href="https://matrix.to/#/#bitgapps:matrix.org"><img src="https://www.vectorlogo.zone/logos/matrix/matrix-icon.svg" width="45px" /></a>
           </article>
--->
+
         </div>
         <div class="col-md-4">
           <div class="position-sticky" style="top: 2rem;">

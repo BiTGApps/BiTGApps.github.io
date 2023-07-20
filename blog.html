@@ -100,10 +100,10 @@
         <div class="col-md-6">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-success">Privileged</strong>
-              <h3 class="mb-0">Permissions</h3>
+              <strong class="d-inline-block mb-2 text-success">Debloater</strong>
+              <h3 class="mb-0">Configuration</h3>
               <div class="mb-1 text-muted">MAY 07, 2023</div>
-              <p class="mb-2">Implementors must explicitly grant or deny all privileged permissions or the device won<span>&#39;</span>t boot.</p>
+              <p class="mb-2">Debloater came useful, when you want to install BiTGApps but running out of some free space.</p>
               <p class="card-text"><span class="bi me-2" width="30" height="30" role="img"><i class="fa-brands fa-readme"></i></span> READ BELOW</p>
             </div>
             <div class="col-md-5 d-none d-lg-block">
@@ -117,7 +117,7 @@
           <article class="blog-post">
             <h2 class="blog-post-title mb-1">Inodes Count</h2>
             <p class="blog-post-meta">MAY 01, 2023 - TheHitMan7</p>
-            <h6><span class="badge rounded-pill text-bg-secondary">What is an inode</span></h6>
+            <h5><span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">What is an inode</span></h5>
             <p class="text-justify">
               An inode is a data structure that keeps track of all the files and directories within a Linux or UNIX-based filesystem.
               So, every file and directory in a filesystem is allocated an inode, which is identified by an integer known as “inode number”.
@@ -125,7 +125,7 @@
             </p>
             <p class="fw-light" style="color:#E90064">Read below to understand, how insufficient inodes count affect BiTGApps installation.</p>
             <hr>
-            <h6><span class="badge rounded-pill text-bg-secondary">No space left on device</span></h6>
+            <h5><span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">No space left on device</span></h5>
             <p class="text-justify">
               On surface level, it may looks like system partition has enough free space for BiTGApps installation. But inodes count is a different story.
               The disk free command shows total/used/available disk space for each filesystem, or all currently mounted filesystems.
@@ -144,7 +144,6 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             <blockquote class="blockquote"><p style="color:#009FBD">IUse% is 100%</p></blockquote>
             <p>This mean you have reached the inode limit and more files cannot be added.</p>
             <hr>
-            <h6><span class="badge rounded-pill text-bg-secondary">BiTGApps Installation</span></h6>
             <p class="text-justify">
               BiTGApps installer backend wouldn<span>&#39;</span>t exit installation on insufficient
               inodes count. You might get the installation done but behind the
@@ -154,10 +153,7 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             <pre style="color:#E90064"><code>Why not checking inodes instead of blocks?</code></pre>
             <p>We cannot determine, how much space is used/available with inodes instead of blocks check.<p>
             <hr>
-            <h6><span class="badge rounded-pill text-bg-secondary">Bad Inode Count</span></h6>
-            <p>When inode count is not configured in device tree, can lead to error, no space left on device.</p>
-            <hr>
-            <h6><span class="badge rounded-pill text-bg-secondary">Troubleshoot Installation</span></h6>
+            <h5><span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Troubleshoot Installation</span></h5>
             <p class="text-justify">
               Facing bootloop even with successful BiTGApps installation then this might be the case.
               To confirm this, we need recovery.log after installation is complete. You can pull it using below command:
@@ -169,10 +165,11 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
             <p class="fw-normal">When troubleshooting, make sure that you have just ROM and BiTGApps installed.</p>
             <p class="fw-light">Avoid using Custom Kernel, Magisk or other modifications.</p>
           </article>
+
           <article class="blog-post">
             <h2 class="blog-post-title mb-1">BiTGApps App</h2>
             <p class="blog-post-meta">MAY 05, 2023 - TheHitMan7</p>
-            <h6><span class="badge rounded-pill text-bg-secondary">User Interface</span></h6>
+            <h5><span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">User Interface</span></h5>
             <p class="text-justify">
               BiTGApps App user interface built with ease-of-use in mind.
               Instructions that make it clear what to do once user lands on App home screen.
@@ -181,77 +178,26 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
               based on current Wallpaper or theme.
             </p>
             <hr>
-            <h6><span class="badge rounded-pill text-bg-secondary">ScreenShots</span></h6>
             <p class="fw-light" style="color:#E90064">Show App Home Screen and Support Section</p>
             <p align="left">
               <img src="images/flavour.jpg" height="300px" />
               <img src="images/hazelnut.jpg" height="300px" />
             </p>
             <hr>
-            <h6><span class="badge rounded-pill text-bg-secondary">Downloads</span></h6>
+            <h5><span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Downloads</span></h5>
             <p>All BiTGApps Flavours can be downloaded from App. For instructions, visit BiTGApps homepage.</p>
-            <hr>
-            <h6><span class="badge rounded-pill text-bg-secondary">Installation</span></h6>
-            <p>It should be done manually from recovery like TWRP. App does not support auto installation.<p>
-            <p class="fw-light text-justify">
-              In some past versions of app, we have built-in installer and updater functionality.
-              Let user directly install and upgrade to latest version of BiTGApps. No doubt its a nice feature
-              to have but growing complexity with backend makes it overtime unreliable including we want BiTGApps
-              to be installed before first boot. So that everything should setup properly and chances of breaking
-              something is negligible.
-            </p>
-            <p class="fw-light text-justify">
-              Even though we still have previous versions available to everyone, but avoid using them just
-              for the sake of in-built installer and updater. Backend for these functionality is shutdown
-              and are no longer functional.
-            </p>
-          </article>
-          <article class="blog-post">
-            <h2 class="blog-post-title mb-1">Privileged Permissions</h2>
-            <p class="blog-post-meta">MAY 07, 2023 - TheHitMan7</p>
-            <h6><span class="badge rounded-pill text-bg-secondary">Android Permissions</span></h6>
-            <p class="text-justify">
-              Android permissions provide controls that increase user awareness and limit an app<span>&#39;</span>s access to sensitive data.
-              Privileged apps are system apps that are located in a priv-app directory on one of the system image partitions.
-              Configuring permissions on Android 8.0 and lower includes allowlisting, without which privileged apps are disabled,
-              even if they<span>&#39;</span>re in the priv-app path. On Android 9 and higher, a device that tries to use apps that aren<span>&#39;</span>t properly
-              allowlisted won<span>&#39;</span>t boot. Implementors must explicitly grant or deny all privileged permissions.
-            </p>
-            <pre style="color:#E90064"><code>Some system apps are more system than others.</code></pre>
-            <hr>
-            <h6><span class="badge rounded-pill text-bg-secondary">Missing Permissions</span></h6>
-            <p class="text-justify">
-              When permissions are missing from system configuration XML files in the etc/permissions directory, the device
-              stuck in an endless bootloop. 
-              All violations must be addressed by adding the missing permissions to the appropriate allowlists.
-              You must explicitly either allow or deny all privileged permissions.
-            </p>
-            <hr>
-            <h6><span class="badge rounded-pill text-bg-secondary">BiTGApps Installation</span></h6>
-            <p class="text-justify">
-              Privileged permissions are already defined for all Privileged Apps included in BiTGApps installer.
-              However it is not possible for us to test installer on every supported Android version.
-              Facing bootloop even with successful BiTGApps installation then this might be the case.
-            </p>
-            <hr>
-            <h6><span class="badge rounded-pill text-bg-secondary">Troubleshoot Installation</span></h6>
-            <p>You need to grab logcat, when device stuck in an endless bootloop. Follow below command:</p>
-            <pre style="color:#E90064"><code>adb logcat > bootloop.log</code></pre>
-            <p class="fw-normal">When troubleshooting, make sure that you have just ROM and BiTGApps installed.</p>
-            <p class="fw-light">Avoid using Custom Kernel, Magisk or other modifications.</p>
           </article>
 
           <article class="blog-post">
             <h2 class="blog-post-title mb-1">BiTGApps Debloater</h2>
             <p class="blog-post-meta">JUNE 04, 2023 - TheHitMan7</p>
-            <h6><span class="badge rounded-pill text-bg-secondary">BiTGApps Feature</span></h6>
             <p class="text-justify">
               Debloater came useful, when you want to install BiTGApps but running out of some couple MB<span>&#39;</span>s in System.
               This allows you to remove selected System Apps. You can even use this to remove System Apps, you think of less value or left unused.
             </p>
             <pre style="color:#E90064"><code>Debloater is built with ease-of-use in mind.</code></pre>
             <hr>
-            <h6><span class="badge rounded-pill text-bg-secondary">Debloater Features</span></h6>
+            <h5><span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Debloater Features</span></h5>
               <ul class="icon-list mt-3 ps-0">
               <li class="d-flex align-items-start mb-1">It can remove apps from system, product &#38; system_ext partitions.</li>
               <li class="d-flex align-items-start mb-1">It can handle folder name like, If system has "ModuleMetaData" folder then you just need to write "module" in debloater config.</li>
@@ -263,10 +209,7 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
               <li class="d-flex align-items-start mb-1">Once created debloater config can be used with multiple ROMs.</li>
               </ul>
             <hr>
-            <h6><span class="badge rounded-pill text-bg-secondary">Debloater Configuration</span></h6>
-            <p>This feature is built with ease-of-use in mind. You just need to add Apps List in debloater config.</p>
-            <hr>
-            <h6><span class="badge rounded-pill text-bg-secondary">Create Apps List</span></h6>
+            <h5><span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Debloater Configuration</span></h5>
             <h6 class="fw-light">Few things to be noted:</h6>
             <div class="list-group w-auto">
               <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
@@ -280,16 +223,6 @@ Filesystem       Inodes IUsed IFree IUse% Mounted on
                 </div>
               </div>
             </div>
-<!--
-            <p class="mt-2 text-justify">
-              You can Create or Edit configuation file in Android or Linux machine, for Windows OS Text-File-Format must be UNIX/OSX.
-              Notepad++ can be used to Create or Edit on Windows OS. On Android, you can have text editor of your choice. Notepadqq can be used on Linux distro.
-              This file must be placed in your device internal storage before installation. With LineageOS Recovery and similar, Adding configuation file to internal
-              storage will not work. Because of encrypted data partition. You need to re-pack GApps package with file. The file must goes in root of
-              un-packed GApps package else it won’t work.
-            </p>
-            <hr>
--->
             <h6 class="fw-light mt-3">There is no initial Apps List :</h6>
             <pre style="color:#1572A1"><code>LIST=""</code></pre>
             <h6 class="fw-light">Add Apps List like this :</h6>

@@ -461,7 +461,7 @@
                         <a role="button" class="btn btn-dark btn-sm" href="https://www.pling.com/p/2020746/">ARM64</a>
                       </p>
                       <p><small class="fw-light">Sometimes Pling doesn't Work</small></p>
-<button type="button" class="btn-dark btn-sm collapsed" id="accordianModal" data-dismiss="modal" data-bs-toggle="collapse" data-bs-target="#collapseCore" aria-controls="collapseCore">Download</button>
+<button id="ToastCore" type="button" class="btn btn-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#collapseCore" aria-expanded="false" aria-controls="collapseCore">Download</button>
                       <!-- <a role="button" class="btn btn-dark btn-sm" href="https://bitgapps.io/download/core.html">Alternate Download Link</a> -->
                     </div>
                     <div class="modal-footer">
@@ -477,7 +477,7 @@
               <h4 class="card-title"><span class="badge badge-pill badge-success">Mini</span></h4>
               <h6 class="card-subtitle mb-2 text-muted">Google Apps Package</h6>
               <p class="card-text">Contain Exclusive Google Apps</p>
-<button type="button" class="btn-dark btn-sm collapsed" data-bs-toggle="collapse" data-bs-target="#collapseMini" aria-controls="collapseMini">Download</button>
+<button id="ToastMini" type="button" class="btn btn-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#collapseMini" aria-expanded="false" aria-controls="collapseMini">Download</button>
               <!-- <a role="button" class="btn btn-dark btn-sm" href="https://bitgapps.io/download/mini.html">Download</a> -->
             </div>
           </div>
@@ -486,19 +486,29 @@
               <h4 class="card-title"><span class="badge badge-pill badge-info">OMNI</span></h4>
               <h6 class="card-subtitle mb-2 text-muted">Google Apps Package</h6>
               <p class="card-text">Contain Useful Google Apps</p>
-<button type="button" class="btn-dark btn-sm collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOmni" aria-controls="collapseOmni">Download</button>
+<button id="ToastOmni" type="button" class="btn btn-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#collapseOmni" aria-expanded="false" aria-controls="collapseOmni">Download</button>
               <!--<a role="button" class="btn btn-dark btn-sm" href="https://bitgapps.io/download/omni.html">Download</a> -->
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+<div class="toast text-start" role="alert" aria-live="polite" aria-atomic="true" data-delay="5000">
+    <div class="toast-header">
+      <img src="images/sidebar.png" height="29" width="29"class="rounded me-2">
+      <strong class="me-auto">Downloads</strong>
+      <small class="text-muted">just now</small>
+      <button type="button" class="btn-close" data-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">Scroll Down for Downloads!</div>
+</div>
+</div>
             </div>
           </div>
         </div>
       </div>
 
 <div class="container" id="accordionDownloads">
-<div class="accordion accordion-flush mt-2">
 
-  <div class="accordion-item">
-    <div id="collapseCore" class="accordion-collapse collapse" data-bs-parent="#accordionDownloads">
-      <div class="accordion-body" style="background-color:#DBE6F6">
+<div class="collapse mt-2" id="collapseCore" data-bs-parent="#accordionDownloads">
+  <div class="card card-body bg-light">
+
         <h6><span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill">Downloads of Core Version</span></h6>
         <table class="table table-light table-striped table-bordered table-hover">
           <thead class="table-dark">
@@ -631,14 +641,12 @@
           </tbody>
         </table>
 
-      </div>
     </div>
   </div>
 
+<div class="collapse mt-2" id="collapseMini" data-bs-parent="#accordionDownloads">
+  <div class="card card-body bg-light">
 
-  <div class="accordion-item">
-    <div id="collapseMini" class="accordion-collapse collapse" data-bs-parent="#accordionDownloads">
-      <div class="accordion-body" style="background-color:#DBE6F6">
         <h6><span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill">Downloads of Minified Version</span></h6>
         <table class="table table-light table-striped table-bordered table-hover">
           <thead class="table-dark">
@@ -771,13 +779,12 @@
           </tbody>
         </table>
 
-      </div>
     </div>
   </div>
 
-  <div class="accordion-item">
-    <div id="collapseOmni" class="accordion-collapse collapse" data-bs-parent="#accordionDownloads">
-      <div class="accordion-body" style="background-color:#DBE6F6">
+<div class="collapse mt-2" id="collapseOmni" data-bs-parent="#accordionDownloads">
+  <div class="card card-body bg-light">
+
         <h6><span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill">Downloads of Omni Version</span></h6>
         <table class="table table-light table-striped table-bordered table-hover">
           <thead class="table-dark">
@@ -910,11 +917,10 @@
           </tbody>
         </table>
 
-      </div>
+
     </div>
   </div>
 
-</div>
 </div>
 
       <br />
@@ -951,7 +957,6 @@
               <a class="mx-1" href="https://discord.gg/2p4QEmAtaE"><img src="https://www.vectorlogo.zone/logos/discordapp/discordapp-icon.svg" width="45px" /></a>
               <a class="mx-1" href="https://www.reddit.com/r/BiTGApps"><img src="https://www.vectorlogo.zone/logos/reddit/reddit-icon.svg" width="45px" /></a>
               <a class="mx-1" href="https://matrix.to/#/#bitgapps:matrix.org"><img src="https://www.vectorlogo.zone/logos/matrix/matrix-icon.svg" width="45px" /></a>
-              <a class="mx-1" href="mailto:info@bitgapps.io"><img src="images/mail.svg" width="41px" /></a>
             </p>
           </div>
         </div>
@@ -1076,12 +1081,32 @@
         })
       })
     </script>
-    <script>
-      $(function () {
-        $('#accordianModal').on('click', function () {
-          $('#staticBackdropDown').hide();
-        })
-      })
-    </script>
+<script>
+document.getElementById("ToastCore").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show()) 
+}
+</script>
+<script>
+document.getElementById("ToastMini").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show()) 
+}
+</script>
+<script>
+document.getElementById("ToastOmni").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show()) 
+}
+</script>
   </body>
 </html>

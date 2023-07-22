@@ -444,7 +444,7 @@
               <h4 class="card-title"><span class="badge badge-pill badge-danger">CORE</span></h4>
               <h6 class="card-subtitle mb-2 text-muted">Google Apps Package</h6>
               <p class="card-text">Contain Minimal Google Apps</p>
-              <button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#staticBackdropDown">Download</button>
+<button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#staticBackdropDown">Download</button>
               <div class="modal fade" id="staticBackdropDown" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
                   <div class="modal-content bg-light">
@@ -461,7 +461,7 @@
                         <a role="button" class="btn btn-dark btn-sm" href="https://www.pling.com/p/2020746/">ARM64</a>
                       </p>
                       <p><small class="fw-light">Sometimes Pling doesn't Work</small></p>
-<button id="ToastCore" type="button" class="btn btn-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#collapseCore" aria-expanded="false" aria-controls="collapseCore">Download</button>
+<button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-dismiss="modal" data-target="#modalCore">Download</button>
                       <!-- <a role="button" class="btn btn-dark btn-sm" href="https://bitgapps.io/download/core.html">Alternate Download Link</a> -->
                     </div>
                     <div class="modal-footer">
@@ -477,7 +477,7 @@
               <h4 class="card-title"><span class="badge badge-pill badge-success">Mini</span></h4>
               <h6 class="card-subtitle mb-2 text-muted">Google Apps Package</h6>
               <p class="card-text">Contain Exclusive Google Apps</p>
-<button id="ToastMini" type="button" class="btn btn-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#collapseMini" aria-expanded="false" aria-controls="collapseMini">Download</button>
+<button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#modalMini">Download</button>
               <!-- <a role="button" class="btn btn-dark btn-sm" href="https://bitgapps.io/download/mini.html">Download</a> -->
             </div>
           </div>
@@ -486,28 +486,25 @@
               <h4 class="card-title"><span class="badge badge-pill badge-info">OMNI</span></h4>
               <h6 class="card-subtitle mb-2 text-muted">Google Apps Package</h6>
               <p class="card-text">Contain Useful Google Apps</p>
-<button id="ToastOmni" type="button" class="btn btn-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#collapseOmni" aria-expanded="false" aria-controls="collapseOmni">Download</button>
+<button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#modalOmni">Download</button>
               <!--<a role="button" class="btn btn-dark btn-sm" href="https://bitgapps.io/download/omni.html">Download</a> -->
-<div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
-<div class="toast text-start" role="alert" aria-live="polite" aria-atomic="true" data-delay="5000">
-    <div class="toast-header">
-      <img src="images/sidebar.png" height="29" width="29"class="rounded me-2">
-      <strong class="me-auto">Downloads</strong>
-      <small class="text-muted">just now</small>
-      <button type="button" class="btn-close" data-dismiss="toast" aria-label="Close"></button>
-    </div>
-    <div class="toast-body">Scroll Down for Downloads!</div>
-</div>
-</div>
             </div>
           </div>
         </div>
       </div>
 
-<div class="container" id="accordionDownloads">
+<div class="container">
 
-<div class="collapse mt-2" id="collapseCore" data-bs-parent="#accordionDownloads">
-  <div class="card card-body bg-light">
+              <div class="modal fade" id="modalCore" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content bg-light">
+                    <div class="modal-header">
+                      <h5 class="modal-title">BiTGApps</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
 
         <h6><span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill">Downloads of Core Version</span></h6>
         <table class="table table-light table-striped table-bordered table-hover">
@@ -640,12 +637,26 @@
             </tr>
           </tbody>
         </table>
+  </div>
+  </div>
 
     </div>
   </div>
 
-<div class="collapse mt-2" id="collapseMini" data-bs-parent="#accordionDownloads">
-  <div class="card card-body bg-light">
+</div>
+
+<div class="container">
+
+              <div class="modal fade" id="modalMini" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content bg-light">
+                    <div class="modal-header">
+                      <h5 class="modal-title">BiTGApps</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
 
         <h6><span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill">Downloads of Minified Version</span></h6>
         <table class="table table-light table-striped table-bordered table-hover">
@@ -778,12 +789,26 @@
             </tr>
           </tbody>
         </table>
+  </div>
+  </div>
 
     </div>
   </div>
 
-<div class="collapse mt-2" id="collapseOmni" data-bs-parent="#accordionDownloads">
-  <div class="card card-body bg-light">
+</div>
+
+<div class="container">
+
+              <div class="modal fade" id="modalOmni" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content bg-light">
+                    <div class="modal-header">
+                      <h5 class="modal-title">BiTGApps</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
 
         <h6><span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill">Downloads of Omni Version</span></h6>
         <table class="table table-light table-striped table-bordered table-hover">
@@ -916,7 +941,8 @@
             </tr>
           </tbody>
         </table>
-
+  </div>
+  </div>
 
     </div>
   </div>
@@ -1081,32 +1107,5 @@
         })
       })
     </script>
-<script>
-document.getElementById("ToastCore").onclick = function() {
-  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-  var toastList = toastElList.map(function(toastEl) {
-    return new bootstrap.Toast(toastEl)
-  })
-  toastList.forEach(toast => toast.show()) 
-}
-</script>
-<script>
-document.getElementById("ToastMini").onclick = function() {
-  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-  var toastList = toastElList.map(function(toastEl) {
-    return new bootstrap.Toast(toastEl)
-  })
-  toastList.forEach(toast => toast.show()) 
-}
-</script>
-<script>
-document.getElementById("ToastOmni").onclick = function() {
-  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-  var toastList = toastElList.map(function(toastEl) {
-    return new bootstrap.Toast(toastEl)
-  })
-  toastList.forEach(toast => toast.show()) 
-}
-</script>
   </body>
 </html>

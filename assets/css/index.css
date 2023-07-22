@@ -8,22 +8,6 @@ body {
   background-color: #efddfb;
 }
 
-.accordion-item {
-  background-color: #fff;
-  border: 0;
-}
-.accordion-item:first-of-type {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-.accordion-item:first-of-type .accordion-button {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-.accordion-item:not(:first-of-type) {
-  border-top: 0;
-}
-
 .badge {
   --bs-badge-padding-x: 0.65em;
   --bs-badge-padding-y: 0.35em;

@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 body {
   background-image: linear-gradient(-45deg, #fbfbfb 0%, #fbfbfb 100%);
+  font-family: "Rubik", sans-serif;
 }
 
 .footer {

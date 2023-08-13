@@ -59,7 +59,7 @@
           </nav>
         </div>
       </header>
-      <main class="px-3">
+      <main class="px-2">
         <br />
         <h2><span class="badge rounded-pill" style="background-image:linear-gradient(-45deg, #108dc7 0%, #ef8e38 100%)">Advance Features</span></h2>
         <p class="lead">
@@ -71,16 +71,21 @@
             Factory reset is also possible to make it exactly like Google Apps installed before first boot.
           </p>
         </div>
-<!--TO-DO-->
-<h4><span class="badge rounded-pill bg-dark">Usage</span></h4>
-<div class="card border-secondary mb-3" style="background-color:#f0f0f0">
-<div class="card-body fw-light">
-There aren't different builds for different use case. Just one build to rule them all.
-One build can be flashed from recovery or booted device. We prefer recovery installation
-and instructions on Homepage. You can choose what fits better.
-</div>
-</div>
-<!--TO-DO-->
+        <div class="card mb-3" style="background-color:#f0f0f0">
+          <div class="card-body fw-light">
+            There aren't different builds for different use case. Just one build to rule them all.
+            One build can be flashed from recovery or booted device. We prefer recovery installation
+            and instructions on Homepage. You can choose what fits better.
+          </div>
+        </div>
+        <h4><span class="badge rounded-pill bg-dark">Usage</span></h4>
+        <div class="alert alert-warning" role="alert">
+          <p class="fw-light mb-1">
+            Want to install as Magisk or KernelSU Module ?
+          </p>
+          <p class="mb-1"><span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">ro.config.systemless=true</span></p>
+          Put this inside bitgapps.conf before installation.
+        </div>
         <h4><span class="badge rounded-pill bg-dark">Need Help ?</span></h4>
         <p class="fw-light">
           Reach us from below link to get additional information.
@@ -106,20 +111,18 @@ and instructions on Homepage. You can choose what fits better.
             When installed as module, required free space is no longer an issue. You can also remove GApps installation. Module installation has its own downside.
           </p>
         </div>
-<!--TO-DO-->
-<div class="card text-start mb-3" style="background-color:#f0f0f0">
-<div class="card-header text-center" style="background-color:#C9D6FF">
-Feature comes with Systemless installation
-</div>
-<div class="card-body">
-<ul class="icon-list ps-0">
-<li class="d-flex align-items-start mb-1">Required free space in system is no longer an issue here.</li>
-<li class="d-flex align-items-start mb-1">Always survive ROM OTA upgrade with flash and forget experience.</li>
-<li class="d-flex align-items-start mb-1">You can easily remove GApps installation.</li>
-</ul>
-</div>
-</div>
-<!--TO-DO-->
+        <div class="card text-start mb-3" style="background-color:#f0f0f0">
+          <div class="card-header text-center" style="background-color:#C9D6FF">
+            Feature comes with Systemless installation
+          </div>
+          <div class="card-body">
+            <ul class="icon-list ps-0">
+              <li class="d-flex align-items-start mb-1">Required free space in system is no longer an issue here.</li>
+              <li class="d-flex align-items-start mb-1">Always survive ROM OTA upgrade with flash and forget experience.</li>
+              <li class="d-flex align-items-start mb-1">You can easily remove GApps installation without clean flash.</li>
+            </ul>
+          </div>
+        </div>
         <h1><span class="badge rounded-pill bg-dark">Preview</span></h1>
         <p align="center">
           <img alt="BiTGApps for Android" class="py-2" src="images/ksu.jpg" width="300px" />

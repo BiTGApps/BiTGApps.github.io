@@ -605,16 +605,23 @@
         if (adBlockEnabled == true) {
           document.getElementById("adblock").innerHTML = `
             <div class="modal fade" id="staticAdsModal" data-bs-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header" style="background-color:#fff3cd">
+              <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content bg-light">
+                  <div class="modal-header border-bottom-0" style="background-color:#fff3cd">
                     <h5 class="modal-title"><strong>AdBlock Detected!</strong> <span style="color:#ff6969"><i class="fa-solid fa-heart-crack"></i></span></h5>
                     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <div class="modal-body" style="background-color:#000000">
-                      <img alt="BiTGApps for Android" class="img-fluid" src="images/meow.png"/>
+                  <div class="modal-body py-1 mt-2 text-center">
+                    <small>
+                      You can support us by whitelisting our URL. The advertisement revenue supports the projects efforts and costs a little resources to keep online.
+                    </small>
+                    <br />
+                    <i class="fa-solid fa-face-smile-beam" style="color:#3C486B"></i>
+                  </div>
+                  <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0" style="background-color:#eef2f3">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>

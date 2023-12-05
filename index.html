@@ -1060,7 +1060,7 @@
                     </small>
                   </div>
                   <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0" style="background-color:#eef2f3">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay, I'll Whitelist</button>
+                    <button type="button" id="timed" class="btn btn-secondary" data-bs-dismiss="modal">Please wait 5 seconds...</button>
                   </div>
                 </div>
               </div>
@@ -1074,6 +1074,23 @@
       $(document).ready(function(){
         $("#staticAdsModal").modal('show');
       });
+    </script>
+    <script>
+      var count=5;
+      var counter=setInterval(timer, 1000);
+      function timer()
+      {
+        count=count-1;
+        if (count <= 0)
+        {
+          clearInterval(counter);
+          document.getElementById("timed").disabled = false
+          document.getElementById("timed").innerHTML="Okay, I'll Whitelist";
+          return;
+        }
+        document.getElementById("timed").disabled = true;
+        document.getElementById("timed").innerHTML="Please wait " + count + " seconds...";
+      }
     </script>
   </body>
 </html>

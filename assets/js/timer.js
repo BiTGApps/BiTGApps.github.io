@@ -10,7 +10,7 @@ function timer() {
         document.getElementById("modal").disabled = false;
         document.getElementById("timed").disabled = false;
         document.getElementById("timed").innerHTML = "Okay, I'll Whitelist";
-        setTimeout(function(){$('#staticAdsModal').modal('hide')},100);
+        setTimeout(function(){$('#staticAdsModal').modal('hide')},4000);
         return;
     }
     document.getElementById("modal").disabled = true;

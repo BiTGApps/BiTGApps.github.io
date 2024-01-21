@@ -947,7 +947,7 @@
         <ul class="list-group border-0 rounded text-center">
           <li class="list-group-item" style="background-color:#f0f0f0"><span><i class="fa-solid fa-link" style="margin-right:5px"></i><a style="color:#1572A1" href="https://bitgapps.io/addon.html">List of Addons</a></span></li>
           <li class="list-group-item" style="background-color:#f0f0f0"><span><i class="fa-solid fa-link" style="margin-right:5px"></i><a style="color:#CC561E" href="https://bitgapps.io/app.html">BiTGApps App</a></span></li>
-          <li class="list-group-item" style="background-color:#f0f0f0"><span><i class="fa-solid fa-link fa-fade" style="margin-right:5px;color:#3468C0"></i><a style="color:#723881" href="https://bitgapps.io/app.html#Polaris">Companion App</a></span></li>
+          <li class="list-group-item" style="background-color:#f0f0f0"><span><i class="fa-solid fa-link" style="margin-right:5px"></i><a style="color:#723881" href="https://bitgapps.io/app.html#Polaris">Companion App</a></span></li>
           <li class="list-group-item" style="background-color:#f0f0f0"><span><i class="fa-solid fa-link" style="margin-right:5px"></i><a style="color:#367E18" href="https://bitgapps.io/faq.html">Installation Notes</a></span></li>
           <li class="list-group-item" style="background-color:#f0f0f0"><span><i class="fa-solid fa-link" style="margin-right:5px"></i><a style="color:#A61F69" href="https://t.me/BiTGAppsChat">Support Chat</a></span></li>
         </ul>
@@ -975,17 +975,17 @@
       </div>
       <div class="container">
         <div class="row px-3 text-center">
-          <div class="col-md-4 mb-1 mb-md-0 p-3 border border-1 border-light-subtle rounded" style="background-color:#C1F2B0">
+          <div class="col-md-4 mb-1 mb-md-0 p-3 border border-1 border-light-subtle rounded" style="background-color:#fcd4c4">
             <img alt="BiTGApps for Android" class="rounded-circle" width="140" height="140" src="images/hitman.png" />
             <h4 class="fw-light">TheHitMan7</h4>
             <p><a class="btn btn-sm btn-dark" role="button" href="https://thehitman7.github.io">Lead Developer</a></p>
           </div>
-          <div class="col-md-4 mb-1 mb-md-0 p-3 border border-1 border-light-subtle rounded" style="background-color:#C1F2B0">
+          <div class="col-md-4 mb-1 mb-md-0 p-3 border border-1 border-light-subtle rounded" style="background-color:#fcd4c4">
             <img alt="BiTGApps for Android" class="rounded-circle" width="140" height="140" src="images/shivam.jpg" />
             <h4 class="fw-light">Kr Shivam</h4>
             <p><a class="btn btn-sm btn-dark" role="button" href="https://github.com/starry-shivam">App Developer</a></p>
           </div>
-          <div class="col-md-4 p-3 border border-1 border-light-subtle rounded" style="background-color:#C1F2B0">
+          <div class="col-md-4 p-3 border border-1 border-light-subtle rounded" style="background-color:#fcd4c4">
             <img alt="BiTGApps for Android" class="rounded-circle" width="140" height="140" src="images/mathur.jpg" />
             <h4 class="fw-light">Viraj Mathur</h4>
             <p><a class="btn btn-sm btn-dark" role="button" href="https://github.com/dimyze">Designer</a></p>
@@ -1025,6 +1025,21 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index:11">
+          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="20000" data-autohide="true">
+            <div class="toast-header" style="background-color:#e9e4f0">
+              <img src="images/sidebar.png" height="40" class="rounded me-2" alt="BiTGApps for Android">
+              <strong class="me-auto">BiTGApps</strong>
+              <small>1 mins ago</small>
+              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">&times;</button>
+            </div>
+            <div class="toast-body fs-6" style="background-color:#d3cce3;font-family:'Single Day', cursive">
+              Want to use Configuration file features? Please use Companion App, Polaris to create Configuration file with ease. It will rebuild the BiTGApps with that Configuration.
             </div>
           </div>
         </div>
@@ -1082,6 +1097,11 @@
         document.getElementById("modal").disabled = true;
         document.getElementById("timed").disabled = true;
       });
+    </script>
+    <script>
+      const staticToast = document.querySelector('.toast');
+      const toast = new bootstrap.Toast(staticToast);
+      toast.show();
     </script>
   </body>
 </html>

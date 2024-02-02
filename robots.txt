@@ -1,0 +1,3 @@
+User-agent: googlebot
+
+Sitemap: https://bitgapps.io/sitemap.xml

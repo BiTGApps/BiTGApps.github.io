@@ -82,14 +82,56 @@
               </h6>
               <small class="text-muted">It will help restore data during initial Android setup.</small>
               <br />
-              <a href="https://bitgapps.io#setupwizard" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-up-right-from-square me-2"></i>Learn More</a>
+              <button type="button" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#setupwizard"><i class="fa-solid fa-up-right-from-square me-2"></i>Learn More</button>
+              <div class="modal fade" id="setupwizard" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content bg-light">
+                    <div class="modal-header border-bottom-0" style="background-color:#ffd89b">
+                      <h5 class="modal-title">BiTGApps</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="background-color:#f0f0f0">
+                      <small class="text-muted">
+                        SetupWizard<span>&#39;</span>s main purpose is to assist Android users when they have to first set up their phones,
+                        especially if they want to transfer old data, such as apps, pictures, and personalized features, from their previous
+                        phone or right after a reset.
+                      </small>
+                    </div>
+                    <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0" style="background-color:#bdc3c7">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <hr class="border border-dark-subtle border-1 opacity-75">
               <h6 class="card-subtitle mt-2">
                 <span class="badge bg-danger-subtle border border-danger-subtle text-danger-emphasis rounded-pill"><i class="fa-solid fa-bolt me-1"></i>Module Installation</span>
               </h6>
               <small class="text-muted">This will turn BiTGApps Package into Magisk or KernelSU Module.</small>
               <br />
-              <a href="https://bitgapps.io/feature.html#module" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-up-right-from-square me-2"></i>Learn More</a>
+              <button type="button" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#module"><i class="fa-solid fa-up-right-from-square me-2"></i>Learn More</button>
+              <!--MODAL-->
+              <div class="modal fade" id="module" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content bg-light">
+                    <div class="modal-header border-bottom-0" style="background-color:#ffd89b">
+                      <h5 class="modal-title">BiTGApps</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="background-color:#f0f0f0">
+                      <small class="text-muted">
+                        You can flash BiTGApps from booted device either using Magisk or KernelSU.
+                        When installed as module, required free space is no longer an issue. You can also remove GApps installation.
+                        Always survive ROM OTA upgrade with flash and forget experience. Module installation has its own downside.
+                      </small>
+                    </div>
+                    <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0" style="background-color:#bdc3c7">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--MODAL-->
             </div>
           </div>
         </div>

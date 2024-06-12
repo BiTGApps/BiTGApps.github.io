@@ -165,3 +165,7 @@ body {
   padding: 9px;
   border-radius: 3px;
 }
+
+.disabled {
+  pointer-events: none;
+}

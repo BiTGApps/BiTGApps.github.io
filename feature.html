@@ -44,7 +44,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6267983170319694" crossorigin="anonymous"></script>
     <style>
       body {
-        background-image:linear-gradient(-45deg, #efddfb 0%, #efddfb 100%);
+        background-image:linear-gradient(-45deg, #fdfff5 0%, #fdfff5 100%);
         font-family: 'Fira Sans', sans-serif;
       }
     </style>
@@ -95,6 +95,10 @@
           </div>
         </div>
         <hr class="my-4">
+        <div class="p-3 my-3 text-muted rounded shadow-sm" style="background-color:#ffbe98">
+          Instructions above are for direct installation similar to TWRP, Lineage Recovery, etc.
+          Want to install this as module follow below instructions.
+        </div>
         <button type="button" class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#staticFlashModal"><i class="fa-regular fa-hand-point-right"></i> Click Me</button>
         <div class="modal fade" id="staticFlashModal" data-bs-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
           <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
@@ -112,9 +116,7 @@
             </div>
           </div>
         </div>
-        <p class="fw-normal mt-2 mb-1 text-muted">
-          <i style="color:#FF8911" class="fa-solid fa-lightbulb me-1"></i>You can also install this as Magisk or KernelSU Module.
-        </p>
+        <p class="fw-normal mt-2 mb-1 text-muted">You can also install this as Magisk or KernelSU Module.</p>
         <div class="align-items-center p-3 my-3 rounded shadow-sm" style="background-color:#eef2f3">
           <div class="lh-2">
             <h1 class="h6 mb-0 lh-1"><span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill">ro.config.systemless=true</span></h1>
@@ -123,7 +125,7 @@
               <div class="mt-1 mb-1">
                 <a class="btn btn-sm btn-dark mb-1" role="button" href="https://sourceforge.net/projects/bitgapps/files/BiTGApps/bitgapps.conf/download">Download Config</a>
                 <br />
-                <small class="text-muted"><i style="color:#FF8911" class="fa-solid fa-lightbulb me-1"></i>Make sure to comment out SetupWizard line.</small>
+                <small class="text-muted">Make sure to comment out SetupWizard line.</small>
               </div>
               <small style="font-family:'Silkscreen', sans-serif">OR</small>
               <div class="mt-1">
@@ -140,11 +142,11 @@
           When installed as module, required free space is no longer an issue. You can also remove GApps installation.
           Always survive ROM OTA upgrade with flash and forget experience. Module installation has its own downside.
         </div>
-        <div class="alert alert-dark fw-light" role="alert">
+        <div class="alert alert-info fw-light" role="alert">
           Please do not install Omni or Roar Variant from either Magisk or KernelSU. These contain GApps which must
           be installed before first boot. Omni or Roar variant must be installed from recovery before first boot.
         </div>
-        <div class="alert alert-dark fw-light" role="alert">When installed as module, do not add Google Apps in MagiskHide or Denylist.</div>
+        <div class="alert alert-info fw-light" role="alert">When installed as module, do not add Google Apps in MagiskHide or Denylist.</div>
         <h1><span class="badge rounded-pill bg-dark">Preview</span></h1>
         <p align="center">
           <img alt="BiTGApps for Android" class="py-2" src="images/ksu.jpg" width="300px" />

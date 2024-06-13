@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="canonical" href="https://bitgapps.io">
@@ -80,11 +81,13 @@
         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
       </symbol>
     </svg>
+    <!---
     <div class="alert border-0 rounded-0 mb-0 text-center" role="alert" style="background-image:linear-gradient(-45deg, #fbd786 0%, #c6ffdd 100%)">
       <small class="fs-6 fw-bold"><i class="fa-regular fa-face-smile-beam me-1"></i>No Ads Here!</small>
       <br />
       <small class="fs-6">Instead, You can share <a href="https://bitgapps.io" class="alert-link">BiTGApps</a> with others.</small>
     </div>
+    --->
     <div class="alert border-0 rounded-0 mb-0 text-center" role="alert" style="background-image:linear-gradient(-45deg, #cde8e5 0%, #fffae6 100%)">
       <small class="fs-6 fw-bold"><i class="fa-regular fa-thumbs-up me-1"></i>Exclusive Feature!</small>
       <br />
@@ -474,6 +477,22 @@
       <br />
       <div class="container text-center mb-3 fs-5">
         <h1 class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill text-wrap"><i class="fa-solid fa-lightbulb me-1"></i>Downloads section YOU are looking for</h1>
+      </div>
+      <div id="unblock" class="container my-3 rubik">
+        <div class="card text-center" style="background-color:#fdfff5">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <i class="bi bi-patch-check text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Spread the Word!"></i>
+            <button type="button" class="btn-close" data-dismiss="alert" data-target="#unblock" aria-label="Close"></button>
+          </div>
+          <div class="card-body">
+            <div><img src="images/brand.png" class="w-25 mb-2" alt="Ads Blocked!"></div>
+            Prebuilt BiTGApps Packages now hosted on a dedicated server. Building of both official and custom builds also
+            happen on server. Some part of website related to custom build hosted on server. With custom build, You can have
+            BiTGApps with Your choice of Google Apps. To keep server up and running, we are paying on a monthy basis.
+            It's a humble request not to block Ads on our site. We have placed minimal Ads, not breaking browsing experience.
+          </div>
+          <div class="card-footer text-muted"><i class="fa-regular fa-thumbs-up me-1"></i>Thanks for your understanding and kind support!</div>
+        </div>
       </div>
       <div class="container">
         <div class="card-deck">
@@ -1531,6 +1550,11 @@
         $("#staticAdsModal").modal('show');
         document.getElementById("modal").disabled = true;
         document.getElementById("timed").disabled = true;
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('[data-bs-toggle="tooltip"]').tooltip();
       });
     </script>
     <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>

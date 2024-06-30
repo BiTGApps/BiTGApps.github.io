@@ -55,7 +55,7 @@
       gtag('js', new Date());
       gtag('config', 'G-76BW4XC058');
     </script>
-    <!---<script src="assets/js/timer.js"></script>--->
+    <script src="assets/js/timer.js"></script>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
@@ -199,7 +199,7 @@
           </div>
         </div>
       </div>
-      <!--- <div id="adblock"></div> --->
+      <div id="adblock"></div>
       <div class="container"><a href="https://bitgapps.io/about.html"><img alt="About" class="mx-auto d-block" height="50" src="images/team.png"></a></div>
       <div class="container text-center text-wrap mb-3 mt-3">
         <h1 class="fw-bold fs-6" style="color:#642B73"><em>A Custom Google Apps Package which contain Minimal, But has all the required Google Applications to get Google Services functionality.</em></h1>
@@ -420,9 +420,11 @@
               of un-packed BiTGApps ZIP else it won<span>&#39;</span>t work.
             </p>
           </div>
+          <!---
           <div class="card-footer text-center text-muted fw-bold mt-n3" style="background-color:#CDFADB">
             This information is no longer relevant as SetupWizard is removed from Latest Release.
           </div>
+          --->
         </div>
       </div>
       <div class="container text-center mb-3 fs-5">
@@ -1566,7 +1568,6 @@
         </div>
       </footer>
     </main>
-    <!---
     <script>
       async function detectAdBlock() {
         let adBlockEnabled = false
@@ -1607,12 +1608,16 @@
     </script>
     <script>
       $(document).ready(function(){
-        $("#staticAdsModal").modal('show');
-        document.getElementById("modal").disabled = true;
-        document.getElementById("timed").disabled = true;
+        $(window).on('load',function(){
+          if (!sessionStorage.getItem('shown-modal')){
+            $("#staticAdsModal").modal('show');
+            document.getElementById("modal").disabled = true;
+            document.getElementById("timed").disabled = true;
+            sessionStorage.setItem('shown-modal', 'true');
+          }
+        });
       });
     </script>
-    --->
     <!---
     <script>
       const staticToast = document.querySelector('.toast');
@@ -1620,10 +1625,12 @@
       toast.show();
     </script>
     --->
+    <!---
     <script>
       $(document).ready(function(){
         $('[data-bs-toggle="tooltip"]').tooltip();
       });
     </script>
+    --->
   </body>
 </html>

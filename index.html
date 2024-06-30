@@ -1617,7 +1617,11 @@
             $('#staticAdsModal').modal('show');
             document.getElementById("modal").disabled = true;
             document.getElementById("timed").disabled = true;
-            $.cookie('shown-modal', '1');
+            var date = new Date();
+            date.setTime(date.getTime() + 24 * 60 * 60 * 1000);
+            $.cookie('shown-modal', '1', {
+              expires: date
+            });
           }
         });
       });

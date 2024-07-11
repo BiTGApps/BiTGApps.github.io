@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head>
+    <title>BiTGApps</title>
+    <meta charset="utf-8">
+    <meta name="generator" content="BiTGApps">
+    <meta name="author" content="The BiTGApps Project">
+    <meta name="description" content="Google Apps Package">
+    <meta name="keywords" content="Google Apps Package">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="BiTGApps">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://bitgapps.io/faq.html">
+    <meta property="og:site_name" content="BiTGApps">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:title" content="BiTGApps">
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"WebSite",
+        "description":"Google Apps Package",
+        "headline":"BiTGApps",
+        "name":"BiTGApps",
+        "publisher": {
+          "@type":"Organization",
+          "logo": {
+            "@type":"ImageObject",
+            "url":"https://cdn.jsdelivr.net/gh/BiTGApps/BiTGApps.github.io@master/images/banner.png"
+          }
+        },
+        "url":"https://bitgapps.io/faq.html"
+      }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@0;1&display=swap">
+    <link rel="canonical" href="https://bitgapps.io/faq.html">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+      body {
+        background-image:linear-gradient(-45deg, #efddfb 0%, #efddfb 100%);
+        font-family: 'Fira Sans', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://bitgapps.io">BiTGApps</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://bitgapps.io">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://forum.xda-developers.com/t/custom-gapps-bitgapps-for-android.4012165">Development</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://bitgapps.io/faq.html">FAQs</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a class="fw-bold text-decoration-none" style="color:#FFFDE4" href="mailto:info@bitgapps.io">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main role="main">
+      <div class="container">
+        <h4 class="mt-4"><span class="badge rounded-pill bg-dark">Frequently Asked Questions</span></h4>
+        <p><strong>1. Do i need to clean flash for every new BiTGApps release ?</strong></p>
+        <p>
+          No, You don’t have to clean install, whenever a new BiTGApps update come. You can simply dirty install over
+          last BiTGApps installation.
+        </p>
+        <p><strong>2. Do i need to re-install BiTGApps EVERY time, I update my ROM ?</strong></p>
+        <p>
+          Probably not. If your ROM supports addon.d backup functionality, it’s not necessary to install BiTGApps with
+          each ROM update, as long as you don’t manually wipe the System partition. The backup script will backup your
+          installed GApps and restores them after your ROM has been updated. However, it is a good idea to install an
+          updated GApps from time to time as functionality may be added or improvements made.
+        </p>
+        <p><strong>3. I am getting connection error with Google Playstore. How to fix this ?</strong></p>
+        <p>Go to Settings &gt; Apps &gt; Google Play Store &gt; Mobile data &amp; WiFi &gt; toggle Allow NetworkAccess.</p>
+        <p><strong>4. Google Playstore is force closing right after its launch. How to fix this ?</strong></p>
+        <p>
+          It is caused by background update of Google Playstore and Play Support Libraries. You don’t need to fix this.
+          Once background update is done, everything will return back to normal. These apps update on their own.
+        </p>
+        <p><strong>5. How to Create/Edit configuation file and where to place this before installation ?</strong></p>
+        <p>
+          You can Create/Edit configuation file in Android or Linux machine, for Windows OS Text-File-Format must be
+          UNIX/OSX. Notepad++ can be used to Create/Edit. It is available for both Windows and Linux OS. On Android,
+          you can have text editor of your choice. This file must be placed in your device internal storage before
+          installation.
+        </p>
+        <p><strong>6. LineageOS Recovery does not support data decryption. How to use configuation file with it ?</strong></p>
+        <p>
+          With LineageOS Recovery, Adding configuation file to internal storage will not work. Because of encrypted
+          data partition. You need to re-pack GApps package with file. The file must goes in root of un-packed GApps
+          package else it won’t work.
+        </p>
+        <p><strong>7. I have Core Version installed. Can i switch to Mini, Omni or Roar version without clean flash ?</strong></p>
+        <p>No, You need to clean flash, When switching between different versions, otherwise expect crashes.</p>
+        <p><strong>8. Do i need to perform additional steps after installation of Mini, Omni or Roar version ?</strong></p>
+        <p>Yes, You need to set default apps under Settings &gt; Apps &#38; notifications &gt; Default apps.</p>
+        <p><strong>9. Do i need to flash every new BiTGApps release on top of last installation ?</strong></p>
+        <p>
+          No, You certainly don't have to, if everything is fine with your last installation, Just keep this as is and switch to new
+          BiTGApps release, When you clean flash ROM again or want to use a feature which is available in new release and not in last.
+          However you can keep the latest version downloaded.
+        </p>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-1 bg-dark">
+      <div class="container">
+        <ul class="nav justify-content-center border-bottom border-dark-subtle border-1 pb-1 mb-3">
+          <li class="nav-item"><a href="https://bitgapps.io" class="nav-link px-2 text-warning">Home</a></li>
+          <li class="nav-item"><a href="https://forum.xda-developers.com/t/custom-gapps-bitgapps-for-android.4012165" class="nav-link px-2 text-warning">Development</a></li>
+          <li class="nav-item"><a href="https://bitgapps.io/faq.html" class="nav-link px-2 text-warning">FAQs</a></li>
+          <li class="nav-item"><a href="https://bitgapps.io/about.html" class="nav-link px-2 text-warning">About</a></li>
+        </ul>
+        <p class="text-white text-center">
+          Copyright <span>&#169;</span> 2018-2024 <a class="text-decoration-none text-warning" href="https://bitgapps.io">The BiTGApps Project</a>
+          <br />
+          <small>Android is a Trademark of Google Inc.</small>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

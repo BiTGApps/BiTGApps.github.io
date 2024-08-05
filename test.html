@@ -156,9 +156,39 @@
       </div>
     </nav>
     <main role="main">
-      <div class="container my-4">
-
-            <p>
+      <div class="jumbotron" style="background-color:#efddfb">
+        <div class="container">
+          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active visually-hidden" aria-current="true"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" class="visually-hidden"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img alt="BiTGApps for Android" class="d-block w-100" src="https://cdn.jsdelivr.net/gh/BiTGApps/BiTGApps.github.io@master/images/banner.png" />
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img alt="BiTGApps for Android" class="d-block w-100" src="images/howto.png" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon mr-5 visually-hidden" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon ml-5 visually-hidden" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="adblock"></div>
+      <div class="container"><a href="https://bitgapps.io/about.html"><img alt="About" class="mx-auto d-block" height="50" src="images/team.png"></a></div>
+      <div class="container text-center text-wrap mb-n2 mt-3">
+        <h1 class="fw-bold fs-6" style="color:#642B73"><em>A Custom Google Apps Package which contain Minimal, But has all the required Google Applications to get Google Services functionality.</em></h1>
+      </div>
+      <div class="px-4 py-4 my-4">
+        <div class="card border rounded" style="background-color:#f0f0f0">
+          <div class="card-body">
+            <p class="card-text text-center fw-light mb-n3 mx-1">
               BiTGApps is a customized Google Apps Package to sideload Google Apps in Custom Android OS.
               It comes with many useful features and easy installation. Configuration file can be used
               to customize BiTGApps installation.
@@ -171,8 +201,10 @@
               It does not focus on having several Package Variations unlike other Google Apps Packages.
               BiTGApps came into existence in MAY 2018.
             <p>
+          </div>
+        </div>
       </div>
-
+      <div class="px-4 py-4 my-4">
         <div class="row row-cols-1 row-cols-md-2">
           <div class="col mb-4">
             <div class="card border rounded text-center" style="background-color:#f0f0f0">
@@ -247,9 +279,11 @@
             </div>
           </div>
         </div>
-
-
-
+      </div>
+      <div class="px-4 py-4 my-4 text-center mb-3 fs-5">
+        <h1 class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill text-wrap"><i class="fa-solid fa-lightbulb me-1"></i>Make sure to READ all before installation</h1>
+      </div>
+      <div class="px-4 py-4 my-4">
         <ul class="list-group border-0 rounded text-center">
           <li class="list-group-item" type="button" data-toggle="collapse" data-target="#android" style="background-color:#f0f0f0">All Platforms and All Android Versions are Supported</li>
           <div id="android" class="container-fluid border collapse show bg-white" style="border-color:#f0f0f0">
@@ -280,8 +314,8 @@
           <li class="list-group-item" style="background-color:#f0f0f0">Relatively small size for easy Download and Installation</li>
           <li class="list-group-item" style="background-color:#f0f0f0">Enabled Doze Mode for Google Play Services</li>
         </ul>
-
-
+      </div>
+      <div class="px-4 py-4 my-4">
         <div class="accordion accordion-flush">
           <div class="accordion-item">
             <div class="accordion-collapse collapse show">
@@ -291,11 +325,12 @@
             </div>
           </div>
         </div>
-
-
-        <div style="background-color:#f0f0f0">
-            <p class="text-center" style="color:#1572A1"><small class="fw-bold">Installing for the first time ?</small></p>
-            <p class="text-center fw-light mx-1">
+      </div>
+      <div class="px-4 py-4 my-4">
+        <div class="card border rounded" style="background-color:#f0f0f0">
+          <div class="card-body">
+            <p class="card-text text-center" style="color:#1572A1"><small class="fw-bold">Installing for the first time ?</small></p>
+            <p class="card-text text-center fw-light mx-1">
               Google Apps should be installed via recovery immediately after installing Custom ROM.
               If you reboot into system before installing Google Apps, you must factory reset and
               then install them, otherwise expect crashes. Addons, if you want to use, should be
@@ -303,12 +338,12 @@
               installation. Checkout instructions for SetupWizard below.
               Please read the <a href="https://bitgapps.io/faq.html">FAQ</a> before installation.
             </p>
-            <p class="fw-light text-center">
+            <p class="card-text fw-light text-center">
               <span class="badge rounded-pill" style="background:#1F8A70"><i class="fa-solid fa-lightbulb me-1"></i>Helpful Tip</span>
               <br />
               You should reboot to recovery after flashing Custom ROM for fresh installation.
             </p>
-            <p class="fw-light text-center">
+            <p class="card-text fw-light text-center">
               <span class="badge rounded-pill" style="background:#FF731D"><i class="fa-solid fa-lightbulb me-1"></i>Dirty Flash</span>
               <br />
               <small class="fw-bold" style="color:#1572A1">Installing for the second time and so on ?</small>
@@ -316,8 +351,9 @@
               Re-flashing of same package or upgrading to latest release doesn't require factory reset.
             </p>
           </div>
-
-
+        </div>
+      </div>
+      <div class="px-4 py-4 my-4">
         <div class="card border rounded" style="background-color:#f0f0f0">
           <div class="card-header text-center" style="background-color:#C9FFBF">
             SetupWizard<span>&#39;</span>s main purpose is to assist Android users when they have to first set up their phones,
@@ -345,9 +381,11 @@
             Please read the <a href="https://bitgapps.io/faq.html">FAQ</a> before installation.
           </div>
         </div>
-
-
-
+      </div>
+      <div class="px-4 py-4 my-4 text-center mb-3 fs-5">
+        <h1 class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill text-wrap"><i class="fa-solid fa-lightbulb me-1"></i>What we have cooked in our Latest release</h1>
+      </div>
+      <div class="px-4 py-4 my-4">
         <div class="card text-start" style="background-color:#f0f0f0">
           <div class="card-header" style="background-color:#C9D6FF">
             <h6 class="card-subtitle mb-1">
@@ -374,7 +412,1130 @@
           </div>
           <div class="card-footer text-muted fw-bold mt-n3"><i class="fa-solid fa-champagne-glasses me-2" style="color:#ec2F4B"></i>July 31, 2024</div>
         </div>
-
+      </div>
+      <div class="px-4 py-4 my-4 text-center mb-3 mt-4 fs-5">
+        <h1 class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill text-wrap"><i class="fa-solid fa-lightbulb me-1"></i>Downloads section YOU are looking for</h1>
+      </div>
+      <div class="px-4 py-4 my-4">
+        <div class="card-deck">
+          <div class="card border-2 rounded text-center mb-n3" style="background-color:#ffebd8">
+            <div class="card-body">
+              <h4 class="card-title"><span class="badge rounded-pill badge-danger">CORE</span></h4>
+              <h6 class="card-subtitle mb-2 text-muted">Google Apps Package</h6>
+              <p class="card-text">Contain Minimal Google Apps</p>
+              <a role="button" class="btn btn-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#collPanelCore" href="#collPanelCore"><i class="fa-solid fa-angles-down me-1"></i>Download</a>
+              <!---
+              <button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#staticBackdropDown"><i class="fa-solid fa-angles-down me-1"></i>Download</button>
+              <div class="modal fade" id="staticBackdropDown" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content bg-light">
+                    <div class="modal-header border-bottom-0" style="background-color:#ffd89b">
+                      <h5 class="modal-title">BiTGApps</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body py-1" style="background-color:#f0f0f0">
+                      <small class="h5" style="color:#424642;font-family:'Single Day', cursive">Feel the Minimalism</small>
+                      <br />
+                      <small class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">Minimal Version</small>
+                      <div class="mt-2">
+                        <a role="button" class="btn btn-dark btn-sm" href="https://www.pling.com/p/2020743/">ARM</a>
+                        <a role="button" class="btn btn-dark btn-sm" href="https://www.pling.com/p/2020746/">ARM64</a>
+                      </div>
+                      <small style="font-family:'Single Day', cursive">Select tab Files on Pling for Downloads</small>
+                    </div>
+                    <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0" style="background-color:#bdc3c7">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              --->
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="collPanelCore">
+          <div class="card-deck border-2 rounded-0 mb-n3 mt-2">
+            <div class="card card-body border-2 rounded text-center" style="background-color:#ffebd8">
+              <table class="table table-light table-striped table-bordered table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Android</th>
+                    <th>Downloads</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-info">
+                    <td>14.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-14.0.0-v3.8-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://www.pling.com/dl?file_id=1722438304&file_type=application/zip&file_name=BiTGApps-arm64-14.0.0-v3.8-CORE.zip&file_size=84998657&has_torrent=0&project_id=2020746&link_type=download&is_external=true&external_link=https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-14.0.0-v3.8-CORE.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>13.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-13.0.0-v3.8-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-13.0.0-v3.8-CORE.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>12.1</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-12.1.0-v3.8-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-12.1.0-v3.8-CORE.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>12.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-12.0.0-v3.8-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-12.0.0-v3.8-CORE.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>11.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-11.0.0-v3.8-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-11.0.0-v3.8-CORE.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>10.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-10.0.0-v3.8-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-10.0.0-v3.8-CORE.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>9.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-9.0.0-v3.8-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-9.0.0-v3.8-CORE.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>8.1.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-8.1.0-v3.8-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-8.1.0-v3.8-CORE.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>8.0.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-8.0.0-v3.8-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-8.0.0-v3.8-CORE.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>7.1.2</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-7.1.2-v3.8-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-7.1.2-v3.8-CORE.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>7.1.1</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-7.1.1-v3.8-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-7.1.1-v3.8-CORE.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="card-deck">
+          <div class="card border-2 rounded text-center mb-n3" style="background-color:#d4e7c5">
+            <div class="card-body">
+              <h4 class="card-title"><span class="badge rounded-pill badge-success">Mini</span></h4>
+              <h6 class="card-subtitle mb-2 text-muted">Google Apps Package</h6>
+              <p class="card-text">Contain Exclusive Google Apps</p>
+              <a role="button" class="btn btn-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#collPanelMini" href="#collPanelMini"><i class="fa-solid fa-angles-down me-1"></i>Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="collPanelMini">
+          <div class="card-deck border-2 rounded-0 mb-n3 mt-2">
+            <div class="card card-body border-2 rounded text-center" style="background-color:#d4e7c5">
+              <table class="table table-light table-striped table-bordered table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Android</th>
+                    <th>Downloads</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-info">
+                    <td>14.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-14.0.0-v3.8-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://www.pling.com/dl?file_id=1722437951&file_type=application/zip&file_name=BiTGApps-arm64-14.0.0-v3.8-MINI.zip&file_size=218332609&has_torrent=0&project_id=2020746&link_type=download&is_external=true&external_link=https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-14.0.0-v3.8-MINI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>13.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-13.0.0-v3.8-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-13.0.0-v3.8-MINI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>12.1</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-12.1.0-v3.8-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-12.1.0-v3.8-MINI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>12.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-12.0.0-v3.8-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-12.0.0-v3.8-MINI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>11.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-11.0.0-v3.8-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-11.0.0-v3.8-MINI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>10.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-10.0.0-v3.8-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-10.0.0-v3.8-MINI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>9.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-9.0.0-v3.8-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-9.0.0-v3.8-MINI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>8.1.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-8.1.0-v3.8-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-8.1.0-v3.8-MINI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>8.0.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-8.0.0-v3.8-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-8.0.0-v3.8-MINI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>7.1.2</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-7.1.2-v3.8-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-7.1.2-v3.8-MINI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>7.1.1</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-7.1.1-v3.8-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-7.1.1-v3.8-MINI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="card-deck">
+          <div class="card border-2 rounded text-center mb-n3" style="background-color:#cde7ed">
+            <div class="card-body">
+              <h4 class="card-title"><span class="badge rounded-pill badge-info">OMNI</span></h4>
+              <h6 class="card-subtitle mb-2 text-muted">Google Apps Package</h6>
+              <p class="card-text">Contain Useful Google Apps</p>
+              <a role="button" class="btn btn-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#collPanelOmni" href="#collPanelOmni"><i class="fa-solid fa-angles-down me-1"></i>Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="collPanelOmni">
+          <div class="card-deck border-2 rounded-0 mb-n3 mt-2">
+            <div class="card card-body border-2 rounded text-center" style="background-color:#cde7ed">
+              <table class="table table-light table-striped table-bordered table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Android</th>
+                    <th>Downloads</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-info">
+                    <td>14.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-14.0.0-v3.8-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://www.pling.com/dl?file_id=1722437878&file_type=application/zip&file_name=BiTGApps-arm64-14.0.0-v3.8-OMNI.zip&file_size=181922803&has_torrent=0&project_id=2020746&link_type=download&is_external=true&external_link=https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-14.0.0-v3.8-OMNI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>13.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-13.0.0-v3.8-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-13.0.0-v3.8-OMNI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>12.1</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-12.1.0-v3.8-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-12.1.0-v3.8-OMNI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>12.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-12.0.0-v3.8-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-12.0.0-v3.8-OMNI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>11.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-11.0.0-v3.8-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-11.0.0-v3.8-OMNI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>10.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-10.0.0-v3.8-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-10.0.0-v3.8-OMNI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>9.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-9.0.0-v3.8-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-9.0.0-v3.8-OMNI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>8.1.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-8.1.0-v3.8-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-8.1.0-v3.8-OMNI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>8.0.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-8.0.0-v3.8-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-8.0.0-v3.8-OMNI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>7.1.2</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-7.1.2-v3.8-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-7.1.2-v3.8-OMNI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>7.1.1</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-7.1.1-v3.8-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-7.1.1-v3.8-OMNI.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="card-deck">
+          <div class="card border-2 rounded text-center mb-n3" style="background-color:#fcd4c4">
+            <div class="card-body">
+              <h4 class="card-title"><span class="badge rounded-pill" style="background-color:#FF731D">ROAR</span></h4>
+              <h6 class="card-subtitle mb-2 text-muted">Google Apps Package</h6>
+              <p class="card-text">Contain Extra Google Apps</p>
+              <a role="button" class="btn btn-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#collPanelRoar" href="#collPanelRoar"><i class="fa-solid fa-angles-down me-1"></i>Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="collPanelRoar">
+          <div class="card-deck border-2 rounded-0 mb-n3 mt-2">
+            <div class="card card-body border-2 rounded text-center" style="background-color:#fcd4c4">
+              <table class="table table-light table-striped table-bordered table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Android</th>
+                    <th>Downloads</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-info">
+                    <td>14.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-14.0.0-v3.8-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://www.pling.com/dl?file_id=1722438406&file_type=application/zip&file_name=BiTGApps-arm64-14.0.0-v3.8-ROAR.zip&file_size=154671284&has_torrent=0&project_id=2020746&link_type=download&is_external=true&external_link=https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-14.0.0-v3.8-ROAR.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>13.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-13.0.0-v3.8-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-13.0.0-v3.8-ROAR.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>12.1</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-12.1.0-v3.8-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-12.1.0-v3.8-ROAR.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>12.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-12.0.0-v3.8-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-12.0.0-v3.8-ROAR.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>11.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-11.0.0-v3.8-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-11.0.0-v3.8-ROAR.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>10.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-10.0.0-v3.8-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-10.0.0-v3.8-ROAR.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>9.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-9.0.0-v3.8-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-9.0.0-v3.8-ROAR.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>8.1.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-8.1.0-v3.8-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-8.1.0-v3.8-ROAR.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>8.0.0</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-8.0.0-v3.8-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-8.0.0-v3.8-ROAR.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>7.1.2</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-7.1.2-v3.8-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-7.1.2-v3.8-ROAR.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>7.1.1</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm-7.1.1-v3.8-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-7.1.1-v3.8-ROAR.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-2">
+        <div class="text-center">
+          <div class="px-4 py-4 my-4">
+            <p class="mt-3 noto-sans"><i class="bi bi-patch-check me-1"></i>We have four more variants for Android 14.</p>
+            <table class="table table-bordered rounded">
+              <tbody>
+                <tr style="background:#F3F1F5">
+                  <td><span class="badge rounded-pill" style="background-color:#AD88C6">NANO</span></td>
+                  <td><a class="text-decoration-none" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-14.0.0-v3.8-NANO.zip"><i class="fa-solid fa-download me-1"></i>Download</a></td>
+                  <td><a class="text-decoration-none" data-toggle="modal" data-target="#staticModalNeon" href="#">README</a></td>
+                  <div class="modal fade" id="staticModalNeon" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content bg-light">
+                        <div class="modal-header border-bottom-0" style="background-color:#9ed2c6">
+                          <h5 class="modal-title">NANO</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body" style="background-color:#f0f0f0">
+                          <p class="mt-n1 mb-1 noto-sans">Everything from core including</p>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-calendar me-1"></i>Calendar</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-address-card me-1"></i>Contacts</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-solid fa-phone-volume me-1"></i>Dialer</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-keyboard me-1"></i>Gboard</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-solid fa-message me-1"></i>Messaging</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-solid fa-language me-1"></i>Text-to-Speech</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-solid fa-heart me-1"></i>Wellbeing</span>
+                        </div>
+                        <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0" style="background-color:#bdc3c7">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </tr>
+                <tr style="background:#F3F1F5">
+                  <td><span class="badge rounded-pill" style="background-color:#55AD9B">ATOM</span></td>
+                  <td><a class="text-decoration-none" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-14.0.0-v3.8-ATOM.zip"><i class="fa-solid fa-download me-1"></i>Download</a></td>
+                  <td><a class="text-decoration-none" data-toggle="modal" data-target="#staticModalAtom" href="#">README</a></td>
+                  <div class="modal fade" id="staticModalAtom" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content bg-light">
+                        <div class="modal-header border-bottom-0" style="background-color:#9ed2c6">
+                          <h5 class="modal-title">ATOM</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body" style="background-color:#f0f0f0">
+                          <p class="mt-n1 mb-1 noto-sans">Everything from core including</p>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-solid fa-calculator me-1"></i>Calculator</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-brands fa-chrome me-1"></i>Chrome</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-brands fa-google-drive me-1"></i>Drive</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-keyboard me-1"></i>Gboard</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-image me-1"></i>Markup</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-images me-1"></i>Photos</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-solid fa-heart me-1"></i>Wellbeing</span>
+                        </div>
+                        <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0" style="background-color:#bdc3c7">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </tr>
+                <tr style="background:#F3F1F5">
+                  <td><span class="badge rounded-pill" style="background-color:#8EACCD">PICO</span></td>
+                  <td><a class="text-decoration-none" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-14.0.0-v3.8-PICO.zip"><i class="fa-solid fa-download me-1"></i>Download</a></td>
+                  <td><a class="text-decoration-none" data-toggle="modal" data-target="#staticModalPico" href="#">README</a></td>
+                  <div class="modal fade" id="staticModalPico" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content bg-light">
+                        <div class="modal-header border-bottom-0" style="background-color:#9ed2c6">
+                          <h5 class="modal-title">PICO</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body" style="background-color:#f0f0f0">
+                          <p class="mt-n1 mb-1 noto-sans">Everything from core including</p>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-calendar me-1"></i>Calendar</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-brands fa-chrome me-1"></i>Chrome</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-address-card me-1"></i>Contacts</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-clock me-1"></i>DeskClock</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-keyboard me-1"></i>Gboard</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-image me-1"></i>Markup</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-solid fa-message me-1"></i>Messaging</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-solid fa-heart me-1"></i>Wellbeing</span>
+                        </div>
+                        <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0" style="background-color:#bdc3c7">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </tr>
+                <tr style="background:#F3F1F5">
+                  <td><span class="badge rounded-pill" style="background-color:#DC8686">FULL</span></td>
+                  <td><a class="text-decoration-none" href="https://github.com/BiTGApps/BiTGApps-Release/releases/download/v3.8/BiTGApps-arm64-14.0.0-v3.8-FULL.zip"><i class="fa-solid fa-download me-1"></i>Download</a></td>
+                  <td><a class="text-decoration-none" data-toggle="modal" data-target="#staticModalFull" href="#">README</a></td>
+                  <div class="modal fade" id="staticModalFull" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content bg-light">
+                        <div class="modal-header border-bottom-0" style="background-color:#9ed2c6">
+                          <h5 class="modal-title">FULL</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body" style="background-color:#f0f0f0">
+                          <p class="mt-n1 mb-1 noto-sans">Everything from core including</p>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-solid fa-calculator me-1"></i>Calculator</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-calendar me-1"></i>Calendar</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-brands fa-chrome me-1"></i>Chrome</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-address-card me-1"></i>Contacts</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-solid fa-phone-volume me-1"></i>Dialer</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-brands fa-google-drive me-1"></i>Drive</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-clock me-1"></i>DeskClock</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-keyboard me-1"></i>Gboard</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-image me-1"></i>Markup</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-solid fa-message me-1"></i>Messaging</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-regular fa-images me-1"></i>Photos</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-solid fa-language me-1"></i>Text-to-Speech</span>
+                          <span class="badge bg-secondary rounded-pill"><i class="fa-solid fa-heart me-1"></i>Wellbeing</span>
+                        </div>
+                        <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0" style="background-color:#bdc3c7">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="addons" class="px-4 py-4 my-4 text-center mt-n2 mb-3 fs-5">
+        <h1 class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill text-wrap"><i class="fa-solid fa-lightbulb me-1"></i>Addons section YOU are looking for</h1>
+      </div>
+      <div class="px-4 py-4 my-4">
+        <div class="card-deck">
+          <div class="card border-2 rounded text-center mb-n3" style="background-color:#d9d7f1">
+            <div class="card-body">
+              <h4 class="card-title"><span class="badge rounded-pill" style="background-color:#55ad9b">Addons</span></h4>
+              <h6 class="card-subtitle mb-2 text-muted">Google Apps Package</h6>
+              <p class="card-text">Contain Per Pack Google Apps</p>
+              <a role="button" class="btn btn-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#collPanelAddon" href="#collPanelAddon"><i class="fa-solid fa-angles-down me-1"></i>Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="collPanelAddon">
+          <div class="card-deck border-2 rounded-0 mb-n3 mt-2">
+            <div class="card card-body border-2 rounded text-center" style="background-color:#d9d7f1">
+              <table class="table table-light table-striped table-bordered table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Package</th>
+                    <th>Downloads</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-info">
+                    <td>AndroidAuto</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/AndroidAuto-v3.8.zip">ALL</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Assistant</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Assistant-v3.8-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Assistant-v3.8-ARM64.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Calculator</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Calculator-v3.8.zip">ALL</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Calendar</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Calendar-v3.8.zip">ALL</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Chrome</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Chrome-v3.8.zip">ALL</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Contacts</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Contacts-v3.8.zip">ALL</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>DeskClock</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/DeskClock-v3.8.zip">ALL</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Dialer</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Dialer-v3.8-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Dialer-v3.8-ARM64.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Drive</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Drive-v3.8-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Drive-v3.8-ARM64.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Gmail</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Gmail-v3.8-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Gmail-v3.8-ARM64.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Gboard</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/LatinIME-v3.8-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/LatinIME-v3.8-ARM64.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Maps</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Maps-v3.8-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Maps-v3.8-ARM64.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Markup</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Markup-v3.8-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Markup-v3.8-ARM64.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Messaging</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Messaging-v3.8-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Messaging-v3.8-ARM64.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Photos</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Photos-v3.8-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Photos-v3.8-ARM64.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>GoogleTTS</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/GoogleTTS-v3.8-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/GoogleTTS-v3.8-ARM64.zip">ARM64</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>WebView</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/WebView-v3.8.zip">ALL</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-info">
+                    <td>Wellbeing</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/Addon-Release/releases/download/v3.8/Wellbeing-v3.8.zip">ALL</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="px-4 py-4 my-4 text-center mt-3 mb-3 fs-5">
+        <h1 class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill text-wrap"><i class="fa-solid fa-lightbulb me-1"></i>Get in touch with us</h1>
+      </div>
+      <div class="px-4 py-4 my-4">
+        <div class="card border rounded text-center" style="background-color:#f0f0f0">
+          <div class="card-body">
+            <p class="card-text">
+              <a class="mx-1" href="https://forum.xda-developers.com/t/custom-gapps-bitgapps-for-android.4012165"><img alt="BiTGApps XDA Forums" src="https://www.svgrepo.com/show/331651/xda-developers.svg" width="45px" /></a>
+              <a class="mx-1" href="https://t.me/BiTGAppsOfficial"><img alt="BiTGApps Telegram Chat" src="https://www.vectorlogo.zone/logos/telegram/telegram-icon.svg" width="45px" /></a>
+              <a class="mx-1" href="https://discord.gg/2p4QEmAtaE"><img alt="BiTGApps Discord Chat" src="https://www.vectorlogo.zone/logos/discord/discord-icon.svg" width="45px" /></a>
+              <a class="mx-1" href="https://www.reddit.com/r/BiTGApps"><img alt="BiTGApps Reddit Chat" src="https://www.vectorlogo.zone/logos/reddit/reddit-icon.svg" width="45px" /></a>
+              <a class="mx-1" href="https://matrix.to/#/#bitgapps:matrix.org"><img alt="BiTGApps Matrix Chat" src="https://www.vectorlogo.zone/logos/matrix/matrix-icon.svg" width="45px" /></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="px-4 py-4 my-4 text-center mb-3 fs-5">
+        <h1 class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill text-wrap"><i class="fa-solid fa-lightbulb me-1"></i>Meet the Team Behind BiTGApps</h1>
+      </div>
+      <div class="px-4 py-4 my-4">
+        <div class="row px-3 text-center">
+          <div class="col-md-4 mb-1 mb-md-0 p-3 border border-1 border-light-subtle rounded" style="background-color:#fcd4c4">
+            <img alt="BiTGApps for Android" class="rounded-circle" width="140" height="140" src="images/hitman.png" />
+            <h4 class="fw-light">TheHitMan7</h4>
+            <p><a class="btn btn-sm btn-dark" role="button" href="https://thehitman7.github.io"><i class="fa-solid fa-terminal me-1"></i>Lead Developer</a></p>
+          </div>
+          <div class="col-md-4 mb-1 mb-md-0 p-3 border border-1 border-light-subtle rounded" style="background-color:#fcd4c4">
+            <img alt="BiTGApps for Android" class="rounded-circle" width="140" height="140" src="images/shivam.jpg" />
+            <h4 class="fw-light">Kr Shivam</h4>
+            <p><a class="btn btn-sm btn-dark" role="button" href="https://github.com/starry-shivam"><i class="fa-solid fa-code me-1"></i>App Developer</a></p>
+          </div>
+          <div class="col-md-4 p-3 border border-1 border-light-subtle rounded" style="background-color:#fcd4c4">
+            <img alt="BiTGApps for Android" class="rounded-circle" width="140" height="140" src="images/mathur.jpg" />
+            <h4 class="fw-light">Viraj Mathur</h4>
+            <p><a class="btn btn-sm btn-dark" role="button" href="https://github.com/dimyze"><i class="fa-solid fa-wand-magic-sparkles me-1"></i>Designer</a></p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="px-4 py-4 my-4">
+        <div class="card border rounded text-center" style="background:#DBE6F6">
+          <small class="h5 card-header" style="font-family:'Single Day', cursive">Donate to The BiTGApps Project</small>
+          <div class="card-body">
+            <p class="text-center fw-light mx-2">
+              <i style="color:#FF6969" class="fa-brands fa-gratipay me-1"></i>Liked it. Donate some bucks for the time <span style="font-family:'Silkscreen', sans-serif">SPENT!</span>
+            </p>
+            <p>
+              <a href="https://www.paypal.me/kartikverma443"><button class="btn btn-sm text-white font-weight-bold mx-1" style="margin-bottom:5px;background:#00457C"><span><i class="fa-brands fa-paypal" style="margin-right:5px"></i></span>PayPal</button></a>
+              <a href="https://www.buymeacoffee.com/TheHitMan7"><button class="btn btn-sm text-white font-weight-bold mx-1" style="margin-bottom:5px;background:#F49D1A"><span><i class="fa-solid fa-mug-saucer" style="margin-right:5px"></i></span>Buy Me a Coffee</button></a>
+              <a href="https://liberapay.com/TheHitMan7"><button class="btn btn-sm text-white font-weight-bold mx-1" style="margin-bottom:5px;background:#905E96"><span><i class="fa-solid fa-dollar-sign" style="margin-right:5px"></i></span>Liberapay</button></a>
+              <a href="https://patreon.com/TheHitMan7"><button class="btn btn-sm text-white font-weight-bold mx-1" style="margin-bottom:5px;background:#F96854"><span><i class="fa-brands fa-patreon" style="margin-right:5px"></i></span>Patreon</button></a>
+              <a href="https://www.paypal.me/kartikverma443"><button class="btn btn-sm text-white font-weight-bold mx-1" style="margin-bottom:5px;background:#53BF9D"><span><i class="fa-solid fa-heart" style="margin-right:5px"></i></span>Become a sponsor to BiTGApps</button></a>
+              <button type="button" class="btn btn-sm text-white font-weight-bold mx-1" data-toggle="modal" data-target="#staticBackdrop" style="margin-bottom:5px;background:#FF7800"><span><i class="fa-solid fa-indian-rupee-sign" style="margin-right:5px"></i></span>krtik.vrma@okaxis</button>
+            </p>
+            <hr>
+            <h5 class="mb-0" style="font-family:'Single Day', cursive">Can't donate? Please share BiTGApps with others!</h5>
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content bg-light">
+                  <div class="modal-header border-bottom-0" style="background-color:#ffd89b">
+                    <h5 class="modal-title">Support Project</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body" style="background-color:#f0f0f0">Donate using Google Pay or similar!</div>
+                  <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0" style="background-color:#bdc3c7">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
       <footer class="footer mt-auto py-3">
         <div class="container text-center">
           <ul class="nav justify-content-center border-bottom border-dark-subtle border-1 pb-1 mb-3">
@@ -391,5 +1552,60 @@
         </div>
       </footer>
     </main>
+    <script>
+      async function detectAdBlock() {
+        let adBlockEnabled = false
+        const googleAdUrl = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+        try {
+          await fetch(new Request(googleAdUrl)).catch(_ => adBlockEnabled = true)
+        } catch (e) {
+          adBlockEnabled = true
+        } finally {
+          console.log(`AdBlock Enabled: ${adBlockEnabled}`)
+        }
+        if (adBlockEnabled == true) {
+          document.getElementById("adblock").innerHTML = `
+            <div class="modal fade" id="staticAdsModal" data-bs-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content bg-light">
+                  <div class="modal-header border-bottom-0" style="background-color:#9ed2c6">
+                    <h5 class="modal-title"><strong>AdBlock Detected!</strong></h5>
+                    <button type="button" id="modal" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body py-2 text-center" style="background-color:#ffffff">
+                    <img src="images/block.gif" height="100"/>
+                    <br />
+                    <small class="h6 fw-bold" style="font-family:'Single Day', cursive">I Hope, You will whitelist our URL.</small>
+                  </div>
+                  <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0" style="background-color:#bdc3c7">
+                    <button type="button" id="timed" class="btn btn-secondary" data-bs-dismiss="modal">Auto close in 9 seconds...</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+        }
+      }
+      detectAdBlock()
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(window).on('load',function() {
+          console.log($.cookie('shown-modal'));
+          if (!$.cookie('shown-modal')) {
+            $('#staticAdsModal').modal('hide');
+            document.getElementById("modal").disabled = true;
+            document.getElementById("timed").disabled = true;
+            var date = new Date();
+            date.setTime(date.getTime() + 24 * 60 * 60 * 1000);
+            $.cookie('shown-modal', '1', {
+              expires: date
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

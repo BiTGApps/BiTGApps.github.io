@@ -156,35 +156,6 @@
       </div>
     </nav>
     <main role="main">
-      <div class="jumbotron" style="background-color:#efddfb">
-        <div class="container">
-          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active visually-hidden" aria-current="true"></button>
-              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" class="visually-hidden"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="3000">
-                <img alt="BiTGApps for Android" class="d-block w-100" src="https://cdn.jsdelivr.net/gh/BiTGApps/BiTGApps.github.io@master/images/banner.png" />
-              </div>
-              <div class="carousel-item" data-bs-interval="4000">
-                <img alt="BiTGApps for Android" class="d-block w-100" src="images/howto.png" />
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon mr-5 visually-hidden" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon ml-5 visually-hidden" aria-hidden="true"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div id="adblock"></div>
-      <div class="container"><a href="https://bitgapps.io/about.html"><img alt="About" class="mx-auto d-block" height="50" src="images/team.png"></a></div>
-      <div class="container text-center text-wrap mb-n2 mt-3">
-        <h1 class="fw-bold fs-6" style="color:#642B73"><em>A Custom Google Apps Package which contain Minimal, But has all the required Google Applications to get Google Services functionality.</em></h1>
-      </div>
       <div class="container my-4">
         <div class="card border rounded" style="background-color:#f0f0f0">
           <div class="card-body">
@@ -425,60 +396,5 @@
         </div>
       </footer>
     </main>
-    <script>
-      async function detectAdBlock() {
-        let adBlockEnabled = false
-        const googleAdUrl = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-        try {
-          await fetch(new Request(googleAdUrl)).catch(_ => adBlockEnabled = true)
-        } catch (e) {
-          adBlockEnabled = true
-        } finally {
-          console.log(`AdBlock Enabled: ${adBlockEnabled}`)
-        }
-        if (adBlockEnabled == true) {
-          document.getElementById("adblock").innerHTML = `
-            <div class="modal fade" id="staticAdsModal" data-bs-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
-              <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content bg-light">
-                  <div class="modal-header border-bottom-0" style="background-color:#9ed2c6">
-                    <h5 class="modal-title"><strong>AdBlock Detected!</strong></h5>
-                    <button type="button" id="modal" class="close" data-bs-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body py-2 text-center" style="background-color:#ffffff">
-                    <img src="images/block.gif" height="100"/>
-                    <br />
-                    <small class="h6 fw-bold" style="font-family:'Single Day', cursive">I Hope, You will whitelist our URL.</small>
-                  </div>
-                  <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0" style="background-color:#bdc3c7">
-                    <button type="button" id="timed" class="btn btn-secondary" data-bs-dismiss="modal">Auto close in 9 seconds...</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          `;
-        }
-      }
-      detectAdBlock()
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $(window).on('load',function() {
-          console.log($.cookie('shown-modal'));
-          if (!$.cookie('shown-modal')) {
-            $('#staticAdsModal').modal('hide');
-            document.getElementById("modal").disabled = true;
-            document.getElementById("timed").disabled = true;
-            var date = new Date();
-            date.setTime(date.getTime() + 24 * 60 * 60 * 1000);
-            $.cookie('shown-modal', '1', {
-              expires: date
-            });
-          }
-        });
-      });
-    </script>
   </body>
 </html>

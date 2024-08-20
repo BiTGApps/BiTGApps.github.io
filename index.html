@@ -1347,7 +1347,7 @@
         <footer class="footer mt-2">
           <div class="container">
             <div class="nav justify-content-center border-bottom border-dark-subtle border-1 pb-1 mb-3">
-              <a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#staticModalFooter">
+              <a class="text-decoration-none" href="#staticModalFooter" data-bs-toggle="modal" data-bs-target="#staticModalFooter">
                 <span class="badge bg-success-subtle text-success-emphasis rounded-pill text-wrap mb-2 py-2 me-2"><i class="fa-solid fa-robot me-1"></i>Download our App</span>
               </a>
               <a class="text-decoration-none" href="https://bitgapps.io/about.html">
@@ -1364,7 +1364,6 @@
       </div>
       <!---MODAL--->
       <div class="text-center" style="background:#f0f0f0">
-        <div class="container">
           <div class="modal fade" id="staticModalFooter" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content bg-light">
@@ -1373,7 +1372,11 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="background-color:#f0f0f0">
-                  <small class="noto-sans">Get notification of latest release using our Android App. Launch website from App, checkout development on XDA and more.</small>
+                  <small class="noto-sans">Get notification of the latest release using our Android App. Launch website from App, checkout development on XDA and more.
+                    <br>
+                    <a role="button" class="btn btn-link text-decoration-none" href="https://bitgapps.io/images/notifier.jpg"><i class="bi bi-image me-1"></i>Preview</a>
+                    <a role="button" class="btn btn-link text-decoration-none" href="https://bitgapps.io/images/notifier.png"><i class="bi bi-image me-1"></i>Preview</a>
+                  </small>
                 </div>
                 <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0" style="background-color:#bdc3c7">
                   <a class="btn btn-dark" role="button" href="https://sourceforge.net/projects/bitgapps/files/BiTGApps/releases/BiTGApps-v1.0.apk/download">Download APK</a>
@@ -1381,7 +1384,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
       <!---MODAL--->
     </main>

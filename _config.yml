@@ -6,3 +6,4 @@ relative_links:
   enabled: true
   collections: true
 theme: jekyll-theme-minimal
+exclude: ['./webroot.sh']

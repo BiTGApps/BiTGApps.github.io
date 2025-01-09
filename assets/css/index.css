@@ -36,26 +36,26 @@ body {
 }
 
 .nano {
-  border-style: solid;
+  border-style: dashed;
   border-color: #AD88C6;
 }
 
 .atom {
-  border-style: solid;
+  border-style: dashed;
   border-color: #A4BC92;
 }
 
 .pico {
-  border-style: solid;
+  border-style: dashed;
   border-color: #94B3FD;
 }
 
 .full {
-  border-style: solid;
+  border-style: dashed;
   border-color: #DC8686;
 }
 
 .tint {
-  border-style: solid;
+  border-style: dashed;
   border-color: #F2994A;
 }

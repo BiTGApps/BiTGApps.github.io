@@ -68,9 +68,10 @@
         <path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/>
       </symbol>
     </svg>
+    <div id="liveAlert"></div>
     <nav class="navbar navbar-expand-md bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand silkscreen animate-text" href="#">BiTGApps</a>
+        <a class="navbar-brand silkscreen animate-text disabled" href="#">BiTGApps</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticNavCanvas" aria-controls="staticNavCanvas" aria-expanded="false">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -146,16 +147,6 @@
         </div>
       </div>
     <main>
-      <div class="container">
-        <div class="position-fixed bottom-0 end-0 p-3" style="z-index:11">
-          <div class="toast align-items-center bg-danger-subtle border-0" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="d-flex">
-              <div class="toast-body"><strong>Hello, World!</strong> Scroll down for Downloads.</div>
-              <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-          </div>
-        </div>
-      </div>
       <!---SECTION--->
       <div class="px-4 py-4 text-center" style="background:#D3F8E2">
         <img alt="About" class="d-inline-block mx-auto mb-4 w-50" src="images/brand.png">
@@ -177,7 +168,7 @@
           </p>
           <div class="col-md-6 mx-auto">
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button id="toastbtn" class="btn btn-primary btn-sm px-4 gap-3 rounded-0 border-2"><i class="fa-solid fa-download me-1"></i>Downloads</button>
+              <button id="liveAlertBtn" class="btn btn-primary btn-sm px-4 gap-3 rounded-0 border-2"><i class="fa-solid fa-download me-1"></i>Downloads</button>
               <a role="button" class="btn btn-outline-success btn-sm px-4 rounded-0 border-2" href="https://t.me/BiTGAppsChat"><i class="bi bi-telegram me-1"></i>Telegram</a>
             </div>
           </div>
@@ -1610,12 +1601,24 @@
       </div>
     </main>
     <script>
-      document.getElementById("toastbtn").onclick = function() {
-        var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-        var toastList = toastElList.map(function(toastEl) {
-          return new bootstrap.Toast(toastEl)
+      const alertPlaceholder = document.getElementById('liveAlert')
+      const appendAlert = (message, type) => {
+        const wrapper = document.createElement('div')
+        wrapper.innerHTML = [
+          `<div class="alert alert-warning alert-dismissible fade show border-0 rounded-0 mb-0" role="alert">`,
+          `   <div>${message}</div>`,
+          '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+          '</div>'
+        ].join('')
+
+        alertPlaceholder.append(wrapper)
+      }
+
+      const alertTrigger = document.getElementById('liveAlertBtn')
+      if (alertTrigger) {
+        alertTrigger.addEventListener('click', () => {
+          appendAlert('<strong>Hello, World!</strong> Scroll down for Downloads.', 'success')
         })
-        toastList.forEach(toast => toast.show())
       }
     </script>
   </body>

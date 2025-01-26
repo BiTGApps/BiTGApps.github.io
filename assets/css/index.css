@@ -86,3 +86,12 @@ body {
     background-position: 200% center;
   }
 }
+
+.media{display:-ms-flexbox;display:flex;-ms-flex-align:start;align-items:flex-start}
+.media-body{-ms-flex:1;flex:1}
+.align-self-center{-ms-flex-item-align:center!important;align-self:center!important}
+.font-large-2{font-size:3rem!important}
+.float-right{float:right!important}
+.danger{color:#FF7588!important}
+.info{color:#2DCEE3!important}
+.success{color:#16D39A!important}

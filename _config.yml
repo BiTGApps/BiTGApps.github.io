@@ -1,4 +1,10 @@
+url: https://bitgapps.io
 title: BiTGApps
+show_downloads: false
+email: info@bitgapps.io
+description: BiTGApps is a customized Google Apps Package to sideload Google Apps in Custom Android OS. Supports Android version 15.0 to 7.1.x with regular updates and bugs fixed.
+keywords: bitgapps, bit gapps, gapps, android, arm, arm64, x86, x86_64, 7.1, 8.0, 8.1, 9.0, 10.0, 11.0, 12.0, 12.1, 13.0, 14.0, 15.0, core, mini, omni, roar, nano, atom, pico, full, tint
+logo: https://bitgapps.io/images/1cecUb3.png
 plugins:
   - jekyll-seo-tag
   - jekyll-relative-links
@@ -6,4 +12,6 @@ relative_links:
   enabled: true
   collections: true
 theme: jekyll-theme-minimal
-exclude: ['./webroot.sh']
+github:
+  is_user_page: false
+  is_project_page: false

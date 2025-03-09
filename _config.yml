@@ -12,6 +12,8 @@ relative_links:
   enabled: true
   collections: true
 theme: jekyll-theme-minimal
+exclude:
+  - webroot.sh
 github:
   is_user_page: false
   is_project_page: false

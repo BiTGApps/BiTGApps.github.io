@@ -1,8 +1,8 @@
 url: https://bitgapps.io
-title: BiTGApps
+title: BiTGApps | Google Apps Package
 email: info@bitgapps.io
 description: BiTGApps is a customized Google Apps Package to sideload Google Apps in Custom Android OS. Supports Android version 15.0 to 7.1.x with regular updates and bugs fixed.
-keywords: bitgapps, bit gapps, google apps, google, apps, gapps, package, android, arm, arm64, x86, x86_64, 7.1, 8.0, 8.1, 9.0, 10.0, 11.0, 12.0, 12.1, 13.0, 14.0, 15.0, core, mini, omni, roar, nano, atom, pico, full, tint, 7, 8, 9, 10, 11, 12, 13, 14, 15, flamegapps, litegapps, nikgapps, opengapps, magisk gapps, gapps systemless, Cupcake, Donut, Eclair, Froyo, Gingerbread, Honeycomb, IceCreamSandwich, JellyBean, Kitkat, Lollipop, Marshmallow, Nougat, Oreo, Pie, QuinceTart, RedVelvetCake, SnowCone, Tiramisu, UpsideDownCake, VanillaIceCream, M, N, O, P, Q, R, S, Sv2
+keywords: android, google, apps, google apps, google apps android, google apps package, gapps, gapps download, gapps package, gapps package android, gapps android, 7, 8, 9, 10, 11, 12, 13, 14, 15, opengapps, mindthegapps, bitgapps, nikgapps, flamegapps, litegapps, arm, arm64, core, mini, omni, roar, nano, atom, pico, full, tint
 logo: https://bitgapps.io/images/1cecUb3.png
 plugins:
   - jekyll-seo-tag

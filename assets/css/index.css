@@ -8,6 +8,10 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .disabled {
   pointer-events: none;
 }

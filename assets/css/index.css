@@ -8,8 +8,14 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
-.text-justify {
-  text-align: justify;
+.header {
+  background-color: #4686a0;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed, fixed, fixed;
+  background-image: url("../images/header.png"), url("../images/header.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+  background-position: top left, center center, center center;
+  background-size: auto, cover, cover;
+  text-align: center;
 }
 
 .disabled {

@@ -8,30 +8,6 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
-.header {
-  background-color: #4686a0;
-  color: rgba(255, 255, 255, 0.75);
-  background-attachment: fixed, fixed, fixed;
-  background-image: url("../images/header.png"), url("../images/header.svg"), linear-gradient(45deg, #a252f1, #4fa49a 50%, #fd836d 95%);
-  background-position: top left, center center, center center;
-  background-size: auto, cover, cover;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-}
-
-.changelog {
-  background-color: #4686a0;
-  color: rgba(255, 255, 255, 0.75);
-  background-attachment: fixed, fixed, fixed;
-  background-image: url("../images/header.png"), url("../images/header.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
-  background-position: top left, center center, center center;
-  background-size: auto, cover, cover;
-  overflow: hidden;
-  position: relative;
-  text-align: start;
-}
-
 .disabled {
   pointer-events: none;
 }
@@ -57,7 +33,7 @@ body {
   font-style: normal;
 }
 
-.icon-lists li::before {
+.icon-list li::before {
   display: block;
   flex-shrink: 0;
   width: 1.5em;
@@ -435,4 +411,16 @@ body {
   bottom: -8px;
   width: 2px;
   background-color: #dee2e6;
+}
+
+.header {
+  background-color: #4686a0;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed, fixed, fixed;
+  background-image: url("../images/header.png"), url("../images/header.svg"), linear-gradient(45deg, #a252f1, #4fa49a 50%, #fd836d 95%);
+  background-position: top left, center center, center center;
+  background-size: auto, cover, cover;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
 }

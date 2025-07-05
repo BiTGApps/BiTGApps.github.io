@@ -164,6 +164,18 @@ body {
   top: 50%;
 }
 
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-white.alert-success .icon,
+.alert-white.alert-success .icon:after {
+  border-color: #54a754;
+  background: #60c060;
+}
+
 .alert-info {
   background-color: #d9edf7;
   border-color: #98cce6;

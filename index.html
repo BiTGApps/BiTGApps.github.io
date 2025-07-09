@@ -325,17 +325,20 @@
             <p class="text-center" style="color:#1572A1"><small class="fw-bold">Want to install SetupWizard with BiTGApps ?</small></p>
             <p class="text-center fw-light">
               In order to have SetupWizard with BiTGApps, config file must be placed in internal
-              storage outside of folder before installation. Avoid placing config file in folder
+              or external storage before installation. Avoid placing config file in folder
               that contain special characters like &#34;&#64;&#35;&#36;&#34; and spaces in their
-              name. LineageOS Recovery users needs to follow below workaround.
+              name. In case both options are not available then follow below workaround.
             </p>
             <ul class="list-group text-center">
               <li class="list-group-item"><span><i class="fa-solid fa-link me-1"></i><a class="text-decoration-none" href="https://sourceforge.net/projects/bitgapps/files/BiTGApps/bitgapps.conf/download">Download Config</a></span></li>
             </ul>
             <p class="text-center fw-light mt-3 mb-0">
-              With LineageOS Recovery and similar, Adding configuation file to internal storage will not work. Because
-              of encrypted data partition. You need to re-pack BiTGApps ZIP with config file. The file must goes in root
-              of un-packed BiTGApps ZIP else it won<span>&#39;</span>t work.
+              Download config from above link and save it somewhere. Unpack BiTGApps ZIP and paste the downloaded
+              config inside extracted folder. The file must goes in root of extracted folder else it won't work
+              Previous step is important and after doing this, select everything at once and re-pack as ZIP file.
+              Keep in mind, You need to select files and not the folder itself.
+              With LineageOS Recovery and similar, Adding configuation file to internal storage will not work.
+              Because of encrypted data partition. So this method is useful for such issues too.
             </p>
           </div>
           <div class="card-footer text-center text-muted rounded-0" style="background-color:#f0f0f0">

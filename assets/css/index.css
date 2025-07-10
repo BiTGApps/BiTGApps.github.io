@@ -424,15 +424,3 @@ body {
   width: 2px;
   background-color: #dee2e6;
 }
-
-.header {
-  background-color: #4686a0;
-  color: rgba(255, 255, 255, 0.75);
-  background-attachment: fixed, fixed, fixed;
-  background-image: url("../images/header.png"), url("../images/header.svg"), linear-gradient(45deg, #a252f1, #4fa49a 50%, #fd836d 95%);
-  background-position: top left, center center, center center;
-  background-size: auto, cover, cover;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-}

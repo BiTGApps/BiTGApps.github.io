@@ -67,7 +67,7 @@
         <div class="offcanvas-body">
           <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width:280px">
             <a href="https://bitgapps.io" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none disabled">
-              <img alt="" width="32" src="images/foss.png" class="me-1">
+              <img alt="" width="32" src="images/foss.png" class="me-2">
               <div class="lh-1">
                 <p class="fs-6 mb-0 text-dark lh-1">MicroGPlus</p>
                 <small style="color:#0081B4">Since 2018</small>
@@ -119,8 +119,8 @@
         </div>
         <h1 class="display-5 fw-bold mb-0">MicroGPlus</h1>
         <span class="text-muted">Install MicroG with Ease</span>
-        <div class="mx-auto mt-3">
-          <p class="mb-2">microG is a free and open-source implementation of Google Play Services. It aims to provide a functional replacement for proprietary Google services on Android devices. It allows users to run applications that depend on Google Play Services without having to authenticate with a personal Google user account, thus adding an anonymisation layer between users and the Google Play Services infrastructure.</p>
+        <div class="mx-auto mt-2">
+          <p class="mb-2">microG is a free and open-source implementation of Google Play Services. It aims to provide a functional replacement for proprietary Google services on Android devices.<br>It allows users to run applications that depend on Google Play Services.</p>
           <div class="col-md-6 mx-auto">
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
               <button id="liveAlertBtn" onclick="topFunction()" class="btn btn-primary btn-sm px-4 gap-3 rounded-0 border-2"><i class="fa-solid fa-download me-1"></i>Downloads</button>
@@ -256,10 +256,10 @@
               then install them, otherwise expect crashes. Once you have root through either Magisk or
               KernelSU, required permissions will be granted on its own else follow "adb shell" method.
             </p>
-            <div class="alert alert-danger fw-light text-center" role="alert">
-              adb shell /system/bin/runtime.sh
-            </div>
-            <p class="card-text fw-light text-center">
+            <ul class="list-group text-center">
+              <li class="list-group-item"><span>adb shell /system/bin/runtime.sh</span></li>
+            </ul>
+            <p class="card-text fw-light text-center mt-3">
               <span class="badge rounded-pill" style="background:#1F8A70"><i class="fa-solid fa-lightbulb me-1"></i>Helpful Tip</span>
               <br>
               You should reboot to recovery after flashing Custom ROM for fresh installation.

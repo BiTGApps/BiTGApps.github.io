@@ -8,6 +8,9 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
+a.touch:visited, a.touch:link {text-decoration: none;}
+a.touch:hover, a.touch:active {text-decoration: underline;}
+
 .disabled {
   pointer-events: none;
 }

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 
 body {
   background-image: linear-gradient(-45deg, #fbfbfb 0%, #fbfbfb 100%);
@@ -31,6 +32,13 @@ a.touch:hover, a.touch:active {text-decoration: underline;}
 
 .rubik {
   font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sand-sans {
+  font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;

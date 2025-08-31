@@ -4,10 +4,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 
+:root {
+  --bg: #3d3d3d;
+  --clr-1: #00c2ff;
+  --clr-2: #33ff8c;
+  --clr-3: #ffc640;
+  --clr-4: #e54cff;
+
+  --blur: 1rem;
+  --fs: clamp(2rem, 3vw, 2rem);
+  --ls: clamp(-1.75px, -0.25vw, -3.5px);
+}
+
 body {
   background-image: linear-gradient(-45deg, #fbfbfb 0%, #fbfbfb 100%);
   font-family: 'Fira Sans', sans-serif;
 }
+
+select > option.hidden { display: none; }
 
 .default {
   background-image:linear-gradient(-45deg, #ffffff 0%, #ffffff 100%);
@@ -199,18 +213,6 @@ body {
 .alert-white.alert-info .icon:after {
   border-color: #3a8ace;
   background: #4d90fd;
-}
-
-:root {
-  --bg: #3d3d3d;
-  --clr-1: #00c2ff;
-  --clr-2: #33ff8c;
-  --clr-3: #ffc640;
-  --clr-4: #e54cff;
-
-  --blur: 1rem;
-  --fs: clamp(2rem, 3vw, 2rem);
-  --ls: clamp(-1.75px, -0.25vw, -3.5px);
 }
 
 .matter {

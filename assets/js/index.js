@@ -22,3 +22,28 @@ document.getElementById('MicroGPlus').addEventListener('change', downloadSelecte
 function resetSelectedFile() {
     document.getElementById("MicroGPlus").selectedIndex = 0;
 }
+
+function downloadRadioFile() {
+    const radioButtons = document.querySelectorAll('input[name="downloadRadioFile"]');
+    let selectedFile = null;
+    for (const radioButton of radioButtons) {
+        if (radioButton.checked) {
+            selectedFile = radioButton.value;
+            break;
+        }
+    }
+    if (selectedFile) {
+        const link = document.createElement('a');
+        link.href = selectedFile;
+        link.download = selectedFile;
+        document.body.appendChild(link); // Append
+        link.click();                    // Trigger
+        document.body.removeChild(link); // Remove
+    } else {
+        alert('Please select MicroGPlus to download.');
+    }
+}
+
+function resetRadioFile() {
+    document.querySelector('input[name="downloadRadioFile"]:checked').checked = false;
+}

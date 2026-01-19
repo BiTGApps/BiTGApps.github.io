@@ -40,7 +40,7 @@ function downloadRadioFile() {
         link.click();                    // Trigger
         document.body.removeChild(link); // Remove
     } else {
-        alert('Please select MicroGPlus to download.');
+        alert('Please select a MicroGPlus version to download.');
     }
 }
 

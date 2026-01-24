@@ -124,8 +124,8 @@
           <p class="mb-2">microG is a free and open-source implementation of Google Play Services. It aims to provide a functional replacement for proprietary Google services on Android devices. It allows users to run applications that depend on Google Play Services.</p>
           <div class="col-md-6 mx-auto">
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button id="liveAlertBtn" onclick="topFunction()" class="btn btn-primary btn-sm px-4 gap-3 rounded-0 border-2"><i class="fa-solid fa-download me-1"></i>Downloads</button>
-              <a role="button" class="btn btn-outline-success btn-sm px-4 rounded-0 border-2" href="https://t.me/MicroGPlusChat"><i class="bi bi-telegram me-1"></i>Telegram</a>
+              <button type="button" id="liveAlertBtn" onclick="topFunction()" class="btn btn-primary btn-sm px-4 gap-3 border-2"><i class="fa-solid fa-download me-1"></i>Downloads</button>
+              <a role="button" class="btn btn-outline-success btn-sm px-4 border-2" href="https://t.me/MicroGPlusChat"><i class="bi bi-telegram me-1"></i>Telegram</a>
             </div>
           </div>
         </div>
@@ -213,9 +213,15 @@
       <!---SECTION--->
       <div class="px-0 my-3 py-1">
         <ul class="list-group border-0 rounded-0 text-center">
+<!--
           <li class="list-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#android" style="background-color:#f0f0f0">All Platforms and All Android Versions are Supported</li>
           <div id="android" class="container-fluid collapse show bg-dark text-white text-center fw-light">
             <p class="mb-0">Supports Android 16.0 to 7.1.x with regular updates and bugs fixed.</p>
+          </div>
+-->
+          <li class="list-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#android" style="background-color:#f0f0f0">All Platforms and All Android Versions are Supported</li>
+          <div id="android" class="container-fluid border collapse show bg-white" style="border-color:#f0f0f0">
+            <img alt="" class="img-fluid" style="width:500px" src="images/untitled.png">
           </div>
           <li class="list-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#flashable" style="background-color:#f0f0f0">MicroGPlus has flashable packages in many variations</li>
           <div id="flashable" class="container-fluid collapse show bg-dark text-white text-center fw-light">
@@ -329,8 +335,8 @@
       -->
       <!---SECTION--->
       <div class="px-3 my-3 py-3 text-center" style="background:#f0f0f0">
-        <div class="px-3 py-3 bg-success-subtle mb-2">
-          <p class="sand-sans mb-0 text-success">Select a MicroGPlus version and hit Download button!</p>
+        <div class="border-bottom border-danger-subtle mb-2">
+          <p class="sand-sans mb-1" style="color:#dc7474">Select a MicroGPlus version and hit Download button!</p>
         </div>
         <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileAUR" value="https://github.com/BiTGApps/extra/releases/download/v1.9-extra/microG-Installer-v1.9-AUR.zip">
         <label class="form-check-label silkscreen" for="radioFileAUR">MicroGPlus AUR</label><br>
@@ -350,8 +356,8 @@
         <label class="form-check-label silkscreen" for="radioFileNOU">MicroGPlus NOU</label>
         <div class="col-md-6 mx-auto mb-2 mt-2">
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-outline-dark btn-sm px-4 gap-3 rounded-0 border-2" onclick="downloadRadioFile()"><i class="bi bi-cloud-download me-1"></i>Download</button>
-            <button type="button" class="btn btn-outline-success btn-sm px-4 rounded-0 border-2" onclick="resetRadioFile()">Reset</button>
+            <button type="button" class="btn btn-outline-dark btn-sm px-4 gap-3 border-2" onclick="downloadRadioFile()"><i class="bi bi-cloud-download me-1"></i>Download</button>
+            <button type="button" class="btn btn-outline-success btn-sm px-4 border-2" onclick="resetRadioFile()">Reset</button>
           </div>
         </div>
         <p class="text-muted silkscreen mb-0">Thanks for choosing MicroGPlus!</p>
@@ -478,8 +484,8 @@
         </p>
         <div class="col-md-6 mx-auto mb-2">
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a role="button" class="btn btn-dark btn-sm px-4 gap-3 rounded-0 border-2 active" href="https://github.com/BiTGApps/extra/releases/download/v1.5-extra/SyncAdapter.zip"><i class="fa-solid fa-arrow-up-right-from-square fa-fade me-2"></i>SyncAdapter</a>
-            <a role="button" class="btn btn-outline-success btn-sm px-4 rounded-0 border-2" href="https://github.com/BiTGApps/extra/releases/download/v1.5-extra/uninstaller.zip"><i class="fa-solid fa-arrow-up-right-from-square me-2"></i>MicroGPlus Uninstaller</a>
+            <a role="button" class="btn btn-dark btn-sm px-4 gap-3 border-2 active" href="https://github.com/BiTGApps/extra/releases/download/v1.5-extra/SyncAdapter.zip"><i class="fa-solid fa-arrow-up-right-from-square fa-fade me-2"></i>SyncAdapter</a>
+            <a role="button" class="btn btn-outline-success btn-sm px-4 border-2" href="https://github.com/BiTGApps/extra/releases/download/v1.5-extra/uninstaller.zip"><i class="fa-solid fa-arrow-up-right-from-square me-2"></i>MicroGPlus Uninstaller</a>
           </div>
         </div>
         <p class="mb-0">

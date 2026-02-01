@@ -7,12 +7,47 @@
 const downloadLibrary = new Map([
     ['CORE', new Map([
         ['arm64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-16.0.0-v5.6-CORE.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.7-release/BiTGApps-arm64-16.0.0-v5.7-CORE.zip' }]
+        ])]
+    ])],
+    ['MINI', new Map([
+        ['arm64', new Map([
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.7-release/BiTGApps-arm64-16.0.0-v5.7-MINI.zip' }]
+        ])]
+    ])],
+    ['OMNI', new Map([
+        ['arm64', new Map([
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.7-release/BiTGApps-arm64-16.0.0-v5.7-OMNI.zip' }]
+        ])]
+    ])],
+    ['ROAR', new Map([
+        ['arm64', new Map([
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.7-release/BiTGApps-arm64-16.0.0-v5.7-ROAR.zip' }]
+        ])]
+    ])],
+    ['NANO', new Map([
+        ['arm64', new Map([
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.7-release/BiTGApps-arm64-16.0.0-v5.7-NANO.zip' }]
+        ])]
+    ])],
+    ['ATOM', new Map([
+        ['arm64', new Map([
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.7-release/BiTGApps-arm64-16.0.0-v5.7-ATOM.zip' }]
+        ])]
+    ])],
+    ['PICO', new Map([
+        ['arm64', new Map([
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.7-release/BiTGApps-arm64-16.0.0-v5.7-PICO.zip' }]
         ])]
     ])],
     ['FULL', new Map([
         ['arm64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-16.0.0-v5.6-FULL.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.7-release/BiTGApps-arm64-16.0.0-v5.7-FULL.zip' }]
+        ])]
+    ])],
+    ['TINT', new Map([
+        ['arm64', new Map([
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.7-release/BiTGApps-arm64-16.0.0-v5.7-TINT.zip' }]
         ])]
     ])]
 ]);

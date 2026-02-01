@@ -52,7 +52,7 @@
       gtag('config', 'G-76BW4XC058');
     </script>
     <script src="assets/js/index.js?ver=22.0"></script>
-    <script src="assets/js/fetch.js?ver=22.0"></script>
+    <script src="assets/js/fetch.js?ver=23.0"></script>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -356,7 +356,7 @@
               <div class="card-body">
                 <div class="media d-flex">
                   <div class="media-body text-left">
-                    <p class="card-text fs-4 danger">Latest v5.6</p>
+                    <p class="card-text fs-4 danger">Latest v5.7</p>
                     <span class="silkscreen">Stable Release</span>
                   </div>
                   <div class="align-self-center">
@@ -373,7 +373,7 @@
                 <div class="media d-flex">
                   <div class="media-body text-left">
                     <p class="card-text fs-4 info">Last Updated</p>
-                    <span class="silkscreen">January 19, 2026</span>
+                    <span class="silkscreen">February 01, 2026</span>
                   </div>
                   <div class="align-self-center">
                     <i class="icon-diamond info font-large-2 float-right"></i>
@@ -412,8 +412,8 @@
               <div class="card shadow-sm mb-2">
                 <div class="card-body">
                   <div class="d-flex align-items-center mb-3">
-                    <span class="badge bg-primary version me-2">v5.6.0</span>
-                    <small class="text-muted">January 19, 2026</small>
+                    <span class="badge bg-primary version me-2">v5.7.0</span>
+                    <small class="text-muted">February 01, 2026</small>
                   </div>
                   <p class="card-title fs-5 mb-1">Final Refactor: Android 16</p>
                   <div class="position-relative">
@@ -470,14 +470,23 @@
           <select id="software" onchange="populatePlatforms()">
             <option value="" hidden>Select Version</option>
             <option value="CORE">Core</option>
+            <option value="MINI">Mini</option>
+            <option value="OMNI">Omni</option>
+            <option value="ROAR">Roar</option>
+            <option value="NANO">Nano</option>
+            <option value="ATOM">Atom</option>
+            <option value="PICO">Pico</option>
             <option value="FULL">Full</option>
+            <option value="TINT">Tint</option>
           </select>
           <select id="platform" class="my-1" onchange="populateVersions()" disabled>
             <option value="" hidden>Select Platform</option>
           </select>
-          <select id="version" onchange="handleDownload()" disabled>
+          <select id="version" disabled>
             <option value="" hidden>Select Android</option>
           </select>
+          <hr>
+          <button type="button" class="btn btn-warning btn-sm" onclick="handleDownload()"><i class="bi bi-cloud-download me-1"></i>Download Selected File</button>
         </div>
         <p class="text-success fw-bold mb-1">Want more personalized build? Custom Builds for Android 16 available now.</p>
         <p class="mb-2">
@@ -547,8 +556,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-16.0.0-v5.5-CORE.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-16.0.0-v5.5-CORE.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-16.0.0-v5.6-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-16.0.0-v5.6-CORE.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -559,8 +568,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-15.0.0-v5.5-CORE.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-15.0.0-v5.5-CORE.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-15.0.0-v5.6-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-15.0.0-v5.6-CORE.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -571,8 +580,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-14.0.0-v5.5-CORE.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-14.0.0-v5.5-CORE.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-14.0.0-v5.6-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-14.0.0-v5.6-CORE.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -583,8 +592,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-13.0.0-v5.5-CORE.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-13.0.0-v5.5-CORE.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-13.0.0-v5.6-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-13.0.0-v5.6-CORE.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -595,8 +604,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-12.1.0-v5.5-CORE.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-12.1.0-v5.5-CORE.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-12.1.0-v5.6-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-12.1.0-v5.6-CORE.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -607,8 +616,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-12.0.0-v5.5-CORE.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-12.0.0-v5.5-CORE.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-12.0.0-v5.6-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-12.0.0-v5.6-CORE.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -619,8 +628,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-11.0.0-v5.5-CORE.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-11.0.0-v5.5-CORE.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-11.0.0-v5.6-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-11.0.0-v5.6-CORE.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -631,8 +640,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-10.0.0-v5.5-CORE.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-10.0.0-v5.5-CORE.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-10.0.0-v5.6-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-10.0.0-v5.6-CORE.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -643,8 +652,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-9.0.0-v5.5-CORE.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-9.0.0-v5.5-CORE.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-9.0.0-v5.6-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-9.0.0-v5.6-CORE.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -655,8 +664,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-8.1.0-v5.5-CORE.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-8.1.0-v5.5-CORE.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-8.1.0-v5.6-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-8.1.0-v5.6-CORE.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -667,8 +676,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-8.0.0-v5.5-CORE.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-8.0.0-v5.5-CORE.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-8.0.0-v5.6-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-8.0.0-v5.6-CORE.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -679,8 +688,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-7.1.2-v5.5-CORE.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-7.1.2-v5.5-CORE.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-7.1.2-v5.6-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-7.1.2-v5.6-CORE.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -691,8 +700,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-7.1.1-v5.5-CORE.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-7.1.1-v5.5-CORE.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-7.1.1-v5.6-CORE.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-7.1.1-v5.6-CORE.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -733,8 +742,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-16.0.0-v5.5-MINI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-16.0.0-v5.5-MINI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-16.0.0-v5.6-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-16.0.0-v5.6-MINI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -745,8 +754,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-15.0.0-v5.5-MINI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-15.0.0-v5.5-MINI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-15.0.0-v5.6-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-15.0.0-v5.6-MINI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -757,8 +766,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-14.0.0-v5.5-MINI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-14.0.0-v5.5-MINI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-14.0.0-v5.6-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-14.0.0-v5.6-MINI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -769,8 +778,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-13.0.0-v5.5-MINI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-13.0.0-v5.5-MINI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-13.0.0-v5.6-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-13.0.0-v5.6-MINI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -781,8 +790,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-12.1.0-v5.5-MINI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-12.1.0-v5.5-MINI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-12.1.0-v5.6-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-12.1.0-v5.6-MINI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -793,8 +802,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-12.0.0-v5.5-MINI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-12.0.0-v5.5-MINI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-12.0.0-v5.6-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-12.0.0-v5.6-MINI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -805,8 +814,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-11.0.0-v5.5-MINI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-11.0.0-v5.5-MINI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-11.0.0-v5.6-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-11.0.0-v5.6-MINI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -817,8 +826,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-10.0.0-v5.5-MINI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-10.0.0-v5.5-MINI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-10.0.0-v5.6-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-10.0.0-v5.6-MINI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -829,8 +838,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-9.0.0-v5.5-MINI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-9.0.0-v5.5-MINI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-9.0.0-v5.6-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-9.0.0-v5.6-MINI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -841,8 +850,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-8.1.0-v5.5-MINI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-8.1.0-v5.5-MINI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-8.1.0-v5.6-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-8.1.0-v5.6-MINI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -853,8 +862,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-8.0.0-v5.5-MINI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-8.0.0-v5.5-MINI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-8.0.0-v5.6-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-8.0.0-v5.6-MINI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -865,8 +874,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-7.1.2-v5.5-MINI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-7.1.2-v5.5-MINI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-7.1.2-v5.6-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-7.1.2-v5.6-MINI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -877,8 +886,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-7.1.1-v5.5-MINI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-7.1.1-v5.5-MINI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-7.1.1-v5.6-MINI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-7.1.1-v5.6-MINI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -919,8 +928,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-16.0.0-v5.5-OMNI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-16.0.0-v5.5-OMNI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-16.0.0-v5.6-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-16.0.0-v5.6-OMNI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -931,8 +940,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-15.0.0-v5.5-OMNI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-15.0.0-v5.5-OMNI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-15.0.0-v5.6-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-15.0.0-v5.6-OMNI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -943,8 +952,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-14.0.0-v5.5-OMNI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-14.0.0-v5.5-OMNI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-14.0.0-v5.6-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-14.0.0-v5.6-OMNI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -955,8 +964,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-13.0.0-v5.5-OMNI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-13.0.0-v5.5-OMNI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-13.0.0-v5.6-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-13.0.0-v5.6-OMNI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -967,8 +976,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-12.1.0-v5.5-OMNI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-12.1.0-v5.5-OMNI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-12.1.0-v5.6-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-12.1.0-v5.6-OMNI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -979,8 +988,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-12.0.0-v5.5-OMNI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-12.0.0-v5.5-OMNI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-12.0.0-v5.6-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-12.0.0-v5.6-OMNI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -991,8 +1000,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-11.0.0-v5.5-OMNI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-11.0.0-v5.5-OMNI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-11.0.0-v5.6-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-11.0.0-v5.6-OMNI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1003,8 +1012,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-10.0.0-v5.5-OMNI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-10.0.0-v5.5-OMNI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-10.0.0-v5.6-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-10.0.0-v5.6-OMNI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1015,8 +1024,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-9.0.0-v5.5-OMNI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-9.0.0-v5.5-OMNI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-9.0.0-v5.6-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-9.0.0-v5.6-OMNI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1027,8 +1036,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-8.1.0-v5.5-OMNI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-8.1.0-v5.5-OMNI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-8.1.0-v5.6-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-8.1.0-v5.6-OMNI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1039,8 +1048,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-8.0.0-v5.5-OMNI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-8.0.0-v5.5-OMNI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-8.0.0-v5.6-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-8.0.0-v5.6-OMNI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1051,8 +1060,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-7.1.2-v5.5-OMNI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-7.1.2-v5.5-OMNI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-7.1.2-v5.6-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-7.1.2-v5.6-OMNI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1063,8 +1072,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-7.1.1-v5.5-OMNI.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-7.1.1-v5.5-OMNI.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-7.1.1-v5.6-OMNI.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-7.1.1-v5.6-OMNI.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1105,8 +1114,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-16.0.0-v5.5-ROAR.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-16.0.0-v5.5-ROAR.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-16.0.0-v5.6-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-16.0.0-v5.6-ROAR.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1117,8 +1126,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-15.0.0-v5.5-ROAR.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-15.0.0-v5.5-ROAR.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-15.0.0-v5.6-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-15.0.0-v5.6-ROAR.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1129,8 +1138,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-14.0.0-v5.5-ROAR.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-14.0.0-v5.5-ROAR.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-14.0.0-v5.6-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-14.0.0-v5.6-ROAR.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1141,8 +1150,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-13.0.0-v5.5-ROAR.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-13.0.0-v5.5-ROAR.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-13.0.0-v5.6-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-13.0.0-v5.6-ROAR.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1153,8 +1162,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-12.1.0-v5.5-ROAR.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-12.1.0-v5.5-ROAR.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-12.1.0-v5.6-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-12.1.0-v5.6-ROAR.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1165,8 +1174,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-12.0.0-v5.5-ROAR.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-12.0.0-v5.5-ROAR.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-12.0.0-v5.6-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-12.0.0-v5.6-ROAR.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1177,8 +1186,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-11.0.0-v5.5-ROAR.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-11.0.0-v5.5-ROAR.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-11.0.0-v5.6-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-11.0.0-v5.6-ROAR.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1189,8 +1198,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-10.0.0-v5.5-ROAR.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-10.0.0-v5.5-ROAR.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-10.0.0-v5.6-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-10.0.0-v5.6-ROAR.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1201,8 +1210,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-9.0.0-v5.5-ROAR.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-9.0.0-v5.5-ROAR.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-9.0.0-v5.6-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-9.0.0-v5.6-ROAR.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1213,8 +1222,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-8.1.0-v5.5-ROAR.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-8.1.0-v5.5-ROAR.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-8.1.0-v5.6-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-8.1.0-v5.6-ROAR.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1225,8 +1234,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-8.0.0-v5.5-ROAR.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-8.0.0-v5.5-ROAR.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-8.0.0-v5.6-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-8.0.0-v5.6-ROAR.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1237,8 +1246,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-7.1.2-v5.5-ROAR.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-7.1.2-v5.5-ROAR.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-7.1.2-v5.6-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-7.1.2-v5.6-ROAR.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1249,8 +1258,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm-7.1.1-v5.5-ROAR.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-7.1.1-v5.5-ROAR.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm-7.1.1-v5.6-ROAR.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-7.1.1-v5.6-ROAR.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1302,9 +1311,9 @@
                   </td>
                   <td>
                     <div class="btn-group" role="group" aria-label="Combined">
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-14.0.0-v5.5-NANO.zip" role="button"><i class="fa-solid fa-download me-1"></i>14.0</a>
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-15.0.0-v5.5-NANO.zip" role="button"><i class="fa-solid fa-download me-1"></i>15.0</a>
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-16.0.0-v5.5-NANO.zip" role="button"><i class="fa-solid fa-download me-1"></i>16.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-14.0.0-v5.6-NANO.zip" role="button"><i class="fa-solid fa-download me-1"></i>14.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-15.0.0-v5.6-NANO.zip" role="button"><i class="fa-solid fa-download me-1"></i>15.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-16.0.0-v5.6-NANO.zip" role="button"><i class="fa-solid fa-download me-1"></i>16.0</a>
                     </div>
                   </td>
                 </tr>
@@ -1315,9 +1324,9 @@
                   </td>
                   <td>
                     <div class="btn-group" role="group" aria-label="Combined">
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-14.0.0-v5.5-ATOM.zip" role="button"><i class="fa-solid fa-download me-1"></i>14.0</a>
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-15.0.0-v5.5-ATOM.zip" role="button"><i class="fa-solid fa-download me-1"></i>15.0</a>
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-16.0.0-v5.5-ATOM.zip" role="button"><i class="fa-solid fa-download me-1"></i>16.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-14.0.0-v5.6-ATOM.zip" role="button"><i class="fa-solid fa-download me-1"></i>14.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-15.0.0-v5.6-ATOM.zip" role="button"><i class="fa-solid fa-download me-1"></i>15.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-16.0.0-v5.6-ATOM.zip" role="button"><i class="fa-solid fa-download me-1"></i>16.0</a>
                     </div>
                   </td>
                 </tr>
@@ -1328,9 +1337,9 @@
                   </td>
                   <td>
                     <div class="btn-group" role="group" aria-label="Combined">
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-14.0.0-v5.5-PICO.zip" role="button"><i class="fa-solid fa-download me-1"></i>14.0</a>
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-15.0.0-v5.5-PICO.zip" role="button"><i class="fa-solid fa-download me-1"></i>15.0</a>
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-16.0.0-v5.5-PICO.zip" role="button"><i class="fa-solid fa-download me-1"></i>16.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-14.0.0-v5.6-PICO.zip" role="button"><i class="fa-solid fa-download me-1"></i>14.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-15.0.0-v5.6-PICO.zip" role="button"><i class="fa-solid fa-download me-1"></i>15.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-16.0.0-v5.6-PICO.zip" role="button"><i class="fa-solid fa-download me-1"></i>16.0</a>
                     </div>
                   </td>
                 </tr>
@@ -1341,9 +1350,9 @@
                   </td>
                   <td>
                     <div class="btn-group" role="group" aria-label="Combined">
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-14.0.0-v5.5-FULL.zip" role="button"><i class="fa-solid fa-download me-1"></i>14.0</a>
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-15.0.0-v5.5-FULL.zip" role="button"><i class="fa-solid fa-download me-1"></i>15.0</a>
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-16.0.0-v5.5-FULL.zip" role="button"><i class="fa-solid fa-download me-1"></i>16.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-14.0.0-v5.6-FULL.zip" role="button"><i class="fa-solid fa-download me-1"></i>14.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-15.0.0-v5.6-FULL.zip" role="button"><i class="fa-solid fa-download me-1"></i>15.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-16.0.0-v5.6-FULL.zip" role="button"><i class="fa-solid fa-download me-1"></i>16.0</a>
                     </div>
                   </td>
                 </tr>
@@ -1354,9 +1363,9 @@
                   </td>
                   <td>
                     <div class="btn-group" role="group" aria-label="Combined">
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-14.0.0-v5.5-TINT.zip" role="button"><i class="fa-solid fa-download me-1"></i>14.0</a>
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-15.0.0-v5.5-TINT.zip" role="button"><i class="fa-solid fa-download me-1"></i>15.0</a>
-                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.5-release/BiTGApps-arm64-16.0.0-v5.5-TINT.zip" role="button"><i class="fa-solid fa-download me-1"></i>16.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-14.0.0-v5.6-TINT.zip" role="button"><i class="fa-solid fa-download me-1"></i>14.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-15.0.0-v5.6-TINT.zip" role="button"><i class="fa-solid fa-download me-1"></i>15.0</a>
+                      <a class="btn btn-outline-primary btn-sm" href="https://github.com/BiTGApps/release/releases/download/v5.6-release/BiTGApps-arm64-16.0.0-v5.6-TINT.zip" role="button"><i class="fa-solid fa-download me-1"></i>16.0</a>
                     </div>
                   </td>
                 </tr>
@@ -1400,7 +1409,7 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/AndroidAuto-v5.5.zip">ALL</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/AndroidAuto-v5.6.zip">ALL</a>
                         </div>
                       </div>
                     </td>
@@ -1411,8 +1420,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Assistant-v5.5-ARM.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Assistant-v5.5-ARM64.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Assistant-v5.6-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Assistant-v5.6-ARM64.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1423,7 +1432,7 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Calculator-v5.5.zip">ALL</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Calculator-v5.6.zip">ALL</a>
                         </div>
                       </div>
                     </td>
@@ -1434,7 +1443,7 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Calendar-v5.5.zip">ALL</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Calendar-v5.6.zip">ALL</a>
                         </div>
                       </div>
                     </td>
@@ -1445,7 +1454,7 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Chrome-v5.5.zip">ALL</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Chrome-v5.6.zip">ALL</a>
                         </div>
                       </div>
                     </td>
@@ -1456,7 +1465,7 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Contacts-v5.5.zip">ALL</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Contacts-v5.6.zip">ALL</a>
                         </div>
                       </div>
                     </td>
@@ -1467,7 +1476,7 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/DeskClock-v5.5.zip">ALL</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/DeskClock-v5.6.zip">ALL</a>
                         </div>
                       </div>
                     </td>
@@ -1478,8 +1487,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Dialer-v5.5-ARM.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Dialer-v5.5-ARM64.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Dialer-v5.6-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Dialer-v5.6-ARM64.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1490,8 +1499,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Drive-v5.5-ARM.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Drive-v5.5-ARM64.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Drive-v5.6-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Drive-v5.6-ARM64.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1502,8 +1511,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Gmail-v5.5-ARM.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Gmail-v5.5-ARM64.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Gmail-v5.6-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Gmail-v5.6-ARM64.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1514,8 +1523,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/LatinIME-v5.5-ARM.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/LatinIME-v5.5-ARM64.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/LatinIME-v5.6-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/LatinIME-v5.6-ARM64.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1526,8 +1535,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Maps-v5.5-ARM.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Maps-v5.5-ARM64.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Maps-v5.6-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Maps-v5.6-ARM64.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1538,8 +1547,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Markup-v5.5-ARM.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Markup-v5.5-ARM64.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Markup-v5.6-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Markup-v5.6-ARM64.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1550,8 +1559,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Messaging-v5.5-ARM.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Messaging-v5.5-ARM64.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Messaging-v5.6-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Messaging-v5.6-ARM64.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1562,8 +1571,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Photos-v5.5-ARM.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Photos-v5.5-ARM64.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Photos-v5.6-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Photos-v5.6-ARM64.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1574,8 +1583,8 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/GoogleTTS-v5.5-ARM.zip">ARM</a>
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/GoogleTTS-v5.5-ARM64.zip">ARM64</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/GoogleTTS-v5.6-ARM.zip">ARM</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/GoogleTTS-v5.6-ARM64.zip">ARM64</a>
                         </div>
                       </div>
                     </td>
@@ -1586,7 +1595,7 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/WebView-v5.5.zip">ALL</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/WebView-v5.6.zip">ALL</a>
                         </div>
                       </div>
                     </td>
@@ -1597,7 +1606,7 @@
                       <div class="dropdown">
                         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Link</button>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.5-addons/Wellbeing-v5.5.zip">ALL</a>
+                          <a class="dropdown-item" href="https://github.com/BiTGApps/release/releases/download/v5.6-addons/Wellbeing-v5.6.zip">ALL</a>
                         </div>
                       </div>
                     </td>

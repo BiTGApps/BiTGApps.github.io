@@ -7,47 +7,47 @@
 const downloadLibrary = new Map([
     ['CORE', new Map([
         ['arm64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.8-release/BiTGApps-arm64-16.0.0-v5.8-CORE.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-CORE.zip' }]
         ])]
     ])],
     ['MINI', new Map([
         ['arm64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.8-release/BiTGApps-arm64-16.0.0-v5.8-MINI.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-MINI.zip' }]
         ])]
     ])],
     ['OMNI', new Map([
         ['arm64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.8-release/BiTGApps-arm64-16.0.0-v5.8-OMNI.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-OMNI.zip' }]
         ])]
     ])],
     ['ROAR', new Map([
         ['arm64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.8-release/BiTGApps-arm64-16.0.0-v5.8-ROAR.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-ROAR.zip' }]
         ])]
     ])],
     ['NANO', new Map([
         ['arm64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.8-release/BiTGApps-arm64-16.0.0-v5.8-NANO.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-NANO.zip' }]
         ])]
     ])],
     ['ATOM', new Map([
         ['arm64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.8-release/BiTGApps-arm64-16.0.0-v5.8-ATOM.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-ATOM.zip' }]
         ])]
     ])],
     ['PICO', new Map([
         ['arm64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.8-release/BiTGApps-arm64-16.0.0-v5.8-PICO.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-PICO.zip' }]
         ])]
     ])],
     ['FULL', new Map([
         ['arm64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.8-release/BiTGApps-arm64-16.0.0-v5.8-FULL.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-FULL.zip' }]
         ])]
     ])],
     ['TINT', new Map([
         ['arm64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.8-release/BiTGApps-arm64-16.0.0-v5.8-TINT.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-TINT.zip' }]
         ])]
     ])]
 ]);

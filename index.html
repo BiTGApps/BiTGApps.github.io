@@ -496,8 +496,39 @@
           Custom builds always contain Google Apps from latest Google Pixel OTA.
           You will have unlimited custom builds for Android 16. These custom builds hosted on a dedicated server.
           Please visit <a class="text-decoration-none" href="https://apilevels.com/">apilevels.com</a> website to know which Android version goes with which API level.
-          If you haven't made a build request then what you're seeing is someone else requested build on status page. When you made a request with your selected options, the index on status page will be updated with your download link and text file will be updated reflecting your chosen options. Further build requests will be rejected unless previous one is completed.
         </p>
+        <hr>
+        <p class="text-danger fw-bold mb-1">How custom build works and respone from server.</p>
+        <p class="mb-2">
+          If you haven't made a build request then what you're seeing is someone else requested build on status page. When you made a request with your selected options, the index on status page will be updated with your download link and text file will be updated reflecting your chosen options. Further build requests will be rejected unless previous one is completed. CronJob runs after every two minutes. You will get your build done in less than a minutes.
+          Please keep refreshing the status page until it is updated with newer links. You can also check text file whether it is updated with your selected apps
+          or not. Below are the sever responses, depending on how you interact with the build system.
+        </p>
+        <div class="mb-3">
+          <ul class="list-group">
+            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#onhold" style="background-color:#f4f4f4">Your build is in Queue!</li>
+            <div id="onhold" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
+              <p class="mb-0">This means build system hasn't picked up your build request.</p>
+            </div>
+            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#tasker" style="background-color:#f4f4f4">Your build is in tasker!</li>
+            <div id="tasker" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
+              <p class="mb-0">This means CronJob finally take over the build request and your build will be available in few seconds.</p>
+            </div>
+            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#username" style="background-color:#f4f4f4">Username not Found!</li>
+            <div id="username" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
+              <p class="mb-0">This means you selected a username from list which is not assigned.</p>
+            </div>
+            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#fields" style="background-color:#f4f4f4">Some fields are not set!</li>
+            <div id="fields" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
+              <p class="mb-0">This means you left some options unchecked.</p>
+            </div>
+            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#limit" style="background-color:#f4f4f4">Current User Limit Reached!</li>
+            <div id="limit" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
+              <p class="mb-0">This means the build system will not process any new requests until restarted.</p>
+            </div>
+            <li class="list-group-item sand-sans" style="background-color:#f4f4f4">Use pre-defined options from below to make a build request.</li>
+          </ul>
+        </div>
         <div class="col-md-4 mx-auto mb-3">
           <ul class="list-group">
             <li class="list-group-item list-group-item-light"><i class="bi bi-1-square me-1"></i>Select username <strong>"tres2b"</strong></li>

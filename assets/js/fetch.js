@@ -49,6 +49,30 @@ const downloadLibrary = new Map([
         ['arm64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-TINT.zip' }]
         ])]
+    ])],
+    ['ADDON', new Map([
+        ['all', new Map([
+            ['AndroidAuto', { url: 'https://build.bitgapps.io/addons/AndroidAuto-v5.9.zip' }],
+            ['Calculator', { url: 'https://build.bitgapps.io/addons/Calculator-v5.9.zip' }],
+            ['Calendar', { url: 'https://build.bitgapps.io/addons/Calendar-v5.9.zip' }],
+            ['Chrome', { url: 'https://build.bitgapps.io/addons/Chrome-v5.9.zip' }],
+            ['Contacts', { url: 'https://build.bitgapps.io/addons/Contacts-v5.9.zip' }],
+            ['DeskClock', { url: 'https://build.bitgapps.io/addons/DeskClock-v5.9.zip' }],
+            ['WebView', { url: 'https://build.bitgapps.io/addons/WebView-v5.9.zip' }],
+            ['Wellbeing', { url: 'https://build.bitgapps.io/addons/Wellbeing-v5.9.zip' }]
+        ])],
+        ['arm64', new Map([
+            ['Assistant', { url: 'https://build.bitgapps.io/addons/Assistant-v5.9-ARM64.zip' }],
+            ['Dialer', { url: 'https://build.bitgapps.io/addons/Dialer-v5.9-ARM64.zip' }],
+            ['Drive', { url: 'https://build.bitgapps.io/addons/Drive-v5.9-ARM64.zip' }],
+            ['Gmail', { url: 'https://build.bitgapps.io/addons/Gmail-v5.9-ARM64.zip' }],
+            ['GoogleTTS', { url: 'https://build.bitgapps.io/addons/GoogleTTS-v5.9-ARM64.zip' }],
+            ['Gboard', { url: 'https://build.bitgapps.io/addons/LatinIME-v5.9-ARM64.zip' }],
+            ['Maps', { url: 'https://build.bitgapps.io/addons/Maps-v5.9-ARM64.zip' }],
+            ['Markup', { url: 'https://build.bitgapps.io/addons/Markup-v5.9-ARM64.zip' }],
+            ['Messaging', { url: 'https://build.bitgapps.io/addons/Messaging-v5.9-ARM64.zip' }],
+            ['Photos', { url: 'https://build.bitgapps.io/addons/Photos-v5.9-ARM64.zip' }]
+        ])]
     ])]
 ]);
 
@@ -59,7 +83,7 @@ function updateDropdown(id, options) {
     options.forEach(opt => {
         let o = document.createElement('option');
         o.value = opt;
-        o.textContent = opt.toUpperCase();
+        o.textContent = opt;
         el.appendChild(o);
     });
     el.disabled = options.length === 0;

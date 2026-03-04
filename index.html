@@ -39,10 +39,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/index.css?ver=22.0">
     <link rel="canonical" href="https://bitgapps.io">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6267983170319694" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-76BW4XC058"></script>
     <script>
@@ -52,7 +54,7 @@
       gtag('config', 'G-76BW4XC058');
     </script>
     <script src="assets/js/index.js?ver=22.0"></script>
-    <script src="assets/js/fetch.js?ver=27.0"></script>
+    <script src="assets/js/fetch.js?ver=28.0"></script>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -470,17 +472,20 @@
         <div class="px-4 py-4 shadow rounded mb-3" style="background:#f4f4f4">
           <select id="software" onchange="populatePlatforms()">
             <option value="" hidden>Select Version</option>
-            <option value="CORE">Core</option>
-            <option value="MINI">Mini</option>
-            <option value="OMNI">Omni</option>
-            <option value="ROAR">Roar</option>
-            <option value="NANO">Nano</option>
-            <option value="ATOM">Atom</option>
-            <option value="PICO">Pico</option>
-            <option value="FULL">Full</option>
-            <option value="TINT">Tint</option>
-            <hr>
-            <option value="ADDON">Addon</option>
+            <optgroup label="Section 1">
+              <option value="CORE">Core</option>
+              <option value="MINI">Mini</option>
+              <option value="OMNI">Omni</option>
+              <option value="ROAR">Roar</option>
+              <option value="NANO">Nano</option>
+              <option value="ATOM">Atom</option>
+              <option value="PICO">Pico</option>
+              <option value="FULL">Full</option>
+              <option value="TINT">Tint</option>
+            </optgroup>
+            <optgroup label="Section 2">
+              <option value="ADDON">Addon</option>
+            </optgroup>
           </select>
           <select id="platform" class="my-1" onchange="populateVersions()" disabled>
             <option value="" hidden>Select Platform</option>

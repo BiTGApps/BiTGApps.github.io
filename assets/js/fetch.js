@@ -6,52 +6,52 @@
 
 const downloadLibrary = new Map([
     ['CORE', new Map([
-        ['arm64', new Map([
+        ['ARM64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-CORE.zip' }]
         ])]
     ])],
     ['MINI', new Map([
-        ['arm64', new Map([
+        ['ARM64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-MINI.zip' }]
         ])]
     ])],
     ['OMNI', new Map([
-        ['arm64', new Map([
+        ['ARM64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-OMNI.zip' }]
         ])]
     ])],
     ['ROAR', new Map([
-        ['arm64', new Map([
+        ['ARM64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-ROAR.zip' }]
         ])]
     ])],
     ['NANO', new Map([
-        ['arm64', new Map([
+        ['ARM64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-NANO.zip' }]
         ])]
     ])],
     ['ATOM', new Map([
-        ['arm64', new Map([
+        ['ARM64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-ATOM.zip' }]
         ])]
     ])],
     ['PICO', new Map([
-        ['arm64', new Map([
+        ['ARM64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-PICO.zip' }]
         ])]
     ])],
     ['FULL', new Map([
-        ['arm64', new Map([
+        ['ARM64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-FULL.zip' }]
         ])]
     ])],
     ['TINT', new Map([
-        ['arm64', new Map([
+        ['ARM64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-TINT.zip' }]
         ])]
     ])],
     ['ADDON', new Map([
-        ['all', new Map([
+        ['ALL', new Map([
             ['AndroidAuto', { url: 'https://build.bitgapps.io/addons/AndroidAuto-v5.9.zip' }],
             ['Calculator', { url: 'https://build.bitgapps.io/addons/Calculator-v5.9.zip' }],
             ['Calendar', { url: 'https://build.bitgapps.io/addons/Calendar-v5.9.zip' }],
@@ -61,7 +61,7 @@ const downloadLibrary = new Map([
             ['WebView', { url: 'https://build.bitgapps.io/addons/WebView-v5.9.zip' }],
             ['Wellbeing', { url: 'https://build.bitgapps.io/addons/Wellbeing-v5.9.zip' }]
         ])],
-        ['arm64', new Map([
+        ['ARM64', new Map([
             ['Assistant', { url: 'https://build.bitgapps.io/addons/Assistant-v5.9-ARM64.zip' }],
             ['Dialer', { url: 'https://build.bitgapps.io/addons/Dialer-v5.9-ARM64.zip' }],
             ['Drive', { url: 'https://build.bitgapps.io/addons/Drive-v5.9-ARM64.zip' }],

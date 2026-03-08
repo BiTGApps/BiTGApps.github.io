@@ -7,71 +7,71 @@
 const downloadLibrary = new Map([
     ['CORE', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-CORE.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-release/BiTGApps-arm64-16.0.0-v6.0-CORE.zip' }]
         ])]
     ])],
     ['MINI', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-MINI.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-release/BiTGApps-arm64-16.0.0-v6.0-MINI.zip' }]
         ])]
     ])],
     ['OMNI', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-OMNI.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-release/BiTGApps-arm64-16.0.0-v6.0-OMNI.zip' }]
         ])]
     ])],
     ['ROAR', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-ROAR.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-release/BiTGApps-arm64-16.0.0-v6.0-ROAR.zip' }]
         ])]
     ])],
     ['NANO', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-NANO.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-release/BiTGApps-arm64-16.0.0-v6.0-NANO.zip' }]
         ])]
     ])],
     ['ATOM', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-ATOM.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-release/BiTGApps-arm64-16.0.0-v6.0-ATOM.zip' }]
         ])]
     ])],
     ['PICO', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-PICO.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-release/BiTGApps-arm64-16.0.0-v6.0-PICO.zip' }]
         ])]
     ])],
     ['FULL', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-FULL.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-release/BiTGApps-arm64-16.0.0-v6.0-FULL.zip' }]
         ])]
     ])],
     ['TINT', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v5.9-release/BiTGApps-arm64-16.0.0-v5.9-TINT.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-release/BiTGApps-arm64-16.0.0-v6.0-TINT.zip' }]
         ])]
     ])],
     ['ADDON', new Map([
         ['ALL', new Map([
-            ['AndroidAuto', { url: 'https://build.bitgapps.io/addons/AndroidAuto-v5.9.zip' }],
-            ['Calculator', { url: 'https://build.bitgapps.io/addons/Calculator-v5.9.zip' }],
-            ['Calendar', { url: 'https://build.bitgapps.io/addons/Calendar-v5.9.zip' }],
-            ['Chrome', { url: 'https://build.bitgapps.io/addons/Chrome-v5.9.zip' }],
-            ['Contacts', { url: 'https://build.bitgapps.io/addons/Contacts-v5.9.zip' }],
-            ['DeskClock', { url: 'https://build.bitgapps.io/addons/DeskClock-v5.9.zip' }],
-            ['WebView', { url: 'https://build.bitgapps.io/addons/WebView-v5.9.zip' }],
-            ['Wellbeing', { url: 'https://build.bitgapps.io/addons/Wellbeing-v5.9.zip' }]
+            ['AndroidAuto', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/AndroidAuto-v6.0.zip' }],
+            ['Calculator', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/Calculator-v6.0.zip' }],
+            ['Calendar', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/Calendar-v6.0.zip' }],
+            ['Chrome', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/Chrome-v6.0.zip' }],
+            ['Contacts', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/Contacts-v6.0.zip' }],
+            ['DeskClock', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/DeskClock-v6.0.zip' }],
+            ['WebView', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/WebView-v6.0.zip' }],
+            ['Wellbeing', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/Wellbeing-v6.0.zip' }]
         ])],
         ['ARM64', new Map([
-            ['Assistant', { url: 'https://build.bitgapps.io/addons/Assistant-v5.9-ARM64.zip' }],
-            ['Dialer', { url: 'https://build.bitgapps.io/addons/Dialer-v5.9-ARM64.zip' }],
-            ['Drive', { url: 'https://build.bitgapps.io/addons/Drive-v5.9-ARM64.zip' }],
-            ['Gmail', { url: 'https://build.bitgapps.io/addons/Gmail-v5.9-ARM64.zip' }],
-            ['GoogleTTS', { url: 'https://build.bitgapps.io/addons/GoogleTTS-v5.9-ARM64.zip' }],
-            ['Gboard', { url: 'https://build.bitgapps.io/addons/LatinIME-v5.9-ARM64.zip' }],
-            ['Maps', { url: 'https://build.bitgapps.io/addons/Maps-v5.9-ARM64.zip' }],
-            ['Markup', { url: 'https://build.bitgapps.io/addons/Markup-v5.9-ARM64.zip' }],
-            ['Messaging', { url: 'https://build.bitgapps.io/addons/Messaging-v5.9-ARM64.zip' }],
-            ['Photos', { url: 'https://build.bitgapps.io/addons/Photos-v5.9-ARM64.zip' }]
+            ['Assistant', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/Assistant-v6.0-ARM64.zip' }],
+            ['Dialer', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/Dialer-v6.0-ARM64.zip' }],
+            ['Drive', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/Drive-v6.0-ARM64.zip' }],
+            ['Gmail', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/Gmail-v6.0-ARM64.zip' }],
+            ['GoogleTTS', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/GoogleTTS-v6.0-ARM64.zip' }],
+            ['Gboard', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/LatinIME-v6.0-ARM64.zip' }],
+            ['Maps', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/Maps-v6.0-ARM64.zip' }],
+            ['Markup', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/Markup-v6.0-ARM64.zip' }],
+            ['Messaging', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/Messaging-v6.0-ARM64.zip' }],
+            ['Photos', { url: 'https://github.com/BiTGApps/release/releases/download/v6.0-addons/Photos-v6.0-ARM64.zip' }]
         ])]
     ])]
 ]);

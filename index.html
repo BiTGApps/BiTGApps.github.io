@@ -451,7 +451,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <p class="text-muted silkscreen mb-0">Thanks for choosing BiTGApps!</p>
+                <p class="text-muted sand-sans mb-0">Contain both older and newer changelog!</p>
               </div>
             </div>
           </div>
@@ -506,35 +506,15 @@
         <hr>
         <p class="text-danger fw-bold mb-1">How custom build works and respone from server.</p>
         <p class="mb-2">
-          If you haven't made a build request then what you're seeing is someone else requested build on status page. When you made a request with your selected options, the index on status page will be updated with your download link and text file will be updated reflecting your chosen options. Further build requests will be rejected unless previous one is completed. CronJob runs after every two minutes. You will get your build done in less than a minutes.
-          Please keep refreshing the status page until it is updated with newer links. You can also check text file whether it is updated with your selected apps
-          or not. Below are the sever responses, depending on how you interact with the build system.
+          You need to use pre-defined options from below to make build request.
+          Enter a username of your choice, it must be seven characters long contain only letters and numbers.
+          CronJob runs after every two minutes. You will get your build done in less than a minutes.
+          You will also get your folder based on provided username created on server within this time frame.
+          From this folder you can access both older and newer builds.
+          Each build has its own text file containing list of google apps added in that specific package.
+          Build server will now accept all incoming requests and they will be sorted and processed in random order.
+          Please check status button option for how to download custom build after a request is made.
         </p>
-        <div class="mb-3">
-          <ul class="list-group">
-            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#onhold" style="background-color:#f4f4f4">Your build is in Queue!</li>
-            <div id="onhold" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
-              <p class="mb-0">This means build system hasn't picked up your build request.</p>
-            </div>
-            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#tasker" style="background-color:#f4f4f4">Your build is in tasker!</li>
-            <div id="tasker" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
-              <p class="mb-0">This means CronJob has finally take over the build request and your build will be available in few seconds.</p>
-            </div>
-            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#username" style="background-color:#f4f4f4">Username not Found!</li>
-            <div id="username" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
-              <p class="mb-0">This means you have selected a username from list which is not assigned.</p>
-            </div>
-            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#fields" style="background-color:#f4f4f4">Some fields are not set!</li>
-            <div id="fields" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
-              <p class="mb-0">This means you left some options unchecked.</p>
-            </div>
-            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#limit" style="background-color:#f4f4f4">Current User Limit Reached!</li>
-            <div id="limit" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
-              <p class="mb-0">This means the build system will not process any new requests until restarted.</p>
-            </div>
-            <li class="list-group-item sand-sans" style="background-color:#f4f4f4">Use pre-defined options from below to make a build request.</li>
-          </ul>
-        </div>
         <div class="col-md-4 mx-auto mb-3">
           <ul class="list-group">
             <li class="list-group-item list-group-item-light"><i class="bi bi-1-square me-1"></i>Enter username of <strong>"YOUR"</strong> choice</li>
@@ -1303,16 +1283,16 @@
       <!---SECTION--->
       <div class="px-3 my-3 py-3 text-center" style="background:#f0f0f0">
         <div class="border-bottom border-danger-subtle mb-2">
-          <p class="rubik fs-6 mb-0" style="color:#dc7474">Little Clarification on Different Versions</p>
+          <p class="sand-sans fs-5 mb-0" style="color:#dc7474">Little Clarification on Different Versions</p>
         </div>
-        <p class="sand-sans text-black-50 mb-1">
+        <p class="mb-1">
           Version like Core, Mini, Omni, Roar support Android 16 to 7.1.x and support both 32 and 64 bit device platform. However Nano, Atom, Pico, Full and Tint version support Android 16 to 14 and compatible ONLY with 64 bit device platform. In addons, All work with both 32 and 64 bit device platform whereas ARM work with 32 bit and ARM64 work with 64 bit device platform. Make sure you know about your device platform. For OTA survival, If your ROM supports addon.d backup functionality (most ROMs do), it's not necessary to install GApps with each ROM update, as long as you don't manually wipe the System partition. The backup script will backup your installed GApps and restores them after your ROM has been updated. If the ROM does not support backup functionality then you must reinstall with each update. That is your job to know whether the rom you're using support backup functionality or not, instead of knowing right at the moment.
         </p>
       </div>
       <!---SECTION--->
       <div class="px-3 my-3 py-3 text-center" style="background:#f0f0f0">
         <div class="text-center silkscreen"><span class="badge rounded-pill fs-5 text-wrap" style="background:#67C090"><i class="bi bi-google-play me-2"></i>Play Support Libraries</span></div>
-        <p class="sand-sans text-black-50 mb-2 mt-2">
+        <p class="mb-2 mt-2">
           Monthly Update of Android 16 Play Support Libraries for 64 bit Platform.
           Just flash this on top of already installed Android 16 Google Apps Package.
           You will get latest PlayStore and PlayServices taken directly from latest Pixel OTA.
@@ -1322,7 +1302,7 @@
             <a role="button" class="btn btn-dark btn-sm px-4 border-2 active" href="https://github.com/BiTGApps/ota/releases/download/v1.7-ota/cp1a.260405.005-factory-3d34f031.zip"><i class="fa-solid fa-arrow-up-right-from-square fa-fade me-2"></i>Download April Patch<hr class="my-1"><span class="text-warning">16.0.0 (CP1A.260405.005, APR 2026)</span></a>
           </div>
         </div>
-        <p class="sand-sans text-black-50 mb-0">Only for Android 16, because this version gets monthly updates from Google.</p>
+        <p class="mb-0">Only for Android 16, because this version gets monthly updates from Google.</p>
       </div>
       <!---SECTION--->
       <div class="px-1 my-3 py-1 text-center" style="background:#f0f0f0">
@@ -1657,6 +1637,9 @@
             in one package. Perks of module installation, required free space is no longer an issue.
             You can also remove Google Apps installation. Always survive ROM OTA upgrade with flash
             and forget experience. Do not disable module, otherwise expect crashes.
+            You might need a meta module installed before installing this as module.
+            Some latest version of KernelSU or forks require meta module for modules that adds or update
+            files in system without this the module files will be not be loaded after reboot.
           </p>
         </div>
       </div>

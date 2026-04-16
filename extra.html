@@ -298,6 +298,9 @@
             and forget experience. Do not disable module, otherwise expect crashes. When installed
             as module, do not enable KSU umount modules option for microG components under App
             Profile. It will cause crashes and APKs not found.
+            You might need a meta module installed before installing this as module.
+            Some latest version of KernelSU or forks require meta module for modules that adds or update
+            files in system without this the module files will be not be loaded after reboot.
           </p>
         </div>
       </div>
@@ -317,21 +320,21 @@
         <div class="border-bottom border-danger-subtle mb-2">
           <p class="sand-sans mb-1" style="color:#dc7474">Select a MicroGPlus version and hit Download button!</p>
         </div>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileAUR" value="https://github.com/BiTGApps/extra/releases/download/v2.2-extra/microG-Installer-v2.2-AUR.zip">
+        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileAUR" value="https://github.com/BiTGApps/extra/releases/download/v2.3-extra/microG-Installer-v2.3-AUR.zip">
         <label class="form-check-label silkscreen" for="radioFileAUR">MicroGPlus AUR</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileBSP" value="https://github.com/BiTGApps/extra/releases/download/v2.2-extra/microG-Installer-v2.2-BSP.zip">
+        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileBSP" value="https://github.com/BiTGApps/extra/releases/download/v2.3-extra/microG-Installer-v2.3-BSP.zip">
         <label class="form-check-label silkscreen" for="radioFileBSP">MicroGPlus BSP</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileFDD" value="https://github.com/BiTGApps/extra/releases/download/v2.2-extra/microG-Installer-v2.2-FDD.zip">
+        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileFDD" value="https://github.com/BiTGApps/extra/releases/download/v2.3-extra/microG-Installer-v2.3-FDD.zip">
         <label class="form-check-label silkscreen" for="radioFileFDD">MicroGPlus FDD</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileFOX" value="https://github.com/BiTGApps/extra/releases/download/v2.2-extra/microG-Installer-v2.2-FOX.zip">
+        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileFOX" value="https://github.com/BiTGApps/extra/releases/download/v2.3-extra/microG-Installer-v2.3-FOX.zip">
         <label class="form-check-label silkscreen" for="radioFileFOX">MicroGPlus FOX</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileGPS" value="https://github.com/BiTGApps/extra/releases/download/v2.2-extra/microG-Installer-v2.2-GPS.zip">
+        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileGPS" value="https://github.com/BiTGApps/extra/releases/download/v2.3-extra/microG-Installer-v2.3-GPS.zip">
         <label class="form-check-label silkscreen" for="radioFileGPS">MicroGPlus GPS</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileNEO" value="https://github.com/BiTGApps/extra/releases/download/v2.2-extra/microG-Installer-v2.2-NEO.zip">
+        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileNEO" value="https://github.com/BiTGApps/extra/releases/download/v2.3-extra/microG-Installer-v2.3-NEO.zip">
         <label class="form-check-label silkscreen" for="radioFileNEO">MicroGPlus NEO</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileNLP" value="https://github.com/BiTGApps/extra/releases/download/v2.2-extra/microG-Installer-v2.2-NLP.zip">
+        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileNLP" value="https://github.com/BiTGApps/extra/releases/download/v2.3-extra/microG-Installer-v2.3-NLP.zip">
         <label class="form-check-label silkscreen" for="radioFileNLP">MicroGPlus NLP</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileNOU" value="https://github.com/BiTGApps/extra/releases/download/v2.2-extra/microG-Installer-v2.2-NOU.zip">
+        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileNOU" value="https://github.com/BiTGApps/extra/releases/download/v2.3-extra/microG-Installer-v2.3-NOU.zip">
         <label class="form-check-label silkscreen" for="radioFileNOU">MicroGPlus NOU</label>
         <div class="col-md-6 mx-auto mb-2 mt-2">
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
@@ -351,35 +354,15 @@
         </p>
         <p class="text-danger text-opacity-75 fw-bold mb-1">How custom build works and respone from server.</p>
         <p class="mb-2">
-          If you haven't made a build request then what you're seeing is someone else requested build on status page. When you made a request with your selected options, the index on status page will be updated with your download link and text file will be updated reflecting your chosen options. Further build requests will be rejected unless previous one is completed. CronJob runs after every two minutes. You will get your build done in less than a minutes.
-          Please keep refreshing the status page until it is updated with newer links. You can also check text file whether it is updated with your selected apps
-          or not. Below are the sever responses, depending on how you interact with the build system.
+          You need to use pre-defined options from below to make build request.
+          Enter a username of your choice, it must be seven characters long contain only letters and numbers.
+          CronJob runs after every two minutes. You will get your build done in less than a minutes.
+          You will also get your folder based on provided username created on server within this time frame.
+          From this folder you can access both older and newer builds.
+          Each build has its own text file containing list of google apps added in that specific package.
+          Build server will now accept all incoming requests and they will be sorted and processed in random order.
+          Please check status button option for how to download custom build after a request is made.
         </p>
-        <div class="mb-3">
-          <ul class="list-group">
-            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#onhold" style="background-color:#f4f4f4">Your build is in Queue!</li>
-            <div id="onhold" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
-              <p class="mb-0">This means build system hasn't picked up your build request.</p>
-            </div>
-            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#tasker" style="background-color:#f4f4f4">Your build is in tasker!</li>
-            <div id="tasker" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
-              <p class="mb-0">This means CronJob has finally take over the build request and your build will be available in few seconds.</p>
-            </div>
-            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#username" style="background-color:#f4f4f4">Username not Found!</li>
-            <div id="username" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
-              <p class="mb-0">This means you have selected a username from list which is not assigned.</p>
-            </div>
-            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#fields" style="background-color:#f4f4f4">Some fields are not set!</li>
-            <div id="fields" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
-              <p class="mb-0">This means you left some options unchecked.</p>
-            </div>
-            <li class="list-group-item sand-sans" type="button" data-bs-toggle="collapse" data-bs-target="#limit" style="background-color:#f4f4f4">Current User Limit Reached!</li>
-            <div id="limit" class="collapse show bg-success bg-opacity-50 text-white text-center fw-light">
-              <p class="mb-0">This means the build system will not process any new requests until restarted.</p>
-            </div>
-            <li class="list-group-item sand-sans" style="background-color:#f4f4f4">Use pre-defined options from below to make a build request.</li>
-          </ul>
-        </div>
         <div class="col-md-4 mx-auto mb-3">
           <ul class="list-group">
             <li class="list-group-item list-group-item-light"><i class="bi bi-1-square me-1"></i>Enter username of <strong>"YOUR"</strong> choice</li>

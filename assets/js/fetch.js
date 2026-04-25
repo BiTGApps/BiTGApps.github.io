@@ -7,71 +7,71 @@
 const downloadLibrary = new Map([
     ['CORE', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-release/BiTGApps-arm64-16.0.0-v6.1-CORE.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-112338-release/BiTGApps-arm64-16.0.0-20260425-112338-CORE.zip' }]
         ])]
     ])],
     ['MINI', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-release/BiTGApps-arm64-16.0.0-v6.1-MINI.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-112338-release/BiTGApps-arm64-16.0.0-20260425-112338-MINI.zip' }]
         ])]
     ])],
     ['OMNI', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-release/BiTGApps-arm64-16.0.0-v6.1-OMNI.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-112338-release/BiTGApps-arm64-16.0.0-20260425-112338-OMNI.zip' }]
         ])]
     ])],
     ['ROAR', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-release/BiTGApps-arm64-16.0.0-v6.1-ROAR.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-112338-release/BiTGApps-arm64-16.0.0-20260425-112338-ROAR.zip' }]
         ])]
     ])],
     ['NANO', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-release/BiTGApps-arm64-16.0.0-v6.1-NANO.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-112338-release/BiTGApps-arm64-16.0.0-20260425-112338-NANO.zip' }]
         ])]
     ])],
     ['ATOM', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-release/BiTGApps-arm64-16.0.0-v6.1-ATOM.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-112338-release/BiTGApps-arm64-16.0.0-20260425-112338-ATOM.zip' }]
         ])]
     ])],
     ['PICO', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-release/BiTGApps-arm64-16.0.0-v6.1-PICO.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-112338-release/BiTGApps-arm64-16.0.0-20260425-112338-PICO.zip' }]
         ])]
     ])],
     ['FULL', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-release/BiTGApps-arm64-16.0.0-v6.1-FULL.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-112338-release/BiTGApps-arm64-16.0.0-20260425-112338-FULL.zip' }]
         ])]
     ])],
     ['TINT', new Map([
         ['ARM64', new Map([
-            ['16.0', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-release/BiTGApps-arm64-16.0.0-v6.1-TINT.zip' }]
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-112338-release/BiTGApps-arm64-16.0.0-20260425-112338-TINT.zip' }]
         ])]
     ])],
     ['ADDON', new Map([
         ['ALL', new Map([
-            ['AndroidAuto', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/AndroidAuto-v6.1.zip' }],
-            ['Calculator', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/Calculator-v6.1.zip' }],
-            ['Calendar', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/Calendar-v6.1.zip' }],
-            ['Chrome', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/Chrome-v6.1.zip' }],
-            ['Contacts', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/Contacts-v6.1.zip' }],
-            ['DeskClock', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/DeskClock-v6.1.zip' }],
-            ['WebView', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/WebView-v6.1.zip' }],
-            ['Wellbeing', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/Wellbeing-v6.1.zip' }]
+            ['AndroidAuto', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/AndroidAuto-20260425-113539.zip' }],
+            ['Calculator', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/Calculator-20260425-113539.zip' }],
+            ['Calendar', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/Calendar-20260425-113539.zip' }],
+            ['Chrome', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/Chrome-20260425-113539.zip' }],
+            ['Contacts', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/Contacts-20260425-113539.zip' }],
+            ['DeskClock', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/DeskClock-20260425-113539.zip' }],
+            ['WebView', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/WebView-20260425-113539.zip' }],
+            ['Wellbeing', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/Wellbeing-20260425-113539.zip' }]
         ])],
         ['ARM64', new Map([
-            ['Assistant', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/Assistant-v6.1-ARM64.zip' }],
-            ['Dialer', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/Dialer-v6.1-ARM64.zip' }],
-            ['Drive', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/Drive-v6.1-ARM64.zip' }],
-            ['Gmail', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/Gmail-v6.1-ARM64.zip' }],
-            ['GoogleTTS', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/GoogleTTS-v6.1-ARM64.zip' }],
-            ['Gboard', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/LatinIME-v6.1-ARM64.zip' }],
-            ['Maps', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/Maps-v6.1-ARM64.zip' }],
-            ['Markup', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/Markup-v6.1-ARM64.zip' }],
-            ['Messaging', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/Messaging-v6.1-ARM64.zip' }],
-            ['Photos', { url: 'https://github.com/BiTGApps/latest/releases/download/v6.1-addons/Photos-v6.1-ARM64.zip' }]
+            ['Assistant', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/Assistant-20260425-113539-ARM64.zip' }],
+            ['Dialer', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/Dialer-20260425-113539-ARM64.zip' }],
+            ['Drive', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/Drive-20260425-113539-ARM64.zip' }],
+            ['Gmail', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/Gmail-20260425-113539-ARM64.zip' }],
+            ['GoogleTTS', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/GoogleTTS-20260425-113539-ARM64.zip' }],
+            ['Gboard', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/LatinIME-20260425-113539-ARM64.zip' }],
+            ['Maps', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/Maps-20260425-113539-ARM64.zip' }],
+            ['Markup', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/Markup-20260425-113539-ARM64.zip' }],
+            ['Messaging', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/Messaging-20260425-113539-ARM64.zip' }],
+            ['Photos', { url: 'https://github.com/BiTGApps/release/releases/download/20260425-113539-addons/Photos-20260425-113539-ARM64.zip' }]
         ])]
     ])]
 ]);

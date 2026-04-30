@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/index.css?ver=22.0">
+    <link rel="stylesheet" href="assets/css/index.css?ver=24.0">
     <link rel="canonical" href="https://bitgapps.io/extra.html">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6267983170319694" crossorigin="anonymous"></script>
     <script src="assets/js/index.js?ver=22.0"></script>
+    <script src="assets/js/block.js?ver=32.0"></script>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -376,12 +377,253 @@
             <li class="list-group-item list-group-item-light"><i class="bi bi-6-square me-1"></i>Click submit for build request</li>
           </ul>
         </div>
-        <div class="col-md-6 mx-auto mb-2">
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a role="button" class="btn btn-dark btn-sm px-4 gap-3 border-2 active" href="https://build.bitgapps.io/marvin.html"><i class="fa-solid fa-arrow-up-right-from-square fa-fade me-2"></i>Self Build Link</a>
-            <a role="button" class="btn btn-outline-primary btn-sm px-4 border-2" href="https://build.bitgapps.io/README.md">Build Status</a>
+        <hr>
+        <p class="fs-5 mb-2 text-primary-subtle sand-sans">Fill below form to make build request!</p>
+        <form class="mb-3" action="https://build.bitgapps.io/marvin.php" method="POST" onsubmit="return validateForm()">
+          <div class="card text-bg-light border-light" style="background-color:#F3F1F5">
+            <div class="card-body">
+              <span style="font-size:25px"><i style="color:#F38BA0" class="fa-solid fa-user-secret"></i></span>
+              <p class="card-title fs-5">Enter Username</p>
+              <div class="card-text">
+                <input type="text" id="client" name="USR">
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="card text-bg-light border-light mt-3" style="background-color:#F3F1F5">
+            <div class="card-body">
+              <span style="font-size:25px"><i style="color:#4797B1" class="fa-sharp fa-solid fa-robot"></i></span>
+              <p class="card-title fs-5">Select Android Platform</p>
+              <div class="card-text d-flex flex-wrap justify-content-center gap-1">
+                <input type="radio" class="btn-check" id="ARMv7" name="Platform" value="ARM">
+                <label for="ARMv7" class="btn btn-outline-secondary btn-sm">ARM</label>
+                <input type="radio" class="btn-check" id="ARMv8" name="Platform" value="ARM64">
+                <label for="ARMv8" class="btn btn-outline-secondary btn-sm">ARM64</label>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-light border-light mt-3" style="background-color:#F3F1F5">
+            <div class="card-body">
+              <span style="font-size:25px"><i style="color:#019267" class="fa-brands fa-android"></i></span>
+              <p class="card-title fs-5">Select Android Version</p>
+              <div class="card-text d-flex flex-wrap justify-content-center gap-1">
+                <input type="radio" class="btn-check" id="VER36" name="Version" value="16.0.0">
+                <label for="VER36" class="btn btn-outline-secondary btn-sm">16.0.0</label>
+                <input type="radio" class="btn-check" id="VER35" name="Version" value="15.0.0">
+                <label for="VER35" class="btn btn-outline-secondary btn-sm">15.0.0</label>
+                <input type="radio" class="btn-check" id="VER34" name="Version" value="14.0.0">
+                <label for="VER34" class="btn btn-outline-secondary btn-sm">14.0.0</label>
+                <input type="radio" class="btn-check" id="VER33" name="Version" value="13.0.0">
+                <label for="VER33" class="btn btn-outline-secondary btn-sm">13.0.0</label>
+                <input type="radio" class="btn-check" id="VER32" name="Version" value="12.1.0">
+                <label for="VER32" class="btn btn-outline-secondary btn-sm">12.1.0</label>
+                <input type="radio" class="btn-check" id="VER31" name="Version" value="12.0.0">
+                <label for="VER31" class="btn btn-outline-secondary btn-sm">12.0.0</label>
+                <input type="radio" class="btn-check" id="VER30" name="Version" value="11.0.0">
+                <label for="VER30" class="btn btn-outline-secondary btn-sm">11.0.0</label>
+                <input type="radio" class="btn-check" id="VER29" name="Version" value="10.0.0">
+                <label for="VER29" class="btn btn-outline-secondary btn-sm">10.0.0</label>
+                <input type="radio" class="btn-check" id="VER28" name="Version" value="9.0.0">
+                <label for="VER28" class="btn btn-outline-secondary btn-sm">9.0.0</label>
+                <input type="radio" class="btn-check" id="VER27" name="Version" value="8.1.0">
+                <label for="VER27" class="btn btn-outline-secondary btn-sm">8.1.0</label>
+                <input type="radio" class="btn-check" id="VER26" name="Version" value="8.0.0">
+                <label for="VER26" class="btn btn-outline-secondary btn-sm">8.0.0</label>
+                <input type="radio" class="btn-check" id="VER25" name="Version" value="7.1.2">
+                <label for="VER25" class="btn btn-outline-secondary btn-sm">7.1.2</label>
+                <input type="radio" class="btn-check" id="VER24" name="Version" value="7.1.1">
+                <label for="VER24" class="btn btn-outline-secondary btn-sm">7.1.1</label>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-light border-light mt-3" style="background-color:#F3F1F5">
+            <div class="card-body">
+              <span style="font-size:25px"><i style="color:#F46060" class="fa-solid fa-code"></i></span>
+              <p class="card-title fs-5">Select API Version</p>
+              <div class="card-text d-flex flex-wrap justify-content-center gap-1">
+                <input type="radio" class="btn-check" id="36" name="API" value="36">
+                <label for="36" class="btn btn-outline-secondary btn-sm">36</label>
+                <input type="radio" class="btn-check" id="35" name="API" value="35">
+                <label for="35" class="btn btn-outline-secondary btn-sm">35</label>
+                <input type="radio" class="btn-check" id="34" name="API" value="34">
+                <label for="34" class="btn btn-outline-secondary btn-sm">34</label>
+                <input type="radio" class="btn-check" id="33" name="API" value="33">
+                <label for="33" class="btn btn-outline-secondary btn-sm">33</label>
+                <input type="radio" class="btn-check" id="32" name="API" value="32">
+                <label for="32" class="btn btn-outline-secondary btn-sm">32</label>
+                <input type="radio" class="btn-check" id="31" name="API" value="31">
+                <label for="31" class="btn btn-outline-secondary btn-sm">31</label>
+                <input type="radio" class="btn-check" id="30" name="API" value="30">
+                <label for="30" class="btn btn-outline-secondary btn-sm">30</label>
+                <input type="radio" class="btn-check" id="29" name="API" value="29">
+                <label for="29" class="btn btn-outline-secondary btn-sm">29</label>
+                <input type="radio" class="btn-check" id="28" name="API" value="28">
+                <label for="28" class="btn btn-outline-secondary btn-sm">28</label>
+                <input type="radio" class="btn-check" id="27" name="API" value="27">
+                <label for="27" class="btn btn-outline-secondary btn-sm">27</label>
+                <input type="radio" class="btn-check" id="26" name="API" value="26">
+                <label for="26" class="btn btn-outline-secondary btn-sm">26</label>
+                <input type="radio" class="btn-check" id="25" name="API" value="25">
+                <label for="25" class="btn btn-outline-secondary btn-sm">25</label>
+                <input type="radio" class="btn-check" id="24" name="API" value="24">
+                <label for="24" class="btn btn-outline-secondary btn-sm">24</label>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-light border-light mt-3" style="background-color:#F3F1F5">
+            <div class="card-body">
+              <span style="font-size:25px"><i style="color:#4797B1" class="fa-solid fa-wand-magic-sparkles"></i></span>
+              <p class="card-title fs-5">Select Build Count</p>
+              <div class="card-text d-flex flex-wrap justify-content-center gap-1">
+                <input type="radio" class="btn-check" id="1" name="Counter" value="1">
+                <label for="1" class="btn btn-outline-secondary btn-sm">1</label>
+                <input type="radio" class="btn-check" id="2" name="Counter" value="2">
+                <label for="2" class="btn btn-outline-secondary btn-sm">2</label>
+                <input type="radio" class="btn-check" id="3" name="Counter" value="3">
+                <label for="3" class="btn btn-outline-secondary btn-sm">3</label>
+                <input type="radio" class="btn-check" id="4" name="Counter" value="4">
+                <label for="4" class="btn btn-outline-secondary btn-sm">4</label>
+                <input type="radio" class="btn-check" id="5" name="Counter" value="5">
+                <label for="5" class="btn btn-outline-secondary btn-sm">5</label>
+                <input type="radio" class="btn-check" id="6" name="Counter" value="6">
+                <label for="6" class="btn btn-outline-secondary btn-sm">6</label>
+                <input type="radio" class="btn-check" id="7" name="Counter" value="7">
+                <label for="7" class="btn btn-outline-secondary btn-sm">7</label>
+                <input type="radio" class="btn-check" id="8" name="Counter" value="8">
+                <label for="8" class="btn btn-outline-secondary btn-sm">8</label>
+                <input type="radio" class="btn-check" id="9" name="Counter" value="9">
+                <label for="9" class="btn btn-outline-secondary btn-sm">9</label>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-light border-light mt-3" style="background-color:#F3F1F5">
+            <div class="card-body">
+              <span style="font-size:25px"><i style="color:#F075AA" class="fa-solid fa-lightbulb"></i></span>
+              <p class="card-title fs-5">Select Free and Opensource Apps</p>
+              <div class="card-text d-flex flex-wrap justify-content-center gap-1">
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="AuroraStore">
+                  <input type="checkbox" class="btn-check" id="AuroraStore" name="AuroraStore" value="1">
+                  <label for="AuroraStore" class="btn btn-outline-secondary btn-sm">AuroraStore</label>
+                  <input type="hidden" value="0" name="AuroraExt">
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/com.aurora.store/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="FakeStore">
+                  <input type="checkbox" class="btn-check" id="FakeStore" name="FakeStore" value="1">
+                  <label for="FakeStore" class="btn btn-outline-secondary btn-sm">FakeStore</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://github.com/microg/FakeStore"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="FossDroid">
+                  <input type="checkbox" class="btn-check" id="FossDroid" name="FossDroid" value="1">
+                  <label for="FossDroid" class="btn btn-outline-secondary btn-sm">F-Droid</label>
+                  <input type="hidden" value="0" name="Extension">
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/org.fdroid.fdroid/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="FoxDroid">
+                  <input type="checkbox" class="btn-check" id="FoxDroid" name="FoxDroid" value="1">
+                  <label for="FoxDroid" class="btn btn-outline-secondary btn-sm">FoxyDroid</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/nya.kitsunyan.foxydroid/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="NeoStore">
+                  <input type="checkbox" class="btn-check" id="NeoStore" name="NeoStore" value="1">
+                  <label for="NeoStore" class="btn btn-outline-secondary btn-sm">NeoStore</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/com.machiav3lli.fdroid/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="PlayStore">
+                  <input type="checkbox" class="btn-check" id="PlayStore" name="PlayStore" value="1">
+                  <label for="PlayStore" class="btn btn-outline-secondary btn-sm">PlayStore</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://play.google.com/store/apps"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="HeliBoard">
+                  <input type="checkbox" class="btn-check" id="HeliBoard" name="HeliBoard" value="1">
+                  <label for="HeliBoard" class="btn btn-outline-secondary btn-sm">HeliBoard</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/helium314.keyboard/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="FutoBoard">
+                  <input type="checkbox" class="btn-check" id="FutoBoard" name="FutoBoard" value="1">
+                  <label for="FutoBoard" class="btn btn-outline-secondary btn-sm">FutoBoard</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://keyboard.futo.org/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="Bitwarden">
+                  <input type="checkbox" class="btn-check" id="Bitwarden" name="Bitwarden" value="1">
+                  <label for="Bitwarden" class="btn btn-outline-secondary btn-sm">Bitwarden</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://bitwarden.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="Cromite">
+                  <input type="checkbox" class="btn-check" id="Cromite" name="Cromite" value="1">
+                  <label for="Cromite" class="btn btn-outline-secondary btn-sm">Cromite Browser</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://www.cromite.org/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="CroView">
+                  <input type="checkbox" class="btn-check" id="CroView" name="CroView" value="1">
+                  <label for="CroView" class="btn btn-outline-secondary btn-sm">Cromite WebView</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://www.cromite.org/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="QuikSMS">
+                  <input type="checkbox" class="btn-check" id="QuikSMS" name="QuikSMS" value="1">
+                  <label for="QuikSMS" class="btn btn-outline-secondary btn-sm">QuikSMS</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/dev.octoshrimpy.quik.fdroid/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="Davx5">
+                  <input type="checkbox" class="btn-check" id="Davx5" name="Davx5" value="1">
+                  <label for="Davx5" class="btn btn-outline-secondary btn-sm">Davx5</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/at.bitfire.davdroid/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="Thunderbird">
+                  <input type="checkbox" class="btn-check" id="Thunderbird" name="Thunderbird" value="1">
+                  <label for="Thunderbird" class="btn btn-outline-secondary btn-sm">Thunderbird</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/net.thunderbird.android.beta/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="K9mail">
+                  <input type="checkbox" class="btn-check" id="K9mail" name="K9mail" value="1">
+                  <label for="K9mail" class="btn btn-outline-secondary btn-sm">K9mail</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/com.fsck.k9/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="Vanadium">
+                  <input type="checkbox" class="btn-check" id="Vanadium" name="Vanadium" value="1">
+                  <label for="Vanadium" class="btn btn-outline-secondary btn-sm">Vanadium Browser</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://github.com/GrapheneOS/Vanadium"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="VanView">
+                  <input type="checkbox" class="btn-check" id="VanView" name="VanView" value="1">
+                  <label for="VanView" class="btn btn-outline-secondary btn-sm">Vanadium WebView</label>
+                  <input type="hidden" value="0" name="Sandbox">
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://github.com/GrapheneOS/Vanadium"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="btn-group">
+                  <input type="hidden" value="0" name="Wellbeing">
+                  <input type="checkbox" class="btn-check" id="Wellbeing" name="Wellbeing" value="1">
+                  <label for="Wellbeing" class="btn btn-outline-secondary btn-sm">Wellbeing</label>
+                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://github.com/akaMrNagar/Mindful"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mb-3 mt-3">
+            This is the base URL, <a class="text-decoration-none" href="https://build.bitgapps.io/">https://build.bitgapps.io/</a>, and to access custom build downloads, please add username after the base URL like this: <a class="text-decoration-none disabled" href="https://build.bitgapps.io/thehitman7/">https://build.bitgapps.io/thehitman7/</a>. You can also make further build requests under the same username. For now this service is free to use, because we are testing and making improvements in custom build system, this may change in the future for the better. You can also support us by means mentioned below. I hope the custom build system serves your needs well.
+          </p>
+          <div class="col-md-6 mx-auto mb-2">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <input class="btn btn-outline-danger" type="reset" value="Reset">
+              <input class="btn btn-outline-dark" type="submit" value="Submit">
+            </div>
+          </div>
+        </form>
       </div>
       <!---SECTION--->
       <div class="px-3 my-0 py-3 text-center" style="background:#f0f0f0">

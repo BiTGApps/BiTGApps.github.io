@@ -404,7 +404,16 @@
       </div>
       <!---SECTION--->
       <div class="px-3 my-3 py-3 text-center" style="background:#f0f0f0">
-        <div class="border-bottom border-warning mb-2">
+        <div class="border-bottom border-danger-subtle mb-2 mx-3">
+          <p class="sand-sans fs-5 mb-0" style="color:#dc7474">Seamless OTA Updates</p>
+        </div>
+        <p class="mb-1">
+          Version like Core, Mini, Omni, Roar support Android 16 to 7.1.x and support both 32 and 64 bit device platform. However Nano, Atom, Pico, Full and Tint version support Android 16 to 14 and compatible ONLY with 64 bit device platform. In addons, All work with both 32 and 64 bit device platform whereas ARM work with 32 bit and ARM64 work with 64 bit device platform. Make sure you know about your device platform. For OTA survival, If your ROM supports addon.d backup functionality (most ROMs do), it's not necessary to install GApps with each ROM update, as long as you don't manually wipe the System partition. The backup script will backup your installed GApps and restores them after your ROM has been updated. If the ROM does not support backup functionality then you must reinstall with each update. That is your job to know whether the rom you're using support backup functionality or not, instead of knowing right at the moment.
+        </p>
+      </div>
+      <!---SECTION--->
+      <div class="px-3 my-3 py-3 text-center" style="background:#f0f0f0">
+        <div class="border-bottom border-warning mb-2 mx-3">
           <p class="rubik fs-5 mb-0" style="color:#f99450">Get Android 16 Latest Release</p>
         </div>
         <p class="mb-3">
@@ -440,7 +449,7 @@
           <hr>
           <button type="button" class="btn btn-warning btn-sm" onclick="handleDownload()"><i class="bi bi-cloud-download me-1"></i>Download Selected File</button>
         </div>
-        <p class="text-success fw-bold mb-1">Want more personalized build? Custom Builds for Android 16 available now.</p>
+        <p class="text-success fw-bold mb-1">Want more personalized build?<br>Custom Builds for Android 16 available now.</p>
         <p class="mb-2">
           You can now build Google Apps Package with YOUR choice of Google Apps with fewer selection.
           This feature is available ONLY for Android 16 because of limited resources.
@@ -448,9 +457,9 @@
           You will have unlimited custom builds for Android 16. These custom builds hosted on a dedicated server.
           Please visit <a class="text-decoration-none" href="https://apilevels.com/">apilevels.com</a> website to know which Android version goes with which API level.
         </p>
-        <hr>
-        <p class="text-danger fw-bold mb-1">How custom build works and respone from server.</p>
-        <p class="mb-2">
+        <hr class="mx-3">
+        <p class="text-danger mb-1">How custom build works and respone from server.</p>
+        <p class="mb-3">
           You need to use pre-defined options from below to make build request.
           Enter a username of your choice, it must be seven characters long contain only letters and numbers.
           CronJob runs after every two minutes. You will get your build done in less than a minutes.
@@ -471,7 +480,6 @@
             <li class="list-group-item list-group-item-light"><i class="bi bi-6-square me-1"></i>Click submit for build request</li>
           </ul>
         </div>
-        <hr>
         <p class="fs-5 mb-2 text-primary-subtle sand-sans">Fill below form to make build request!</p>
         <form class="mb-3" action="https://build.bitgapps.io/client.php" method="POST" onsubmit="return validateForm()">
           <div class="card text-bg-light border-light" style="background-color:#F3F1F5">
@@ -1413,15 +1421,6 @@
       </div>
       <!---SECTION--->
       <div class="px-3 my-3 py-3 text-center" style="background:#f0f0f0">
-        <div class="border-bottom border-danger-subtle mb-2">
-          <p class="rubik fs-5 mb-0" style="color:#dc7474">Seamless OTA Updates</p>
-        </div>
-        <p class="mb-1">
-          Version like Core, Mini, Omni, Roar support Android 16 to 7.1.x and support both 32 and 64 bit device platform. However Nano, Atom, Pico, Full and Tint version support Android 16 to 14 and compatible ONLY with 64 bit device platform. In addons, All work with both 32 and 64 bit device platform whereas ARM work with 32 bit and ARM64 work with 64 bit device platform. Make sure you know about your device platform. For OTA survival, If your ROM supports addon.d backup functionality (most ROMs do), it's not necessary to install GApps with each ROM update, as long as you don't manually wipe the System partition. The backup script will backup your installed GApps and restores them after your ROM has been updated. If the ROM does not support backup functionality then you must reinstall with each update. That is your job to know whether the rom you're using support backup functionality or not, instead of knowing right at the moment.
-        </p>
-      </div>
-      <!---SECTION--->
-      <div class="px-3 my-3 py-3 text-center" style="background:#f0f0f0">
         <div class="text-center silkscreen"><span class="badge rounded-pill fs-5 text-wrap" style="background:#67C090"><i class="bi bi-google-play me-2"></i>Play Support Libraries</span></div>
         <p class="mb-2 mt-2">
           Monthly Update of Android 16 Play Support Libraries for 64 bit Platform.
@@ -1768,7 +1767,7 @@
           You can also remove Google Apps installation. Always survive ROM OTA upgrade with flash
           and forget experience. Do not disable module, otherwise expect crashes.
           An edge case for some latest version of KernelSU or forks explained below.
-          <hr>
+          <hr class="mx-1">
           You might need a metamodule installed before installing this as module.
           Some latest version of KernelSU or forks require metamodule for modules that adds or update
           files in system without this the module files will not be loaded after reboot.

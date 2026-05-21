@@ -299,7 +299,7 @@
           as module, do not enable KSU umount modules option for microG components under App
           Profile. It will cause crashes and APKs not found.
           An edge case for some latest version of KernelSU or forks explained below.
-          <hr>
+          <hr class="mx-3">
           You might need a metamodule installed before installing this as module.
           Some latest version of KernelSU or forks require metamodule for modules that adds or update
           files in system without this the module files will not be loaded after reboot.
@@ -350,14 +350,13 @@
       </div>
       <!---SECTION--->
       <div class="px-3 my-3 py-3 text-center" style="background:#f0f0f0">
-        <div class="border-bottom border-success-subtle mb-2">
-          <p class="rubik mb-0" style="color:#67C090">Want more personalized build?<br>Custom Builds for MicroGPlus available now.</p>
-        </div>
+        <p class="text-success fw-bold mb-1">Want more personalized build?<br>Custom Builds for MicroGPlus available now.</p>
         <p class="mb-2">
           You can now build MicroG Installer Package with YOUR choice of Free and Opensource Apps with fewer selection. These custom builds hosted on a dedicated server. Please visit <a class="text-decoration-none" href="https://apilevels.com/">apilevels.com</a> website to know which Android version goes with which API level. To know more about selected FOSS application, click on arrow button next to it.
         </p>
-        <p class="text-danger text-opacity-75 fw-bold mb-1">How custom build works and respone from server.</p>
-        <p class="mb-2">
+        <hr class="mx-3">
+        <p class="text-danger fw-bold mb-1">How custom build works and respone from server.</p>
+        <p class="mb-3">
           You need to use pre-defined options from below to make build request.
           Enter a username of your choice, it must be seven characters long contain only letters and numbers.
           CronJob runs after every two minutes. You will get your build done in less than a minutes.
@@ -365,8 +364,8 @@
           From this folder you can access both older and newer builds.
           Each build has its own text file containing list of google apps added in that specific package.
           Build server will now accept all incoming requests and they will be sorted and processed in random order.
-          Once disk space of the build server reaches a critical level, previous builds will be removed, but the
-          folder based on the provided username remains there.
+          Once disk space of the build server reaches a critical level, previous builds will be removed including
+          folder based on the provided username.
         </p>
         <div class="col-md-4 mx-auto mb-3">
           <ul class="list-group">
@@ -378,7 +377,6 @@
             <li class="list-group-item list-group-item-light"><i class="bi bi-6-square me-1"></i>Click submit for build request</li>
           </ul>
         </div>
-        <hr>
         <p class="fs-5 mb-2 text-primary-subtle sand-sans">Fill below form to make build request!</p>
         <form class="mb-3" action="https://build.bitgapps.io/marvin.php" method="POST" onsubmit="return validateForm()">
           <div class="card text-bg-light border-light" style="background-color:#F3F1F5">

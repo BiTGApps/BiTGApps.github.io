@@ -6,21 +6,33 @@
 
 const downloadLibrary = new Map([
     ['CORE', new Map([
+        ['ARM', new Map([
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-16.0.0-20260517-105809-CORE.zip' }]
+        ])],
         ['ARM64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-124149-release/BiTGApps-arm64-16.0.0-20260517-124149-CORE.zip' }]
         ])]
     ])],
     ['MINI', new Map([
+        ['ARM', new Map([
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-16.0.0-20260517-105809-MINI.zip' }]
+        ])],
         ['ARM64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-124149-release/BiTGApps-arm64-16.0.0-20260517-124149-MINI.zip' }]
         ])]
     ])],
     ['OMNI', new Map([
+        ['ARM', new Map([
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-16.0.0-20260517-105809-OMNI.zip' }]
+        ])],
         ['ARM64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-124149-release/BiTGApps-arm64-16.0.0-20260517-124149-OMNI.zip' }]
         ])]
     ])],
     ['ROAR', new Map([
+        ['ARM', new Map([
+            ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-16.0.0-20260517-105809-ROAR.zip' }]
+        ])],
         ['ARM64', new Map([
             ['16.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-124149-release/BiTGApps-arm64-16.0.0-20260517-124149-ROAR.zip' }]
         ])]

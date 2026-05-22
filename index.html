@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
-    <link rel="stylesheet" href="assets/css/index.css?ver=24.0">
+    <link rel="stylesheet" href="assets/css/index.css?ver=0.1">
     <link rel="canonical" href="https://bitgapps.io">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -53,10 +53,10 @@
       gtag('js', new Date());
       gtag('config', 'G-76BW4XC058');
     </script>
-    <script src="assets/js/index.js?ver=22.0"></script>
-    <script src="assets/js/fetch.js?ver=34.0"></script>
-    <script src="assets/js/build.js?ver=34.0"></script>
-    <script src="assets/js/block.js?ver=32.0"></script>
+    <script src="assets/js/index.js?ver=0.1"></script>
+    <script src="assets/js/fetch.js?ver=0.1"></script>
+    <script src="assets/js/build.js?ver=0.1"></script>
+    <script src="assets/js/block.js?ver=0.1"></script>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -427,8 +427,8 @@
           <div class="col-sm-6 mb-3 mb-sm-0">
             <div class="px-4 py-4 shadow rounded mb-3" style="background:#f4f4f4">
               <p class="sand-sans">Downloads for Android 16 and above!</p>
-              <select id="software" onchange="populatePlatforms()">
-                <option value="" hidden>Select Version</option>
+              <select id="software-0" onchange="populatePlatforms()">
+                <option value="" hidden>Select Variant</option>
                 <optgroup label="Section 1">
                   <option value="CORE">Core</option>
                   <option value="MINI">Mini</option>
@@ -444,11 +444,11 @@
                   <option value="ADDON">Addon</option>
                 </optgroup>
               </select>
-              <select id="platform" class="my-1" onchange="populateVersions()" disabled>
+              <select id="platform-0" class="my-1" onchange="populateVersions()" disabled>
                 <option value="" hidden>Select Platform</option>
               </select>
-              <select id="version" disabled>
-                <option value="" hidden>Select Android</option>
+              <select id="version-0" disabled>
+                <option value="" hidden>Select Version</option>
               </select>
               <hr>
               <button type="button" class="btn btn-warning btn-sm" onclick="handleDownload()"><i class="bi bi-cloud-download me-1"></i>Download Selected File</button>
@@ -457,8 +457,8 @@
           <div class="col-sm-6">
             <div class="px-4 py-4 shadow rounded mb-3" style="background:#f4f4f4">
               <p class="sand-sans">Downloads for Android 15 and below!</p>
-              <select id="release" onchange="populatePlatformsSafe()">
-                <option value="" hidden>Select Version</option>
+              <select id="software-1" onchange="populatePlatformsSafe()">
+                <option value="" hidden>Select Variant</option>
                 <optgroup label="Section 1">
                   <option value="CORE">Core</option>
                   <option value="MINI">Mini</option>
@@ -474,11 +474,11 @@
                   <option value="ADDON">Addon</option>
                 </optgroup>
               </select>
-              <select id="architecture" class="my-1" onchange="populateVersionsSafe()" disabled>
+              <select id="platform-1" class="my-1" onchange="populateVersionsSafe()" disabled>
                 <option value="" hidden>Select Platform</option>
               </select>
-              <select id="android" disabled>
-                <option value="" hidden>Select Android</option>
+              <select id="version-1" disabled>
+                <option value="" hidden>Select Version</option>
               </select>
               <hr>
               <button type="button" class="btn btn-warning btn-sm" onclick="handleDownloadSafe()"><i class="bi bi-cloud-download me-1"></i>Download Selected File</button>

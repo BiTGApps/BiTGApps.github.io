@@ -89,9 +89,9 @@ const downloadLibrary = new Map([
 ]);
 
 // Helper to clear and populate a dropdown
-function updateDropdown(id, options) {
+function updateDropdown(id, options, text) {
     const el = document.getElementById(id);
-    el.innerHTML = `<option value="" hidden>Select ${id.charAt(0).toUpperCase() + id.slice(1)}</option>`;
+    el.innerHTML = `<option value="" hidden>${text}</option>`;
     options.forEach(opt => {
         let o = document.createElement('option');
         o.value = opt;
@@ -102,23 +102,23 @@ function updateDropdown(id, options) {
 }
 
 function populatePlatforms() {
-    const soft = document.getElementById('software').value;
+    const soft = document.getElementById('software-0').value;
     const platforms = soft ? Array.from(downloadLibrary.get(soft).keys()) : [];
-    updateDropdown('platform', platforms);
-    updateDropdown('version', []); // Reset version
+    updateDropdown('platform-0', platforms, 'Select Platform');
+    updateDropdown('version-0', [], 'Select Version'); // Reset version
 }
 
 function populateVersions() {
-    const soft = document.getElementById('software').value;
-    const platforms = document.getElementById('platform').value;
+    const soft = document.getElementById('software-0').value;
+    const platforms = document.getElementById('platform-0').value;
     const versions = (soft && platforms) ? Array.from(downloadLibrary.get(soft).get(platforms).keys()) : [];
-    updateDropdown('version', versions);
+    updateDropdown('version-0', versions, 'Select Version');
 }
 
 function handleDownload() {
-    const s = document.getElementById('software').value;
-    const p = document.getElementById('platform').value;
-    const v = document.getElementById('version').value;
+    const s = document.getElementById('software-0').value;
+    const p = document.getElementById('platform-0').value;
+    const v = document.getElementById('version-0').value;
 
     // Final fetch from the nested map
     const fileData = downloadLibrary.get(s)?.get(p)?.get(v);

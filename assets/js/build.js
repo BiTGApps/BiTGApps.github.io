@@ -9,7 +9,7 @@ const downloadLibrarySafe = new Map([
         ['ARM', new Map([
             ['15.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-15.0.0-20260517-105809-CORE.zip' }],
             ['14.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-14.0.0-20260517-105809-CORE.zip' }],
-            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-12.0.0-20260517-105809-CORE.zip' }],
+            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-13.0.0-20260517-105809-CORE.zip' }],
             ['12.1', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-12.1.0-20260517-105809-CORE.zip' }],
             ['12.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-12.0.0-20260517-105809-CORE.zip' }],
             ['11.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-11.0.0-20260517-105809-CORE.zip' }],
@@ -23,7 +23,7 @@ const downloadLibrarySafe = new Map([
         ['ARM64', new Map([
             ['15.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-15.0.0-20260517-105809-CORE.zip' }],
             ['14.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-14.0.0-20260517-105809-CORE.zip' }],
-            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-12.0.0-20260517-105809-CORE.zip' }],
+            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-13.0.0-20260517-105809-CORE.zip' }],
             ['12.1', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-12.1.0-20260517-105809-CORE.zip' }],
             ['12.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-12.0.0-20260517-105809-CORE.zip' }],
             ['11.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-11.0.0-20260517-105809-CORE.zip' }],
@@ -39,7 +39,7 @@ const downloadLibrarySafe = new Map([
         ['ARM', new Map([
             ['15.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-15.0.0-20260517-105809-MINI.zip' }],
             ['14.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-14.0.0-20260517-105809-MINI.zip' }],
-            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-12.0.0-20260517-105809-MINI.zip' }],
+            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-13.0.0-20260517-105809-MINI.zip' }],
             ['12.1', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-12.1.0-20260517-105809-MINI.zip' }],
             ['12.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-12.0.0-20260517-105809-MINI.zip' }],
             ['11.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-11.0.0-20260517-105809-MINI.zip' }],
@@ -53,7 +53,7 @@ const downloadLibrarySafe = new Map([
         ['ARM64', new Map([
             ['15.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-15.0.0-20260517-105809-MINI.zip' }],
             ['14.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-14.0.0-20260517-105809-MINI.zip' }],
-            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-12.0.0-20260517-105809-MINI.zip' }],
+            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-13.0.0-20260517-105809-MINI.zip' }],
             ['12.1', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-12.1.0-20260517-105809-MINI.zip' }],
             ['12.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-12.0.0-20260517-105809-MINI.zip' }],
             ['11.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-11.0.0-20260517-105809-MINI.zip' }],
@@ -69,7 +69,7 @@ const downloadLibrarySafe = new Map([
         ['ARM', new Map([
             ['15.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-15.0.0-20260517-105809-OMNI.zip' }],
             ['14.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-14.0.0-20260517-105809-OMNI.zip' }],
-            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-12.0.0-20260517-105809-OMNI.zip' }],
+            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-13.0.0-20260517-105809-OMNI.zip' }],
             ['12.1', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-12.1.0-20260517-105809-OMNI.zip' }],
             ['12.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-12.0.0-20260517-105809-OMNI.zip' }],
             ['11.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-11.0.0-20260517-105809-OMNI.zip' }],
@@ -83,7 +83,7 @@ const downloadLibrarySafe = new Map([
         ['ARM64', new Map([
             ['15.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-15.0.0-20260517-105809-OMNI.zip' }],
             ['14.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-14.0.0-20260517-105809-OMNI.zip' }],
-            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-12.0.0-20260517-105809-OMNI.zip' }],
+            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-13.0.0-20260517-105809-OMNI.zip' }],
             ['12.1', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-12.1.0-20260517-105809-OMNI.zip' }],
             ['12.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-12.0.0-20260517-105809-OMNI.zip' }],
             ['11.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-11.0.0-20260517-105809-OMNI.zip' }],
@@ -99,7 +99,7 @@ const downloadLibrarySafe = new Map([
         ['ARM', new Map([
             ['15.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-15.0.0-20260517-105809-ROAR.zip' }],
             ['14.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-14.0.0-20260517-105809-ROAR.zip' }],
-            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-12.0.0-20260517-105809-ROAR.zip' }],
+            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-13.0.0-20260517-105809-ROAR.zip' }],
             ['12.1', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-12.1.0-20260517-105809-ROAR.zip' }],
             ['12.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-12.0.0-20260517-105809-ROAR.zip' }],
             ['11.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm-11.0.0-20260517-105809-ROAR.zip' }],
@@ -113,7 +113,7 @@ const downloadLibrarySafe = new Map([
         ['ARM64', new Map([
             ['15.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-15.0.0-20260517-105809-ROAR.zip' }],
             ['14.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-14.0.0-20260517-105809-ROAR.zip' }],
-            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-12.0.0-20260517-105809-ROAR.zip' }],
+            ['13.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-13.0.0-20260517-105809-ROAR.zip' }],
             ['12.1', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-12.1.0-20260517-105809-ROAR.zip' }],
             ['12.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-12.0.0-20260517-105809-ROAR.zip' }],
             ['11.0', { url: 'https://github.com/BiTGApps/release/releases/download/20260517-105809-release/BiTGApps-arm64-11.0.0-20260517-105809-ROAR.zip' }],
@@ -194,9 +194,9 @@ const downloadLibrarySafe = new Map([
 ]);
 
 // Helper to clear and populate a dropdown
-function updateDropdownSafe(id, options) {
+function updateDropdownSafe(id, options, text) {
     const el = document.getElementById(id);
-    el.innerHTML = `<option value="" hidden>Select ${id.charAt(0).toUpperCase() + id.slice(1)}</option>`;
+    el.innerHTML = `<option value="" hidden>${text}</option>`;
     options.forEach(opt => {
         let o = document.createElement('option');
         o.value = opt;
@@ -207,23 +207,23 @@ function updateDropdownSafe(id, options) {
 }
 
 function populatePlatformsSafe() {
-    const software = document.getElementById('release').value;
-    const platform = software ? Array.from(downloadLibrarySafe.get(software).keys()) : [];
-    updateDropdownSafe('architecture', platform);
-    updateDropdownSafe('android', []); // Reset version
+    const soft = document.getElementById('software-1').value;
+    const platforms = soft ? Array.from(downloadLibrarySafe.get(soft).keys()) : [];
+    updateDropdownSafe('platform-1', platforms, 'Select Platform');
+    updateDropdownSafe('version-1', [], 'Select Version'); // Reset version
 }
 
 function populateVersionsSafe() {
-    const software = document.getElementById('release').value;
-    const platform = document.getElementById('architecture').value;
-    const semver = (software && platform) ? Array.from(downloadLibrarySafe.get(software).get(platform).keys()) : [];
-    updateDropdownSafe('android', semver);
+    const soft = document.getElementById('software-1').value;
+    const platforms = document.getElementById('platform-1').value;
+    const versions = (soft && platforms) ? Array.from(downloadLibrarySafe.get(soft).get(platforms).keys()) : [];
+    updateDropdownSafe('version-1', versions, 'Select Version');
 }
 
 function handleDownloadSafe() {
-    const s = document.getElementById('release').value;
-    const p = document.getElementById('architecture').value;
-    const v = document.getElementById('android').value;
+    const s = document.getElementById('software-1').value;
+    const p = document.getElementById('platform-1').value;
+    const v = document.getElementById('version-1').value;
 
     // Final fetch from the nested map
     const fileData = downloadLibrarySafe.get(s)?.get(p)?.get(v);

@@ -38,7 +38,7 @@ async function fetchBuildFiles() {
             link.href = `https://build.bitgapps.io/${username}/${fileName}`;
             link.textContent = fileName;
             link.setAttribute('download', '');
-            link.classList.add('text-decoration-none', 'fw-medium', 'text-truncate');
+            link.classList.add('text-decoration-none', 'fw-medium', 'text-truncate', 'text-wrap');
 
             const downloadBtn = document.createElement('span');
             downloadBtn.classList.add('badge', 'bg-primary', 'rounded-pill');

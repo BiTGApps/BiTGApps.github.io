@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/index.css?ver=0.1">
+    <link rel="stylesheet" href="assets/css/index.css?ver=0.2">
     <link rel="canonical" href="https://bitgapps.io/extra.html">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6267983170319694" crossorigin="anonymous"></script>
-    <script src="assets/js/index.js?ver=0.1"></script>
-    <script src="assets/js/block.js?ver=0.1"></script>
+    <script src="assets/js/index.js?ver=0.2"></script>
+    <script src="assets/js/block.js?ver=0.2"></script>
+    <script src="assets/js/views.js?ver=0.2"></script>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -121,15 +122,16 @@
         </div>
         <h1 class="display-5 fw-bold mb-0">MicroGPlus</h1>
         <span class="text-muted">Install MicroG with Ease</span>
-        <div class="mx-auto mt-2">
+        <div class="mx-auto mt-2 mb-2">
           <p class="mb-2">microG is a free and open-source implementation of Google Play Services. It aims to provide a functional replacement for proprietary Google services on Android devices. It allows users to run applications that depend on Google Play Services.</p>
           <div class="col-md-6 mx-auto">
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button type="button" id="liveAlertBtn" onclick="topFunction()" class="btn btn-primary btn-sm px-4 gap-3 border-2"><i class="fa-solid fa-download me-1"></i>Downloads</button>
+              <button type="button" id="liveAlertBtn" onclick="topFunction()" class="btn btn-primary btn-sm px-4 gap-3 border-2">Customization</button>
               <a role="button" class="btn btn-outline-success btn-sm px-4 border-2" href="https://t.me/MicroGPlusChat"><i class="bi bi-telegram me-1"></i>Telegram</a>
             </div>
           </div>
         </div>
+        <p class="noto-sans mb-0"><i class="bi bi-arrow-down me-1"></i>Grab files from the download section below.</p>
       </div>
       <!---SECTION--->
       <div class="px-4 my-3 py-4 text-center" style="background:#f0f0f0">
@@ -623,6 +625,23 @@
             </div>
           </div>
         </form>
+        <div class="card text-bg-light border-light" style="background-color:#F3F1F5">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center text-center">
+              <p class="fs-2 animated-text">Access Your Custom Build</p>
+              <p class="text-muted">Enter your username below to view your software package files instantly.</p>
+              <div class="input-group mb-3" style="max-width:450px;">
+                <input type="text" id="username" class="form-control" placeholder="Enter your username" aria-label="Username">
+                <button class="btn btn-primary" type="button" onclick="fetchBuildFiles()">View Files</button>
+              </div>
+              <div id="file-viewer-zone" style="display:none;width:100%;max-width:500px;">
+                <p class="fs-5 mb-1 text-secondary">Your Files:</p>
+                <ul id="file-list" class="list-group w-100 shadow-sm"></ul>
+              </div>
+              <p id="error-text" class="text-danger mb-1" style="display:none;"></p>
+            </div>
+          </div>
+        </div>
       </div>
       <!---SECTION--->
       <div class="px-3 my-0 py-3 text-center" style="background:#f0f0f0">
@@ -685,7 +704,7 @@
       const alertTrigger = document.getElementById('liveAlertBtn')
       if (alertTrigger) {
         alertTrigger.addEventListener('click', () => {
-          appendAlert('<strong>Hello, World!</strong> Please Scroll Down for Downloads.', 'success')
+          appendAlert('Customized build with YOUR choice of FOSS Apps.', 'info')
         })
       }
     </script>

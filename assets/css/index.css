@@ -439,3 +439,17 @@ select > option.hidden { display: none; }
   width: 2px;
   background-color: #dee2e6;
 }
+
+.animated-text {
+  background: linear-gradient(90deg, #ED6485, #7f00ff, #6495ED, #ED6485);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: shine 6s linear infinite;
+}
+
+@keyframes shine {
+  0% { background-position: 0% center; }
+  100% { background-position: 300% center; }
+}

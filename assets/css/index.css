@@ -445,8 +445,9 @@ select > option.hidden { display: none; }
   background-size: 300% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block;
   animation: shine 6s linear infinite;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .custom-text {
@@ -454,8 +455,9 @@ select > option.hidden { display: none; }
   background-size: 300% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block;
   animation: shine 6s linear infinite;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 @keyframes shine {

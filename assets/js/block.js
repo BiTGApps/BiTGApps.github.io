@@ -1,16 +1,5 @@
 /* This file is part of The BiTGApps Project */
 
-function validateForm() {
-    const inputElement = document.getElementById("client");
-    const regex = /^[a-zA-Z0-9]{7}$/; // Matches the whole string
-    if (regex.test(inputElement.value)) {
-        return true; // Allow form submission
-    } else {
-        alert("Error: Input must be 7 characters contain only letters and numbers.");
-        return false; // Block form submission
-    }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     // Target both possible form IDs
     const buildForm0 = document.getElementById('buildForm-0');
@@ -24,6 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (activeForm) {
         activeForm.addEventListener('submit', function(event) {
             event.preventDefault();
+
+            const inputElement = this.querySelector('input[name="USR"]');
+            const regex = /^[a-zA-Z0-9]{7}$/; // Matches the whole string
+            if (!inputElement || !regex.test(inputElement.value)) {
+                alert("Error: Input must be 7 characters contain only letters and numbers.");
+                return false; // Block form submission
+            }
 
             const responseDiv = document.getElementById('serverResponse');
 

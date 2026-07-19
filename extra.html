@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/index.css?ver=0.8">
+    <link rel="stylesheet" href="assets/css/index.css?ver=0.9">
     <link rel="canonical" href="https://bitgapps.io/extra.html">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6267983170319694" crossorigin="anonymous"></script>
-    <script src="assets/js/index.js?ver=0.8"></script>
-    <script src="assets/js/block.js?ver=0.8"></script>
-    <script src="assets/js/views.js?ver=0.8"></script>
+    <script src="assets/js/index.js?ver=0.9"></script>
+    <script src="assets/js/block.js?ver=0.9"></script>
+    <script src="assets/js/views.js?ver=0.9"></script>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -113,587 +113,1378 @@
         </div>
       </div>
     <main>
-      <!---SECTION--->
-      <div class="px-4 py-4 text-center" style="background:#D3F8E2">
-        <div class="col-lg-8 mx-auto mb-0">
-          <div class="d-flex justify-content-center">
-            <img class="w-25" src="images/foss.png" alt="">
-          </div>
-        </div>
-        <h1 class="display-5 fw-bold mb-0">MicroGPlus</h1>
-        <span class="text-muted">Install MicroG with Ease</span>
-        <div class="mx-auto mt-2 mb-2">
-          <p class="mb-2">microG is a free and open-source implementation of Google Play Services. It aims to provide a functional replacement for proprietary Google services on Android devices. It allows users to run applications that depend on Google Play Services.</p>
-          <div class="col-md-6 mx-auto">
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button type="button" id="liveAlertBtn" onclick="topFunction()" class="btn btn-primary btn-sm px-4 gap-3 border-2">Customization</button>
-              <a role="button" class="btn btn-outline-success btn-sm px-4 border-2" href="https://t.me/MicroGPlusChat"><i class="bi bi-telegram me-1"></i>Telegram</a>
-            </div>
-          </div>
-        </div>
-        <p class="noto-sans mb-0"><i class="bi bi-arrow-down me-1"></i>Grab files from the download section below.</p>
-      </div>
-      <!---SECTION--->
-      <div class="px-4 my-3 py-4 text-center" style="background:#f0f0f0">
-        <div class="container">
-          <p class="fs-2 mb-0 rubik text-black-50">Why MicroGPlus?</p>
-          <div class="row row-cols-1 row-cols-md-2">
-            <div class="col mb-1">
-              <div class="card border-0 rounded text-center" style="background-color:#f0f0f0">
-                <div class="card-body">
-                  <span style="font-size:25px"><i style="color:#4797B1" class="fa-sharp fa-solid fa-robot"></i></span>
-                  <p class="card-title fs-5"><span class="badge text-bg-secondary rounded-pill">Android Support</span></p>
-                  <p class="card-text fw-light">All Platforms and All Android Versions are Supported.</p>
-                </div>
+      <!-- SECTION -->
+      <div class="position-relative overflow-hidden py-5 d-flex align-items-center" style="background:#f8fafc; min-height:75vh; color:#0f172a">
+        <div class="position-absolute top-0 start-0 translate-middle bg-primary opacity-5 rounded-circle d-none d-lg-block" style="width:500px; height:500px; filter:blur(100px)"></div>
+        <div class="position-absolute bottom-0 end-0 translate-middle-x bg-warning opacity-10 rounded-circle d-none d-lg-block" style="width:400px; height:400px; filter:blur(100px)"></div>
+        <div class="container position-relative z-1">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 text-center text-lg-start">
+              <div class="badge px-3 py-2 rounded-pill mb-3 fs-7 fw-semibold tracking-wide border border-dark border-opacity-10" style="background:#e2e8f0; color:#334155">
+                <i class="bi bi-shield-check text-primary me-2"></i>FREE &amp; OPEN SOURCE
+              </div>
+              <h1 class="display-4 fw-black text-dark mb-2 tracking-tight" style="letter-spacing:-1px; color:#0f172a !important">MicroGPlus</h1>
+              <p class="fs-4 fw-medium mb-4" style="color:#0284c7">Install MicroG with Ease</p>
+              <p class="fs-6 lh-lg mb-5" style="max-width:540px; color:#475569 !important">
+                microG is a free and open-source implementation of Google Play Services. It aims to provide a functional replacement for proprietary Google services on Android devices. It allows users to run applications that depend on Google Play Services.
+              </p>
+              <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-5">
+                <button type="button" id="liveAlertBtn" onclick="topFunction()" class="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-sm custom-btn-primary" style="border-radius:12px; background:#2563eb; border-color:#2563eb">
+                  <i class="bi bi-sliders2-vertical me-2"></i>Customization
+                </button>
+                <a role="button" class="btn btn-lg px-4 py-3 fw-semibold custom-btn-telegram-light" href="https://t.me/MicroGPlusChat" style="border-radius:12px">
+                  <i class="bi bi-telegram me-2"></i>Telegram Community
+                </a>
+              </div>
+              <div class="pt-2 fs-7 d-flex align-items-center justify-content-center justify-content-lg-start" style="color:#64748b">
+                <span class="animate-bi-bounce me-2 d-inline-block">
+                  <span class="badge rounded-pill bg-primary bg-opacity-10 p-2 d-flex align-items-center justify-content-center border border-primary border-opacity-25" style="width:32px; height:32px">
+                    <i class="bi bi-arrow-down text-primary fw-bold fs-6"></i>
+                  </span>
+                </span>
+                <span class="noto-sans ms-1">Grab files from the download section below.</span>
               </div>
             </div>
-            <div class="col mb-1">
-              <div class="card border-0 rounded text-center" style="background-color:#f0f0f0">
-                <div class="card-body">
-                  <span style="font-size:25px"><i style="color:#B958A5" class="fa-solid fa-cubes"></i></span>
-                  <p class="card-title fs-5"><span class="badge text-bg-secondary rounded-pill">Customizable Installation</span></p>
-                  <p class="card-text fw-light">MicroGPlus can be installed from multiple environments with ease.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-1">
-              <div class="card border-0 rounded text-center" style="background-color:#f0f0f0">
-                <div class="card-body">
-                  <span style="font-size:25px"><i style="color:#019267" class="fa-brands fa-android"></i></span>
-                  <p class="card-title fs-5"><span class="badge text-bg-secondary rounded-pill">Wide Support</span></p>
-                  <p class="card-text fw-light">MicroGPlus offers flashable packages in many variations from Minimal to Variants.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-1">
-              <div class="card border-0 rounded text-center" style="background-color:#f0f0f0">
-                <div class="card-body">
-                  <span style="font-size:25px"><i style="color:#DC3535" class="fa-solid fa-arrows-rotate"></i></span>
-                  <p class="card-title fs-5"><span class="badge text-bg-secondary rounded-pill">Seamless OTA Updates</span></p>
-                  <p class="card-text fw-light">MicroGPlus comes with OTA survival support to provide you flash and forget experience.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-1">
-              <div class="card border-0 rounded text-center" style="background-color:#f0f0f0">
-                <div class="card-body">
-                  <span style="font-size:25px"><i style="color:#C780FA" class="fa-solid fa-puzzle-piece"></i></span>
-                  <p class="card-title fs-5"><span class="badge text-bg-secondary rounded-pill">Dynamic Installer</span></p>
-                  <p class="card-text fw-light">You can easily override between any MicroGPlus version without clean flash.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-1">
-              <div class="card border-0 rounded text-center" style="background-color:#f0f0f0">
-                <div class="card-body">
-                  <span style="font-size:25px"><i style="color:#F46060" class="fa-solid fa-code"></i></span>
-                  <p class="card-title fs-5"><span class="badge text-bg-secondary rounded-pill">Module Installation</span></p>
-                  <p class="card-text fw-light">MicroGPlus can also be installed as Magisk or KernelSU module beside recovery installation.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-1">
-              <div class="card border-0 rounded text-center" style="background-color:#f0f0f0">
-                <div class="card-body">
-                  <span style="font-size:25px"><i style="color:#4797B1" class="fa-solid fa-wand-magic-sparkles"></i></span>
-                  <p class="card-title fs-5"><span class="badge text-bg-secondary rounded-pill">Smart Space</span></p>
-                  <p class="card-text fw-light">This feature allows you to re-flash MicroGPlus even with insufficient space in system.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-1">
-              <div class="card border-0 rounded text-center" style="background-color:#f0f0f0">
-                <div class="card-body">
-                  <span style="font-size:25px"><i style="color:#B958A5" class="fa-solid fa-face-smile"></i></span>
-                  <p class="card-title fs-5"><span class="badge text-bg-secondary rounded-pill">Happy Community</span></p>
-                  <p class="card-text fw-light">We have a friendly community that helps you get what you're looking for in MicroGPlus.</p>
-                </div>
+            <div class="col-lg-6 d-flex justify-content-center order-first order-lg-last">
+              <div class="position-relative p-4 bg-white rounded-4 border border-dark border-opacity-10 shadow-lg transition-hover" style="max-width:380px">
+                <img class="img-fluid w-100" src="images/foss.png" alt="MicroGPlus" style="filter:drop-shadow(0 10px 20px rgba(0,0,0,0.06))">
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!---SECTION--->
-      <div class="px-0 my-3 py-1">
-        <ul class="list-group border-0 rounded-0 text-center">
-          <li class="list-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#android" style="background-color:#f0f0f0">All Platforms and All Android Versions are Supported</li>
-          <div id="android" class="container-fluid border collapse show bg-white" style="border-color:#f0f0f0">
-            <img alt="" class="img-fluid" style="width:500px" src="images/untitled.png">
+      <!-- SECTION -->
+      <div class="px-1 px-md-4 px-lg-5 py-4">
+        <div class="container-fluid py-md-4 py-lg-4">
+          <div class="row mb-4">
+            <div class="col-12">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-4" style="width:56px; height:56px; background-color:#e8f6ed">
+                <i style="color:#16a34a" class="fa-solid fa-cubes fs-3"></i>
+              </div>
+              <h2 class="display-5 fw-bold rubik text-dark mb-3">Why MicroGPlus?</h2>
+              <p class="text-muted fs-5 col-lg-7 px-0">
+                Discover the core features that make our platform flexible and reliable.
+              </p>
+            </div>
           </div>
-          <li class="list-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#flashable" style="background-color:#f0f0f0">MicroGPlus has flashable packages in many variations</li>
-          <div id="flashable" class="container-fluid collapse show bg-dark text-white text-center fw-light">
-            <p class="mb-0">
-              NLP which is a Minimal MicroGPlus Package includes GmsCore, microG Services Framework (GSF), FakeStore and other essentials.
-              Variants like AUR, BSP, FDD, FOX, NEO, NOU, GPS which includes everything from Minimal with alternative App store client.
-              Checkout list of Apps included in Minimal and Variants below.
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Feature Card -->
+            <div class="col">
+              <div class="card h-100 border-0 shadow-md rounded-4 p-3 bg-white lift-card">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <div class="d-flex align-items-center justify-content-center rounded-3 mb-3" style="width:56px; height:56px; background-color:rgba(71, 151, 177, 0.1)">
+                    <i style="color:#4797B1" class="fa-sharp fa-solid fa-robot fs-4"></i>
+                  </div>
+                  <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Android Support</h3>
+                  <p class="card-text text-muted fw-normal small">
+                    All Platforms and All Android Versions are Supported.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Feature Card -->
+            <div class="col">
+              <div class="card h-100 border-0 shadow-md rounded-4 p-3 bg-white lift-card">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <div class="d-flex align-items-center justify-content-center rounded-3 mb-3" style="width:56px; height:56px; background-color:rgba(185, 88, 165, 0.1)">
+                    <i style="color:#B958A5" class="fa-solid fa-cubes fs-4"></i>
+                  </div>
+                  <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Customizable Installation</h3>
+                  <p class="card-text text-muted fw-normal small">
+                    MicroGPlus can be installed from multiple environments with ease.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Feature Card -->
+            <div class="col">
+              <div class="card h-100 border-0 shadow-md rounded-4 p-3 bg-white lift-card">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <div class="d-flex align-items-center justify-content-center rounded-3 mb-3" style="width:56px; height:56px; background-color:rgba(1, 146, 103, 0.1)">
+                    <i style="color:#019267" class="fa-brands fa-android fs-4"></i>
+                  </div>
+                  <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Wide Support</h3>
+                  <p class="card-text text-muted fw-normal small">
+                    MicroGPlus offers flashable packages in many variations from Minimal to Variants.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Feature Card -->
+            <div class="col">
+              <div class="card h-100 border-0 shadow-md rounded-4 p-3 bg-white lift-card">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <div class="d-flex align-items-center justify-content-center rounded-3 mb-3" style="width:56px; height:56px; background-color:rgba(220, 53, 53, 0.1)">
+                    <i style="color:#DC3535" class="fa-solid fa-arrows-rotate fs-4"></i>
+                  </div>
+                  <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Seamless OTA Updates</h3>
+                  <p class="card-text text-muted fw-normal small">
+                    MicroGPlus comes with OTA survival support to provide you flash and forget experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Feature Card -->
+            <div class="col">
+              <div class="card h-100 border-0 shadow-md rounded-4 p-3 bg-white lift-card">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <div class="d-flex align-items-center justify-content-center rounded-3 mb-3" style="width:56px; height:56px; background-color:rgba(199, 128, 250, 0.1)">
+                    <i style="color:#C780FA" class="fa-solid fa-puzzle-piece fs-4"></i>
+                  </div>
+                  <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Dynamic Installer</h3>
+                  <p class="card-text text-muted fw-normal small">
+                    You can easily override between any MicroGPlus version without clean flash.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Feature Card -->
+            <div class="col">
+              <div class="card h-100 border-0 shadow-md rounded-4 p-3 bg-white lift-card">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <div class="d-flex align-items-center justify-content-center rounded-3 mb-3" style="width:56px; height:56px; background-color:rgba(244, 96, 96, 0.1)">
+                    <i style="color:#F46060" class="fa-solid fa-code fs-4"></i>
+                  </div>
+                  <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Module Installation</h3>
+                  <p class="card-text text-muted fw-normal small">
+                    MicroGPlus can also be installed as Magisk or KernelSU module beside recovery installation.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Feature Card -->
+            <div class="col">
+              <div class="card h-100 border-0 shadow-md rounded-4 p-3 bg-white lift-card">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <div class="d-flex align-items-center justify-content-center rounded-3 mb-3" style="width:56px; height:56px; background-color:rgba(71, 151, 177, 0.1)">
+                    <i style="color:#4797B1" class="fa-solid fa-wand-magic-sparkles fs-4"></i>
+                  </div>
+                  <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Smart Space</h3>
+                  <p class="card-text text-muted fw-normal small">
+                    This feature allows you to re-flash MicroGPlus even with insufficient space in system.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Feature Card -->
+            <div class="col">
+              <div class="card h-100 border-0 shadow-md rounded-4 p-3 bg-white lift-card">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <div class="d-flex align-items-center justify-content-center rounded-3 mb-3" style="width:56px; height:56px; background-color:rgba(255, 179, 0, 0.1)">
+                    <i style="color:#FFB300" class="fa-solid fa-shield-halved fs-4"></i>
+                  </div>
+                  <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Privileged Permission</h3>
+                  <p class="card-text text-muted fw-normal small">
+                    Providing the necessary permissions to the privileged apps.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Feature Card -->
+            <div class="col">
+              <div class="card h-100 border-0 shadow-md rounded-4 p-3 bg-white lift-card">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <div class="d-flex align-items-center justify-content-center rounded-3 mb-3" style="width:56px; height:56px; background-color:rgba(185, 88, 165, 0.1)">
+                    <i style="color:#B958A5" class="fa-solid fa-face-smile fs-4"></i>
+                  </div>
+                  <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Happy Community</h3>
+                  <p class="card-text text-muted fw-normal small">
+                    We have a friendly community that helps you get what you're looking for in MicroGPlus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION -->
+      <div class="px-1 px-md-4 px-lg-5 py-4">
+        <div class="container-fluid py-md-4 py-lg-4">
+          <div class="row mb-4">
+            <div class="col-12">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-4" style="width:56px; height:56px; background-color:#f3e8ff">
+                <i style="color:#7c3aed" class="fa-solid fa-layer-group fs-3"></i>
+              </div>
+              <h2 class="display-5 fw-bold rubik text-dark mb-3">Compatibility &amp; Features</h2>
+              <p class="text-muted fs-5 col-lg-7 px-0">
+                Explore lightweight, tailored packages built to support every Android version.
+              </p>
+            </div>
+          </div>
+          <div class="row g-4 mb-4">
+            <!-- COLUMN -->
+            <div class="col-md-6">
+              <div class="bg-white border border-soft rounded-4 p-4 shadow-sm h-100">
+                <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom">
+                  <h3 class="h6 fw-bold tracking-tight text-dark m-0">Architectures</h3>
+                  <span class="text-xs text-muted font-mono-tech">PLATFORM</span>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex align-items-center justify-content-between py-2 px-3 bg-light rounded-3">
+                    <span class="font-mono-tech text-sm fw-bold">ARM</span>
+                    <span class="text-success bg-success bg-opacity-10 px-2 py-1 rounded-circle text-xs"><i class="bi bi-check2"></i></span>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between py-2 px-3 bg-light rounded-3">
+                    <span class="font-mono-tech text-sm fw-bold">ARM64</span>
+                    <span class="text-success bg-success bg-opacity-10 px-2 py-1 rounded-circle text-xs"><i class="bi bi-check2"></i></span>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between py-2 px-3 bg-light rounded-3 opacity-50">
+                    <span class="font-mono-tech text-sm">x86</span>
+                    <span class="text-muted text-xs"><i class="bi bi-x"></i></span>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between py-2 px-3 bg-light rounded-3 opacity-50">
+                    <span class="font-mono-tech text-sm">x86-64</span>
+                    <span class="text-muted text-xs"><i class="bi bi-x"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- COLUMN -->
+            <div class="col-md-6">
+              <div class="bg-white border border-soft rounded-4 p-4 shadow-sm h-100">
+                <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom">
+                  <h3 class="h6 fw-bold tracking-tight text-dark m-0">Android Versions</h3>
+                  <span class="text-xs text-muted font-mono-tech">API 25 - 36</span>
+                </div>
+                <div class="row g-2">
+                  <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 16.0</div></div>
+                  <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 15.0</div></div>
+                  <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 14.0</div></div>
+                  <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 13.0</div></div>
+                  <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 12.1</div></div>
+                  <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 12.0</div></div>
+                  <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 11.0</div></div>
+                  <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 10.0</div></div>
+                </div>
+                <div class="mt-3 text-center text-xs text-muted">
+                  <i class="bi bi-plus-circle me-1"></i>Legacy support for versions 9.0, 8.1, 8.0, and 7.1
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 mb-4">
+            <!-- COLUMN -->
+            <div class="col-lg-8">
+              <div class="bg-white border border-soft rounded-4 p-4 shadow-sm h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <h3 class="h5 fw-bold text-dark mb-2">Flashable Package Variations</h3>
+                  <p class="text-sm text-muted lh-base">
+                    The core <strong class="text-dark">NLP (Minimal)</strong> package includes GmsCore, microG Services Framework (GSF), FakeStore and other essentials.
+                  </p>
+                  <p class="text-sm text-muted lh-base mt-2">
+                    Advanced variants like <span class="font-mono-tech text-xs bg-light px-2 py-1 rounded text-primary">AUR, BSP, FDD, FOX, NEO, NOU and GPS</span> includes everything from Minimal with alternative App store client.
+                  </p>
+                </div>
+                <div class="mt-0 pt-3 border-top d-flex align-items-center justify-content-between">
+                  <span class="text-xs text-primary font-semibold">Explore alternative store integrations below.</span>
+                </div>
+              </div>
+            </div>
+            <!-- COLUMN -->
+            <div class="col-lg-4">
+              <div class="bg-white border border-soft rounded-4 p-4 shadow-sm h-100">
+                <h3 class="h6 fw-bold text-dark mb-2">Included F-Droid and it&#39;s Privileged Extension</h3>
+                <p class="text-sm text-muted lh-base m-0">
+                  Privileged extension enables F-Droid to install and delete apps without needing "Unknown Sources" to be enabled
+                  (e.g. Just like Google Play does). It also enables F-Droid to auto install updates in the background without the user
+                  having to click "install".
+                </p>
+              </div>
+            </div>
+            <!-- COLUMN -->
+            <div class="col-lg-4">
+              <div class="bg-white border border-soft rounded-4 p-4 shadow-sm h-100">
+                <h3 class="h6 fw-bold text-dark mb-2">Seamless OTA Updates</h3>
+                <p class="text-sm text-muted lh-base m-0">
+                  The OTA survival script allows you to update your current ROM to its latest version without worrying about
+                  having to flash MicroGPlus again, delivering a true "flash and forget" experience. Powered by the latest
+                  <strong class="text-dark">ADDOND Version 3</strong>.
+                </p>
+              </div>
+            </div>
+            <!-- COLUMN -->
+            <div class="col-lg-8">
+              <div class="bg-dark-vercel text-white rounded-4 p-4 shadow h-100">
+                <h3 class="h6 fw-bold mb-3 text-white">Alternate App Store Client Included</h3>
+                <div class="row g-3">
+                  <div class="col-sm-4">
+                    <div class="bg-white bg-opacity-10 border border-white border-opacity-10 rounded-3 p-3 h-100">
+                      <div class="fw-bold text-sm mb-1 text-white">Droid-ify</div>
+                      <div class="text-xs text-light opacity-75">Clean F-Droid client with Material You design language.</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="bg-white bg-opacity-10 border border-white border-opacity-10 rounded-3 p-3 h-100">
+                      <div class="fw-bold text-sm mb-1 text-white">Aurora Store</div>
+                      <div class="text-xs text-light opacity-75">Anonymous gateway client to Google Play store items.</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="bg-white bg-opacity-10 border border-white border-opacity-10 rounded-3 p-3 h-100">
+                      <div class="fw-bold text-sm mb-1 text-white">Neo Store</div>
+                      <div class="text-xs text-light opacity-75">An F-Droid client with modern UI and an arsenal of extra features.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white border border-soft rounded-3 p-4 text-xs text-muted">
+            <div class="row g-3 text-center text-sm-start">
+              <div class="col-sm-6 col-md-3">
+                <span class="fw-bold text-dark d-block mb-1">Vanilla PlayStore</span>
+                Includes vanilla PlayStore to safely handle native In-App purchases.
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <span class="fw-bold text-dark d-block mb-1">Google Maps API</span>
+                Native Maps framework v1 support legacy compatibility.
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <span class="fw-bold text-dark d-block mb-1">Footprint Efficient</span>
+                Relatively small size for easy Download and Installation.
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <span class="fw-bold text-dark d-block mb-1">Sync Adapter</span>
+                Includes standalone Google Contacts Sync Adapter as Addon.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION -->
+      <div class="px-1 px-md-4 px-lg-5 py-4">
+        <div class="container-fluid py-md-4 py-lg-4">
+          <div class="row mb-4">
+            <div class="col-12">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-4" style="width:56px; height:56px; background-color:#ffe4e6">
+                <i style="color:#e11d48" class="fa-solid fa-terminal fs-3"></i>
+              </div>
+              <h2 class="display-5 fw-bold rubik text-dark mb-3">Installation Instructions</h2>
+              <p class="text-muted fs-5 col-lg-7 px-0">
+                Follow the correct order to avoid crashes and ensure a clean boot.
+              </p>
+            </div>
+          </div>
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-4" style="background:linear-gradient(135deg, #e6ffea 0%, #f4fff6 100%); border-left:5px solid #28a745 !important">
+            <div class="card-body p-4 p-md-5">
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <h2 class="fw-bold text-success mb-3">Seamless microG Sideloading</h2>
+                  <p class="text-secondary lead mb-0" style="font-size:1.1rem; line-height:1.6">
+                    MicroGPlus is a convenient way to sideload microG into custom ROM without having to deal with the extra hassle.
+                    You can easily override between any MicroGPlus version without clean flash. You can also remove microG components
+                    from custom ROM with our uninstaller too. Regular updates cover the latest microG version with bugs fixed on time.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4">
+            <!-- First Time Installation -->
+            <div class="col-md-7">
+              <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                <div class="d-flex align-items-center mb-4">
+                  <div class="bg-primary bg-opacity-10 text-primary rounded-3 p-2 me-3">
+                    <i class="fa-solid fa-download fa-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="fs-4 fw-bold mb-0 text-dark">First Time Installation</h3>
+                    <small class="text-muted">Fresh setup instructions</small>
+                  </div>
+                </div>
+                <div class="position-relative ps-2">
+                  <!-- Step 1 -->
+                  <div class="d-flex mb-4">
+                    <div class="fw-bold text-primary me-3 fs-5">01</div>
+                    <div>
+                      <h3 class="fs-6 fw-bold mb-1">Flash via Recovery</h3>
+                      <p class="text-secondary small mb-0">MicroGPlus should be installed via recovery immediately after installing Custom ROM.</p>
+                    </div>
+                  </div>
+                  <!-- Step 2 -->
+                  <div class="d-flex mb-4">
+                    <div class="fw-bold text-danger me-3 fs-5">02</div>
+                    <div>
+                      <h3 class="fs-6 fw-bold mb-1 text-danger">Do Not Boot to System Yet</h3>
+                      <p class="text-secondary small mb-0"> If you reboot into system before installing microG components, you must factory reset and then install them, otherwise expect crashes.</p>
+                    </div>
+                  </div>
+                  <!-- Step 3 -->
+                  <div class="d-flex">
+                    <div class="fw-bold text-primary me-3 fs-5">03</div>
+                    <div>
+                      <h3 class="fs-6 fw-bold mb-1">Grant Permissions</h3>
+                      <p class="text-secondary small mb-3">Rooting via Magisk or KernelSU handles permissions automatically. Otherwise, run the fallback terminal command:</p>
+                      <!-- Code Block -->
+                      <div class="bg-dark rounded-3 p-3 position-relative d-flex justify-content-between align-items-center text-start">
+                        <code class="text-info font-monospace small">adb shell /system/bin/runtime.sh</code>
+                        <button class="btn btn-sm btn-outline-secondary border-0 py-0 text-white-50" title="Copy code">
+                          <i class="fa-regular fa-copy"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Alert -->
+                <div class="alert alert-success border-0 rounded-3 mt-4 mb-0 d-flex align-items-start" style="background-color:#f0fbf7">
+                  <i class="fa-solid fa-lightbulb text-success mt-1 me-3"></i>
+                  <div>
+                    <strong class="text-success small d-block mb-1">Helpful Tip</strong>
+                    <p class="text-secondary small mb-0">Always loop back or reboot directly to recovery mode after flashing your Custom ROM for a fresh installation environment.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Upgrade / Dirty Flash Installation -->
+            <div class="col-md-5">
+              <div class="card h-100 border-0 shadow-sm rounded-4 p-4 d-flex flex-column justify-content-between">
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex align-items-center mb-2">
+                    <div class="bg-warning bg-opacity-10 text-warning rounded-3 p-2 me-3">
+                      <i class="fa-solid fa-arrows-rotate fa-xl"></i>
+                    </div>
+                    <div>
+                      <h3 class="fs-4 fw-bold mb-0 text-dark">Updates &amp; Maintenance</h3>
+                      <small class="text-muted">Subsequent installations</small>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="fs-6 fw-bold mb-2">Installing for the second time and so on?</h3>
+                    <p class="text-secondary small mb-0">Upgrading packages or re-flashing software on top of your existing base does not wipe your active user data environment.</p>
+                  </div>
+                  <div class="text-center py-5 my-1 text-muted bg-success rounded-3 bg-opacity-10">
+                    <i class="bi bi-shield-check display-5 text-success opacity-75"></i>
+                    <div class="small fw-semibold mt-1 text-success text-opacity-75">Data Preservation Active</div>
+                  </div>
+                </div>
+                <!-- Dirty Flash -->
+                <div class="alert alert-warning border-0 rounded-3 mt-4 mb-0 d-flex align-items-start" style="background-color:#fff9f3">
+                  <i class="fa-solid fa-triangle-exclamation text-warning mt-1 me-3"></i>
+                  <div>
+                    <strong class="text-warning small d-block mb-1">Dirty Flash Supported</strong>
+                    <p class="text-secondary small mb-0">Re-flashing the exact same package configuration or upgrading to the latest stable release build does not require a factory reset cycle.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION -->
+      <div class="px-1 px-md-4 px-lg-5 py-4">
+        <div class="container-fluid py-md-4 py-lg-4">
+          <div class="row mb-4 text-start">
+            <div class="col-12">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-4" style="width:56px; height:56px; background-color:#fef3c7">
+                <i style="color:#d97706" class="fa-solid fa-bolt fs-3"></i>
+              </div>
+              <h2 class="display-5 fw-bold rubik text-dark mb-3">Flash &amp; Forget</h2>
+              <p class="text-muted fs-5 col-lg-7 px-0">
+                Zero storage issues, clean removal options, and seamless ROM updates.
+              </p>
+            </div>
+          </div>
+          <div class="alert alert-primary d-flex align-items-center justify-content-center border-0 rounded-3 mb-4 shadow-sm" role="alert">
+            <i class="bi bi-info-circle-fill me-2 fs-5"></i>
+            <div class="fw-medium text-center">
+              Flash via recovery (like TWRP, LineageOS Recovery, etc.) for the most stable installation.
+            </div>
+          </div>
+          <div class="accordion accordion-flush rounded-3 shadow-sm border overflow-hidden">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <div class="accordion-button fw-semibold bg-body text-dark" aria-expanded="true">
+                  <i class="bi bi-layers-half text-primary me-2"></i>Module Installation &amp; Compatibility Details
+                </div>
+              </h2>
+              <div class="accordion-collapse collapse show">
+                <div class="accordion-body bg-body-tertiary lh-base text-secondary">
+                  <p class="mb-3">Module installation is back. Same builds can be installed as a <strong>Magisk</strong> or <strong>KernelSU</strong> module.</p>
+                  <div class="alert alert-warning border-0 rounded-3 py-2 px-3 mb-3 d-flex align-items-start small" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2 mt-0.5"></i>
+                    <div>
+                      <p class="mb-0">
+                        <strong>Important Note:</strong> Keep in mind, module installation has its own downside. For this reason, we highly prefer installation from recovery like TWRP, LineageOS Recovery, etc. However it is up to you what you want to proceed with. When installed as module, do not enable KSU <code>umount modules</code> option for microG components under App Profile. It will cause crashes and APKs not found.
+                      </p>
+                    </div>
+                  </div>
+                  <p class="mb-0">
+                    MicroGPlus includes both functionalities in one package. Perks of module installation, required free space is no longer an issue. You can also remove Google Apps installation. Always survive ROM OTA upgrade with flash and forget experience. <span class="text-danger-emphasis fw-medium">Do not disable module, otherwise expect crashes.</span> An edge case for some latest version of KernelSU or forks explained below.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <div class="accordion-button fw-semibold bg-body text-dark" aria-expanded="true">
+                  <i class="bi bi-shield-exclamation text-warning me-2"></i>Metamodule Requirements (KernelSU &amp; Forks)
+                </div>
+              </h2>
+              <div class="accordion-collapse collapse show">
+                <div class="accordion-body bg-body-tertiary lh-base text-secondary">
+                  <p class="mb-3">
+                    You might need a <strong>metamodule</strong> installed before installing this as module. Some latest version of KernelSU or forks require metamodule for modules that adds or update files in system without this the module files will not be loaded after reboot. Also when this flashed as module first before flashing a metamodule, this will also cause module files to not load after reboot.
+                  </p>
+                  <div class="alert alert-danger border-0 rounded-3 py-2 px-3 mb-0 small" role="alert">
+                    <p class="mb-0"><i class="bi bi-arrow-clockwise me-1"></i>
+                      Once a metamodule is installed, it blocks installation of further modules until device is rebooted and metamodule is initialized. This will ensure that the modules depending on the metamodule function properly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION -->
+      <div class="px-1 px-md-4 px-lg-5 py-4" style="background:#e6fde9">
+        <div class="container-fluid py-md-4 py-lg-4">
+          <div class="row mb-4 text-start">
+            <div class="col-12">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-4" style="width:56px; height:56px; background-color:#d1fae5">
+                <i style="color:#047857" class="fa-solid fa-file-arrow-down fs-3"></i>
+              </div>
+              <h2 class="display-5 fw-bold rubik text-dark mb-3">Downloads Section</h2>
+              <p class="text-muted fs-5 col-lg-7 px-0">
+                Synchronized directly with upstream GmsCore release.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-center text-center px-4 py-3 mb-5 rounded-4 shadow-sm" style="background-color:#ffffff; border:1px solid rgba(220, 116, 116, 0.15)">
+            <p class="text-secondary small mb-0 fw-medium">
+              <i class="bi bi-heart-fill text-danger me-2"></i>You can support us by whitelisting our URL. The advertisement revenue supports the projects efforts and costs a little resources to keep online.
             </p>
           </div>
-          <li class="list-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#extension" style="background-color:#f0f0f0">Included F-Droid and it&#39;s privileged extension</li>
-          <div id="extension" class="container-fluid collapse show bg-dark text-white text-center fw-light">
-            <p class="mb-0">
-              Privileged extension enables F-Droid to install and delete apps without needing "Unknown Sources" to be enabled
-              (e.g. Just like Google Play does). It also enables F-Droid to auto install updates in the background without the user
-              having to click "install".
-            </p>
-          </div>
-          <li class="list-group-item" style="background-color:#f0f0f0">Added Droid-ify as alternative App store client</li>
-          <li class="list-group-item" style="background-color:#f0f0f0">Added AuroraStore as alternative App store client</li>
-          <li class="list-group-item" style="background-color:#f0f0f0">Added NeoStore as alternative App store client</li>
-          <li class="list-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#ota" style="background-color:#f0f0f0">MicroGPlus offers Seamless OTA Updates through Survival Script</li>
-          <div id="ota" class="container-fluid collapse show bg-dark text-white text-center fw-light">
-            <p class="mb-0">
-              OTA survival script allows you to update your current ROM to its latest version without worrying about
-              having to flash MicroGPlus again. This functionality gives you flash and forget experience. Currently
-              installer using ADDOND Version 3 which is latest.
-            </p>
-          </div>
-          <li class="list-group-item" style="background-color:#f0f0f0">MicroGPlus has vanilla PlayStore to allow In-App purchase</li>
-          <li class="list-group-item" style="background-color:#f0f0f0">It comes with Google Maps API v1 framework support</li>
-          <li class="list-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#size" style="background-color:#f0f0f0">Relatively small size for easy Download and Installation</li>
-          <div id="size" class="container-fluid collapse show bg-dark text-white text-center fw-light"><p class="mb-0">Installation Size is different from Package Size.</p></div>
-          <li class="list-group-item" style="background-color:#f0f0f0">MicroGPlus also offers Google Contacts Sync Adapter as Addon</li>
-        </ul>
-      </div>
-      <!---SECTION--->
-      <div class="px-0 my-3 py-0" style="background:#f0f0f0">
-        <div class="card border-0 rounded-0" style="background-color:#f0f0f0">
-          <div class="card-header text-center rounded-0" style="background-color:#C9FFBF">
-            MicroGPlus is a convenient way to sideload microG into custom ROM without having to deal with additional stuffs.
-            You can easily override between any MicroGPlus version without clean flash. You can also remove microG components
-            from custom ROM with our uninstaller too. Regular updates cover the latest microG version with bugs fixed on time.
-          </div>
-          <div class="card-body">
-            <p class="card-text text-center" style="color:#1572A1"><small class="fw-bold">Installing for the first time ?</small></p>
-            <p class="card-text text-center fw-light mx-1">
-              MicroGPlus should be installed via recovery immediately after installing Custom ROM.
-              If you reboot into system before installing microG components, you must factory reset and
-              then install them, otherwise expect crashes. Once you have root through either Magisk or
-              KernelSU, required permissions will be granted on its own else follow "adb shell" method.
-            </p>
-            <ul class="list-group text-center">
-              <li class="list-group-item text-danger"><span>adb shell /system/bin/runtime.sh</span></li>
-            </ul>
-            <p class="card-text fw-light text-center mt-3">
-              <span class="badge rounded-pill" style="background:#1F8A70"><i class="fa-solid fa-lightbulb me-1"></i>Helpful Tip</span>
-              <br>
-              You should reboot to recovery after flashing Custom ROM for fresh installation.
-            </p>
-            <p class="card-text fw-light text-center">
-              <span class="badge rounded-pill" style="background:#FF731D"><i class="fa-solid fa-lightbulb me-1"></i>Dirty Flash</span>
-              <br>
-              <small class="fw-bold" style="color:#1572A1">Installing for the second time and so on ?</small>
-              <br>
-              Re-flashing of same package or upgrading to latest release doesn't require factory reset.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!---SECTION--->
-      <div class="px-3 my-3 py-3 text-center" style="background:#dcdcef">
-        <div class="card text-bg-light border-light">
-          <div class="card-body">
-            <div class="card-text">
-              Module installation is back. Same builds can be installed as Magisk or KernelSU module.
-              Keep in mind, module installation has its own downside. For this reason, we prefer
-              installation from recovery like TWRP, LineageOS Recovery, etc. However it is up to you
-              what you want to proceed with. To make it more clear, MicroGPlus has both functionality
-              in one package. Perks of module installation, required free space is no longer an issue.
-              You can also remove microG installation. Always survive ROM OTA upgrade with flash
-              and forget experience. Do not disable module, otherwise expect crashes. When installed
-              as module, do not enable KSU umount modules option for microG components under App
-              Profile. It will cause crashes and APKs not found.
-              An edge case for some latest version of KernelSU or forks explained below.
+          <div class="row g-3 g-md-4 g-lg-5 align-items-center">
+            <div class="col-lg-7 d-flex flex-column justify-content-center">
+              <div class="position-relative overflow-hidden rounded-4 p-3 bg-white shadow-sm transition-all duration-300 hover-lift border border-light-subtle">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalFoss" class="d-block position-relative group text-decoration-none">
+                  <img alt="" class="img-fluid rounded-3 w-100" src="images/fosslist.png" style="transition:transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)">
+                  <div class="position-absolute inset-0 top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center bg-dark bg-opacity-10 opacity-0 hover-opacity-100 transition-all rounded-3" style="transition:0.3s ease">
+                    <span class="btn btn-sm btn-white shadow-sm rounded-pill px-3 py-2 border-0 fw-medium">
+                      <i class="bi bi-arrows-fullscreen me-3 small"></i>Click to Zoom
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="text-center mt-3">
+                <p class="small mb-0 text-zoom"><i class="bi bi-info-circle me-2"></i>Click on the image to zoom</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="card text-bg-light border-light mt-2">
-          <div class="card-body">
-            <div class="card-text">
-              You might need a metamodule installed before installing this as module.
-              Some latest version of KernelSU or forks require metamodule for modules that adds or update
-              files in system without this the module files will not be loaded after reboot.
-              Also when this flashed as module first before flashing a metamodule, this will also cause module files to not load after reboot.
-              Once a metamodule is installed, it blocks installation of further modules until device is rebooted and metamodule is initialized.
-              This will ensure that the modules depending on the metamodule function properly.
+            <div class="col-lg-5">
+              <div class="d-flex flex-column h-100 ps-lg-3">
+                <div class="mb-4 pb-3 border-bottom" style="border-color:rgba(220, 116, 116, 0.2) !important">
+                  <h2 class="fs-4 fw-extrabold mb-1 text-dark tracking-tight">Select Package</h2>
+                  <p class="sand-sans small mb-0 tracking-wider fw-semibold" style="color:#dc7474; font-size:0.75rem">Choose a MicroGPlus version to download</p>
+                </div>
+                <div class="row row-cols-2 g-2 mb-4">
+                  <div class="col">
+                    <input class="btn-check" type="radio" name="downloadRadioFile" id="radioFileAUR" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-AUR-v0.3.15.zip">
+                    <label class="btn btn-select w-100 text-start py-9 px-3 silkscreen" for="radioFileAUR">AUR</label>
+                  </div>
+                  <div class="col">
+                    <input class="btn-check" type="radio" name="downloadRadioFile" id="radioFileBSP" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-BSP-v0.3.15.zip">
+                    <label class="btn btn-select w-100 text-start py-9 px-3 silkscreen" for="radioFileBSP">BSP</label>
+                  </div>
+                  <div class="col">
+                    <input class="btn-check" type="radio" name="downloadRadioFile" id="radioFileFDD" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-FDD-v0.3.15.zip">
+                    <label class="btn btn-select w-100 text-start py-9 px-3 silkscreen" for="radioFileFDD">FDD</label>
+                  </div>
+                  <div class="col">
+                    <input class="btn-check" type="radio" name="downloadRadioFile" id="radioFileFOX" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-FOX-v0.3.15.zip">
+                    <label class="btn btn-select w-100 text-start py-9 px-3 silkscreen" for="radioFileFOX">FOX</label>
+                  </div>
+                  <div class="col">
+                    <input class="btn-check" type="radio" name="downloadRadioFile" id="radioFileGPS" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-GPS-v0.3.15.zip">
+                    <label class="btn btn-select w-100 text-start py-9 px-3 silkscreen" for="radioFileGPS">GPS</label>
+                  </div>
+                  <div class="col">
+                    <input class="btn-check" type="radio" name="downloadRadioFile" id="radioFileNEO" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-NEO-v0.3.15.zip">
+                    <label class="btn btn-select w-100 text-start py-9 px-3 silkscreen" for="radioFileNEO">NEO</label>
+                  </div>
+                  <div class="col">
+                    <input class="btn-check" type="radio" name="downloadRadioFile" id="radioFileNLP" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-NLP-v0.3.15.zip">
+                    <label class="btn btn-select w-100 text-start py-9 px-3 silkscreen" for="radioFileNLP">NLP</label>
+                  </div>
+                  <div class="col">
+                    <input class="btn-check" type="radio" name="downloadRadioFile" id="radioFileNOU" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-NOU-v0.3.15.zip">
+                    <label class="btn btn-select w-100 text-start py-9 px-3 silkscreen" for="radioFileNOU">NOU</label>
+                  </div>
+                </div>
+                <div class="d-flex gap-2 mb-3">
+                  <button type="button" class="btn btn-dark w-100 py-9 border-0 rounded-3 fw-medium tracking-wide shadow-sm btn-hover" onclick="downloadRadioFile()">
+                    <i class="bi bi-cloud-download me-2"></i>Download
+                  </button>
+                  <button type="button" class="btn btn-white text-secondary border border-light-subtle px-3 py-9 rounded-3 hover-bg-light shadow-sm" onclick="resetRadioFile()">Reset</button>
+                </div>
+                <p class="text-center silkscreen small mt-3 pt-2 mb-0 text-thanks tracking-widest text-uppercase" style="font-size:0.65rem">
+                  Thanks for choosing MicroGPlus!
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!---SECTION--->
-      <div class="px-4 my-3 py-1 text-center" style="background:#f4f4f4">
-        <p class="text-dark mb-0 mt-3">
-          You can support us by whitelisting our URL. The advertisement revenue supports the projects efforts and costs a little resources to keep online.
-        </p>
-        <div class="col-lg-8 mx-auto mt-3">
-          <div class="d-flex justify-content-center">
-            <img alt="" class="border border-0 border-dark-subtle rounded w-100" src="images/fosslist.png">
+      <div class="modal fade" id="modalFoss" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0 position-relative text-center">
+              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img alt="" src="images/fosslist.png" class="img-fluid rounded-4 shadow-lg bg-white">
+            </div>
           </div>
         </div>
       </div>
-      <!---SECTION--->
-      <div class="px-3 my-3 py-3 text-center" style="background:#f0f0f0">
-        <div class="border-bottom border-danger-subtle mb-2">
-          <p class="sand-sans mb-1" style="color:#dc7474">Select a MicroGPlus version and hit Download button!</p>
-        </div>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileAUR" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-AUR-v0.3.15.zip">
-        <label class="form-check-label silkscreen" for="radioFileAUR">MicroGPlus AUR</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileBSP" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-BSP-v0.3.15.zip">
-        <label class="form-check-label silkscreen" for="radioFileBSP">MicroGPlus BSP</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileFDD" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-FDD-v0.3.15.zip">
-        <label class="form-check-label silkscreen" for="radioFileFDD">MicroGPlus FDD</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileFOX" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-FOX-v0.3.15.zip">
-        <label class="form-check-label silkscreen" for="radioFileFOX">MicroGPlus FOX</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileGPS" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-GPS-v0.3.15.zip">
-        <label class="form-check-label silkscreen" for="radioFileGPS">MicroGPlus GPS</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileNEO" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-NEO-v0.3.15.zip">
-        <label class="form-check-label silkscreen" for="radioFileNEO">MicroGPlus NEO</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileNLP" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-NLP-v0.3.15.zip">
-        <label class="form-check-label silkscreen" for="radioFileNLP">MicroGPlus NLP</label><br>
-        <input class="form-check-input" type="radio" name="downloadRadioFile" id="radioFileNOU" value="https://github.com/BiTGApps/release/releases/download/20260517-121824-extra/microG-Installer-20260517-121824-NOU-v0.3.15.zip">
-        <label class="form-check-label silkscreen" for="radioFileNOU">MicroGPlus NOU</label>
-        <div class="col-md-6 mx-auto mb-2 mt-2">
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-outline-dark btn-sm px-4 gap-3 border-2" onclick="downloadRadioFile()"><i class="bi bi-cloud-download me-1"></i>Download</button>
-            <button type="button" class="btn btn-outline-success btn-sm px-4 border-2" onclick="resetRadioFile()">Reset</button>
-          </div>
-        </div>
-        <p class="text-muted silkscreen mb-0">Thanks for choosing MicroGPlus!</p>
-      </div>
-      <!---SECTION--->
-      <div class="px-3 my-3 py-3 text-center" style="background:#f0f0f0">
-        <p class="text-success fw-bold mb-1">Want more personalized build?<br>Custom Builds for MicroGPlus available now.</p>
-        <p class="mb-2">
-          You can now build MicroG Installer Package with YOUR choice of Free and Opensource Apps with fewer selection. These custom builds are securely hosted on a dedicated server. Please visit <a class="text-decoration-none" href="https://apilevels.com/">apilevels.com</a> website to know which Android version goes with which API level. To know more about selected FOSS application, click on arrow button next to it.
-        </p>
-        <div class="card text-bg-light border-light mb-2">
-          <div class="card-body">
-            <div class="card-text">
-              Running these servers costs money, and this project is entirely funded by ad revenue. If you enjoy using our work, please consider disabling your ad blocker for us. It keeps the lights on and the project free for everyone!
-            </div>
-          </div>
-        </div>
-        <p class="text-danger fw-bold mb-1">How custom build works and respone from server.</p>
-        <p class="mb-3">
-          You need to use pre-defined options from below to make build request.
-          Enter a username of your choice, it must be seven characters long contain only letters and numbers.
-          CronJob runs after every two minutes. You will get your build done in less than a minutes.
-          You will also get your folder based on provided username created on server within this time frame.
-          From this folder you can access both older and newer builds.
-          Each build has its own text file containing list of free and opensource apps added in that specific package.
-          Build server will now accept all incoming requests and they will be sorted and processed in random order.
-          Once disk space of the build server reaches a critical level, previous builds will be removed including
-          folder based on the provided username.
-        </p>
-        <div class="col-md-4 mx-auto mb-3">
-          <ul class="list-group">
-            <li class="list-group-item list-group-item-light"><i class="bi bi-1-square me-1"></i>Enter username of <strong>"YOUR"</strong> choice</li>
-            <li class="list-group-item list-group-item-light"><i class="bi bi-2-square me-1"></i>Select Device Platform</li>
-            <li class="list-group-item list-group-item-light"><i class="bi bi-3-square me-1"></i>Select Android Version</li>
-            <li class="list-group-item list-group-item-light"><i class="bi bi-4-square me-1"></i>Select API Version</li>
-            <li class="list-group-item list-group-item-light"><i class="bi bi-5-square me-1"></i>Always set Build Count to <strong>"1"</strong></li>
-            <li class="list-group-item list-group-item-light"><i class="bi bi-6-square me-1"></i>Click submit for build request</li>
-          </ul>
-        </div>
-        <p class="fs-5 mb-2 text-primary-subtle sand-sans">Fill below form to make build request!</p>
-        <form id="buildForm-1" class="mb-3" action="https://build.bitgapps.io/marvin.php" method="POST">
-          <div class="card text-bg-light border-light" style="background-color:#F3F1F5">
-            <div class="card-body">
-              <span style="font-size:25px"><i style="color:#F38BA0" class="fa-solid fa-user-secret"></i></span>
-              <p class="card-title fs-5">Enter Username</p>
-              <div class="card-text">
-                <input type="text" id="client" name="USR">
+      <!-- SECTION -->
+      <div class="px-1 px-md-4 px-lg-5 py-4 text-center">
+        <div class="container-fluid py-md-4 py-lg-4">
+          <div class="row mb-4 text-start">
+            <div class="col-12">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-4" style="width:56px; height:56px; background-color:#fce7f3">
+                <i style="color:#c026d3" class="fa-solid fa-wand-magic-sparkles fs-3"></i>
               </div>
+              <h2 class="display-5 fw-bold rubik text-dark mb-3">Custom Build Generator</h2>
+              <p class="text-muted fs-5 col-lg-7 px-0">
+                Generate user configured package using the latest Free and Opensource Apps.
+              </p>
             </div>
           </div>
-          <div class="card text-bg-light border-light mt-3" style="background-color:#F3F1F5">
-            <div class="card-body">
-              <span style="font-size:25px"><i style="color:#4797B1" class="fa-sharp fa-solid fa-robot"></i></span>
-              <p class="card-title fs-5">Select Android Platform</p>
-              <div class="card-text d-flex flex-wrap justify-content-center gap-1">
-                <input type="radio" class="btn-check" id="ARMv7" name="Platform" value="ARM">
-                <label for="ARMv7" class="btn btn-outline-secondary btn-sm">ARM</label>
-                <input type="radio" class="btn-check" id="ARMv8" name="Platform" value="ARM64">
-                <label for="ARMv8" class="btn btn-outline-secondary btn-sm">ARM64</label>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-light border-light mt-3" style="background-color:#F3F1F5">
-            <div class="card-body">
-              <span style="font-size:25px"><i style="color:#019267" class="fa-brands fa-android"></i></span>
-              <p class="card-title fs-5">Select Android Version</p>
-              <div class="card-text d-flex flex-wrap justify-content-center gap-1">
-                <input type="radio" class="btn-check" id="VER36" name="Version" value="16.0.0">
-                <label for="VER36" class="btn btn-outline-secondary btn-sm">16.0.0</label>
-                <input type="radio" class="btn-check" id="VER35" name="Version" value="15.0.0">
-                <label for="VER35" class="btn btn-outline-secondary btn-sm">15.0.0</label>
-                <input type="radio" class="btn-check" id="VER34" name="Version" value="14.0.0">
-                <label for="VER34" class="btn btn-outline-secondary btn-sm">14.0.0</label>
-                <input type="radio" class="btn-check" id="VER33" name="Version" value="13.0.0">
-                <label for="VER33" class="btn btn-outline-secondary btn-sm">13.0.0</label>
-                <input type="radio" class="btn-check" id="VER32" name="Version" value="12.1.0">
-                <label for="VER32" class="btn btn-outline-secondary btn-sm">12.1.0</label>
-                <input type="radio" class="btn-check" id="VER31" name="Version" value="12.0.0">
-                <label for="VER31" class="btn btn-outline-secondary btn-sm">12.0.0</label>
-                <input type="radio" class="btn-check" id="VER30" name="Version" value="11.0.0">
-                <label for="VER30" class="btn btn-outline-secondary btn-sm">11.0.0</label>
-                <input type="radio" class="btn-check" id="VER29" name="Version" value="10.0.0">
-                <label for="VER29" class="btn btn-outline-secondary btn-sm">10.0.0</label>
-                <input type="radio" class="btn-check" id="VER28" name="Version" value="9.0.0">
-                <label for="VER28" class="btn btn-outline-secondary btn-sm">9.0.0</label>
-                <input type="radio" class="btn-check" id="VER27" name="Version" value="8.1.0">
-                <label for="VER27" class="btn btn-outline-secondary btn-sm">8.1.0</label>
-                <input type="radio" class="btn-check" id="VER26" name="Version" value="8.0.0">
-                <label for="VER26" class="btn btn-outline-secondary btn-sm">8.0.0</label>
-                <input type="radio" class="btn-check" id="VER25" name="Version" value="7.1.2">
-                <label for="VER25" class="btn btn-outline-secondary btn-sm">7.1.2</label>
-                <input type="radio" class="btn-check" id="VER24" name="Version" value="7.1.1">
-                <label for="VER24" class="btn btn-outline-secondary btn-sm">7.1.1</label>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-light border-light mt-3" style="background-color:#F3F1F5">
-            <div class="card-body">
-              <span style="font-size:25px"><i style="color:#F46060" class="fa-solid fa-code"></i></span>
-              <p class="card-title fs-5">Select API Version</p>
-              <div class="card-text d-flex flex-wrap justify-content-center gap-1">
-                <input type="radio" class="btn-check" id="36" name="API" value="36">
-                <label for="36" class="btn btn-outline-secondary btn-sm">36</label>
-                <input type="radio" class="btn-check" id="35" name="API" value="35">
-                <label for="35" class="btn btn-outline-secondary btn-sm">35</label>
-                <input type="radio" class="btn-check" id="34" name="API" value="34">
-                <label for="34" class="btn btn-outline-secondary btn-sm">34</label>
-                <input type="radio" class="btn-check" id="33" name="API" value="33">
-                <label for="33" class="btn btn-outline-secondary btn-sm">33</label>
-                <input type="radio" class="btn-check" id="32" name="API" value="32">
-                <label for="32" class="btn btn-outline-secondary btn-sm">32</label>
-                <input type="radio" class="btn-check" id="31" name="API" value="31">
-                <label for="31" class="btn btn-outline-secondary btn-sm">31</label>
-                <input type="radio" class="btn-check" id="30" name="API" value="30">
-                <label for="30" class="btn btn-outline-secondary btn-sm">30</label>
-                <input type="radio" class="btn-check" id="29" name="API" value="29">
-                <label for="29" class="btn btn-outline-secondary btn-sm">29</label>
-                <input type="radio" class="btn-check" id="28" name="API" value="28">
-                <label for="28" class="btn btn-outline-secondary btn-sm">28</label>
-                <input type="radio" class="btn-check" id="27" name="API" value="27">
-                <label for="27" class="btn btn-outline-secondary btn-sm">27</label>
-                <input type="radio" class="btn-check" id="26" name="API" value="26">
-                <label for="26" class="btn btn-outline-secondary btn-sm">26</label>
-                <input type="radio" class="btn-check" id="25" name="API" value="25">
-                <label for="25" class="btn btn-outline-secondary btn-sm">25</label>
-                <input type="radio" class="btn-check" id="24" name="API" value="24">
-                <label for="24" class="btn btn-outline-secondary btn-sm">24</label>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-light border-light mt-3" style="background-color:#F3F1F5">
-            <div class="card-body">
-              <span style="font-size:25px"><i style="color:#4797B1" class="fa-solid fa-wand-magic-sparkles"></i></span>
-              <p class="card-title fs-5">Select Build Count</p>
-              <div class="card-text d-flex flex-wrap justify-content-center gap-1">
-                <input type="radio" class="btn-check" id="1" name="Counter" value="1">
-                <label for="1" class="btn btn-outline-secondary btn-sm">1</label>
-                <input type="radio" class="btn-check" id="2" name="Counter" value="2">
-                <label for="2" class="btn btn-outline-secondary btn-sm">2</label>
-                <input type="radio" class="btn-check" id="3" name="Counter" value="3">
-                <label for="3" class="btn btn-outline-secondary btn-sm">3</label>
-                <input type="radio" class="btn-check" id="4" name="Counter" value="4">
-                <label for="4" class="btn btn-outline-secondary btn-sm">4</label>
-                <input type="radio" class="btn-check" id="5" name="Counter" value="5">
-                <label for="5" class="btn btn-outline-secondary btn-sm">5</label>
-                <input type="radio" class="btn-check" id="6" name="Counter" value="6">
-                <label for="6" class="btn btn-outline-secondary btn-sm">6</label>
-                <input type="radio" class="btn-check" id="7" name="Counter" value="7">
-                <label for="7" class="btn btn-outline-secondary btn-sm">7</label>
-                <input type="radio" class="btn-check" id="8" name="Counter" value="8">
-                <label for="8" class="btn btn-outline-secondary btn-sm">8</label>
-                <input type="radio" class="btn-check" id="9" name="Counter" value="9">
-                <label for="9" class="btn btn-outline-secondary btn-sm">9</label>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-light border-light mt-3" style="background-color:#F3F1F5">
-            <div class="card-body">
-              <span style="font-size:25px"><i style="color:#F075AA" class="fa-solid fa-lightbulb"></i></span>
-              <p class="card-title fs-5">Select Free and Opensource Apps</p>
-              <div class="card-text d-flex flex-wrap justify-content-center gap-1">
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="AuroraStore">
-                  <input type="checkbox" class="btn-check" id="AuroraStore" name="AuroraStore" value="1">
-                  <label for="AuroraStore" class="btn btn-outline-secondary btn-sm">AuroraStore</label>
-                  <input type="hidden" value="0" name="AuroraExt">
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/com.aurora.store/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="FakeStore">
-                  <input type="checkbox" class="btn-check" id="FakeStore" name="FakeStore" value="1">
-                  <label for="FakeStore" class="btn btn-outline-secondary btn-sm">FakeStore</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://github.com/microg/FakeStore"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="FossDroid">
-                  <input type="checkbox" class="btn-check" id="FossDroid" name="FossDroid" value="1">
-                  <label for="FossDroid" class="btn btn-outline-secondary btn-sm">F-Droid</label>
-                  <input type="hidden" value="0" name="Extension">
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/org.fdroid.fdroid/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="FoxDroid">
-                  <input type="checkbox" class="btn-check" id="FoxDroid" name="FoxDroid" value="1">
-                  <label for="FoxDroid" class="btn btn-outline-secondary btn-sm">FoxyDroid</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/nya.kitsunyan.foxydroid/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="NeoStore">
-                  <input type="checkbox" class="btn-check" id="NeoStore" name="NeoStore" value="1">
-                  <label for="NeoStore" class="btn btn-outline-secondary btn-sm">NeoStore</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/com.machiav3lli.fdroid/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="PlayStore">
-                  <input type="checkbox" class="btn-check" id="PlayStore" name="PlayStore" value="1">
-                  <label for="PlayStore" class="btn btn-outline-secondary btn-sm">PlayStore</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://play.google.com/store/apps"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="HeliBoard">
-                  <input type="checkbox" class="btn-check" id="HeliBoard" name="HeliBoard" value="1">
-                  <label for="HeliBoard" class="btn btn-outline-secondary btn-sm">HeliBoard</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/helium314.keyboard/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="FutoBoard">
-                  <input type="checkbox" class="btn-check" id="FutoBoard" name="FutoBoard" value="1">
-                  <label for="FutoBoard" class="btn btn-outline-secondary btn-sm">FutoBoard</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://keyboard.futo.org/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="Bitwarden">
-                  <input type="checkbox" class="btn-check" id="Bitwarden" name="Bitwarden" value="1">
-                  <label for="Bitwarden" class="btn btn-outline-secondary btn-sm">Bitwarden</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://bitwarden.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="Cromite">
-                  <input type="checkbox" class="btn-check" id="Cromite" name="Cromite" value="1">
-                  <label for="Cromite" class="btn btn-outline-secondary btn-sm">Cromite Browser</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://www.cromite.org/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="CroView">
-                  <input type="checkbox" class="btn-check" id="CroView" name="CroView" value="1">
-                  <label for="CroView" class="btn btn-outline-secondary btn-sm">Cromite WebView</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://www.cromite.org/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="QuikSMS">
-                  <input type="checkbox" class="btn-check" id="QuikSMS" name="QuikSMS" value="1">
-                  <label for="QuikSMS" class="btn btn-outline-secondary btn-sm">QuikSMS</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/dev.octoshrimpy.quik.fdroid/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="Davx5">
-                  <input type="checkbox" class="btn-check" id="Davx5" name="Davx5" value="1">
-                  <label for="Davx5" class="btn btn-outline-secondary btn-sm">Davx5</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/at.bitfire.davdroid/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="Thunderbird">
-                  <input type="checkbox" class="btn-check" id="Thunderbird" name="Thunderbird" value="1">
-                  <label for="Thunderbird" class="btn btn-outline-secondary btn-sm">Thunderbird</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/net.thunderbird.android.beta/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="K9mail">
-                  <input type="checkbox" class="btn-check" id="K9mail" name="K9mail" value="1">
-                  <label for="K9mail" class="btn btn-outline-secondary btn-sm">K9mail</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://f-droid.org/en/packages/com.fsck.k9/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="Vanadium">
-                  <input type="checkbox" class="btn-check" id="Vanadium" name="Vanadium" value="1">
-                  <label for="Vanadium" class="btn btn-outline-secondary btn-sm">Vanadium Browser</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://github.com/GrapheneOS/Vanadium"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="VanView">
-                  <input type="checkbox" class="btn-check" id="VanView" name="VanView" value="1">
-                  <label for="VanView" class="btn btn-outline-secondary btn-sm">Vanadium WebView</label>
-                  <input type="hidden" value="0" name="Sandbox">
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://github.com/GrapheneOS/Vanadium"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="btn-group">
-                  <input type="hidden" value="0" name="Wellbeing">
-                  <input type="checkbox" class="btn-check" id="Wellbeing" name="Wellbeing" value="1">
-                  <label for="Wellbeing" class="btn btn-outline-secondary btn-sm">Wellbeing</label>
-                  <a role="button" class="btn btn-outline-secondary btn-sm" href="https://github.com/akaMrNagar/Mindful"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card text-bg-light border-light mt-3" style="background-color:#F3F1F5">
-            <div class="card-body">
-              <span style="font-size:25px"><i style="color:#8FBC8F" class="fa-solid fa-key"></i></span>
-              <p class="card-title fs-5">Enter admin token</p>
-              <div class="card-text">
-                <input type="text" id="admin-token" name="ADMIN_TOKEN">
-              </div>
-              <p class="d-inline animated-text noto-sans mt-2 mb-0">This field is restricted for server admins.</p>
-            </div>
-          </div>
-          <p class="mb-3 mt-3">
-            This is the base URL, <a class="text-decoration-none" href="https://build.bitgapps.io/">https://build.bitgapps.io/</a>, and to access custom build downloads, please add username after the base URL like this: <a class="text-decoration-none disabled" href="https://build.bitgapps.io/thehitman7/">https://build.bitgapps.io/thehitman7/</a>. You can also make further build requests under the same username. For now this service is free to use, because we are testing and making improvements in custom build system, this may change in the future for the better. You can also support us by means mentioned below. I hope the custom build system serves your needs well.
+          <p class="text-start text-secondary fs-6 lh-base mb-4 px-0">
+            You can now build MicroG Installer Package with YOUR choice of Free and Opensource Apps with fewer clicks and no creation limits. These custom builds are securely hosted on a dedicated server. Please visit <a class="text-decoration-none" href="https://apilevels.com/">apilevels.com</a> website to know which Android version goes with which API level. To know more about selected FOSS application, click on the learn more button next to it.
           </p>
-          <div class="col-md-6 mx-auto mb-2">
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <input class="btn btn-outline-danger" type="reset" value="Reset">
-              <input class="btn btn-outline-dark" type="submit" value="Submit">
+          <div class="card border-0 bg-white shadow-sm p-4 mb-4 mx-auto w-100" style="border-radius:14px; background:#ffffff; border-left:4px solid #f59e0b !important">
+            <div class="d-flex align-items-center text-start gap-3">
+              <div class="bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:48px; height:48px">
+                <i class="bi bi-heart-fill fs-5"></i>
+              </div>
+              <div>
+                <p class="fw-bold fs-6 text-dark mb-1">Help Keep the Lights On!</p>
+                <p class="text-muted small mb-0 lh-sm">
+                  Running these servers costs money, and this project is entirely funded by ad revenue. If you enjoy using our work, please consider disabling your ad blocker for us. It keeps the lights on and the project free for everyone!
+                </p>
+              </div>
             </div>
           </div>
-        </form>
-        <div id="serverResponse" class="alert d-none" role="alert"></div>
-        <div class="card text-bg-light border-light" style="background-color:#F3F1F5">
-          <div class="card-body">
-            <div class="d-flex flex-column align-items-center text-center">
-              <p class="d-inline fs-2 animated-text">Access Your Custom Build</p>
-              <p class="text-muted">Enter your username below to view your software package files instantly.</p>
-              <div class="input-group mb-3" style="max-width:450px;">
-                <input type="text" id="username" class="form-control" placeholder="Enter your username" aria-label="Username">
-                <button class="btn btn-primary" type="button" onclick="fetchBuildFiles()">View Files</button>
+          <div class="d-inline-flex align-items-center gap-2 mb-4 bg-danger-subtle text-danger px-3 py-1 rounded-pill small fw-bold text-uppercase">
+            <i class="bi bi-gear-wide-connected fa-spin"></i>Core Server Pipeline &amp; Execution
+          </div>
+          <div class="row g-3 text-start text-secondary small lh-base mb-3">
+            <div class="col-md-6 col-lg-3">
+              <div class="p-3 bg-white rounded-3 border border-light-subtle shadow-xs h-100">
+                <span class="d-block fw-bold text-dark mb-1"><i class="bi bi-ui-checks-grid text-success me-1"></i>Requirements &amp; Queues</span>
+                You need to use pre-defined options from below to make build request. Enter a username of your choice, it must be exactly <strong>seven alphanumeric characters</strong> contain only letters and numbers.
               </div>
-              <div id="file-viewer-zone" style="display:none;width:100%;max-width:500px;">
-                <p class="fs-5 mb-1 text-secondary">Your Files:</p>
-                <ul id="file-list" class="list-group w-100 shadow-sm"></ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="p-3 bg-white rounded-3 border border-light-subtle shadow-xs h-100">
+                <span class="d-block fw-bold text-dark mb-1"><i class="bi bi-hourglass-split text-warning me-1"></i>Ultra-Fast Delivery</span>
+                Our server CronJob runs after every two minutes. You will get your build done in less than a minute. Build server will now accept all incoming requests and they will be sorted and processed in random order.
               </div>
-              <p id="error-text" class="text-danger mb-1" style="display:none;"></p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="p-3 bg-white rounded-3 border border-light-subtle shadow-xs h-100">
+                <span class="d-block fw-bold text-dark mb-1"><i class="bi bi-folder2-open text-primary me-1"></i>Manifest Storage</span>
+                You will also get your folder based on provided username created on server within CronJob time frame. From this folder you can access both older and newer builds. Each build has its own text file containing list of free and opensource apps added in that specific package.
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="p-3 bg-white rounded-3 border border-light-subtle shadow-xs h-100">
+                <span class="d-block fw-bold text-dark mb-1"><i class="bi bi-exclamation-triangle-fill text-danger me-1"></i>Storage &amp; Lifespan</span>
+                Once disk space of the build server reaches a critical level, previous builds will be removed including folder based on the provided username to maintain performance.
+              </div>
+            </div>
+          </div>
+          <h3 class="pt-2 mb-4 fs-4">
+            <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-2 fw-medium text-wrap sand-sans">
+              Fill below form to make build request!
+            </span>
+          </h3>
+          <form id="buildForm-1" class="mb-3 modern-tech-form text-start" action="https://build.bitgapps.io/marvin.php" method="POST">
+            <!-- ROW -->
+            <div class="row g-4 mb-4">
+              <div class="col-md-4">
+                <div class="card modern-input-card h-100">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <span class="icon-form bg-rose-soft"><i class="fa-solid fa-user-secret"></i></span>
+                      <label for="client" class="form-label card-title fs-5 mb-0 fw-semibold">Enter Username</label>
+                    </div>
+                    <input type="text" id="client" name="USR" class="form-control form-control-lg custom-input" placeholder="e.g., hitman7">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card modern-input-card h-100">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <span class="icon-form bg-sage-soft"><i class="fa-solid fa-key"></i></span>
+                      <label for="admin-token" class="form-label card-title fs-5 mb-0 fw-semibold">Admin Token</label>
+                    </div>
+                    <input type="password" id="admin-token" name="ADMIN_TOKEN" class="form-control form-control-lg custom-input" placeholder="••••••••••••••••">
+                    <div class="form-text mt-2 text-danger-emphasis fw-medium fs-7">
+                      <i class="fa-solid fa-circle-exclamation me-2"></i>This field is restricted for server admins.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card modern-input-card h-100">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <span class="icon-form bg-amber-soft"><i class="fa-solid fa-shield-halved"></i></span>
+                      <label for="user-token" class="form-label card-title fs-5 mb-0 fw-semibold">Builder Token</label>
+                    </div>
+                    <input type="password" id="user-token" name="USER_TOKEN" class="form-control form-control-lg custom-input" placeholder="••••••••••••••••">
+                    <div class="form-text mt-2 text-danger-emphasis fw-medium fs-7">
+                      <!-- <i class="fa-solid fa-circle-exclamation me-2"></i>Enter the secret builder token. -->
+                      <i class="fa-solid fa-circle-exclamation me-2"></i>This field is restricted for server admins.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ROW -->
+            <div class="row g-4 mb-4">
+              <div class="col-md-5">
+                <div class="card modern-input-card h-100">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <span class="icon-form bg-blue-soft"><i class="fa-sharp fa-solid fa-robot"></i></span>
+                      <p class="card-title fs-5 mb-0 fw-semibold">Select Android Platform</p>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2">
+                      <input type="radio" class="btn-check" id="ARMv7" name="Platform" value="ARM">
+                      <label for="ARMv7" class="btn custom-selector-btn">ARM</label>
+                      <input type="radio" class="btn-check" id="ARMv8" name="Platform" value="ARM64">
+                      <label for="ARMv8" class="btn custom-selector-btn">ARM64</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="card modern-input-card h-100">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <span class="icon-form bg-cyan-soft"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                      <p class="card-title fs-5 mb-0 fw-semibold">Select Build Count</p>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2">
+                      <input type="radio" class="btn-check" id="1" name="Counter" value="1">
+                      <label for="1" class="btn custom-selector-btn square">1</label>
+                      <input type="radio" class="btn-check" id="2" name="Counter" value="2">
+                      <label for="2" class="btn custom-selector-btn square">2</label>
+                      <input type="radio" class="btn-check" id="3" name="Counter" value="3">
+                      <label for="3" class="btn custom-selector-btn square">3</label>
+                      <input type="radio" class="btn-check" id="4" name="Counter" value="4">
+                      <label for="4" class="btn custom-selector-btn square">4</label>
+                      <input type="radio" class="btn-check" id="5" name="Counter" value="5">
+                      <label for="5" class="btn custom-selector-btn square">5</label>
+                      <input type="radio" class="btn-check" id="6" name="Counter" value="6">
+                      <label for="6" class="btn custom-selector-btn square">6</label>
+                      <input type="radio" class="btn-check" id="7" name="Counter" value="7">
+                      <label for="7" class="btn custom-selector-btn square">7</label>
+                      <input type="radio" class="btn-check" id="8" name="Counter" value="8">
+                      <label for="8" class="btn custom-selector-btn square">8</label>
+                      <input type="radio" class="btn-check" id="9" name="Counter" value="9">
+                      <label for="9" class="btn custom-selector-btn square">9</label>
+                    </div>
+                    <div class="form-text mt-2 text-danger-emphasis fw-medium fs-7">
+                      <i class="fa-solid fa-circle-exclamation me-2"></i>Always set Build Count to <strong>1</strong>.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ROW -->
+            <div class="card modern-input-card mb-4">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <span class="icon-form bg-green-soft"><i class="fa-brands fa-android"></i></span>
+                  <p class="card-title fs-5 mb-0 fw-semibold">Select Android &amp; API Version</p>
+                </div>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <div class="version-label mb-2">Android Version</div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                      <input type="radio" class="btn-check" id="VER36" name="Version" value="16.0.0">
+                      <label for="VER36" class="btn custom-selector-btn long">16.0.0</label>
+                      <input type="radio" class="btn-check" id="VER35" name="Version" value="15.0.0">
+                      <label for="VER35" class="btn custom-selector-btn long">15.0.0</label>
+                      <input type="radio" class="btn-check" id="VER34" name="Version" value="14.0.0">
+                      <label for="VER34" class="btn custom-selector-btn long">14.0.0</label>
+                      <input type="radio" class="btn-check" id="VER33" name="Version" value="13.0.0">
+                      <label for="VER33" class="btn custom-selector-btn long">13.0.0</label>
+                      <input type="radio" class="btn-check" id="VER32" name="Version" value="12.1.0">
+                      <label for="VER32" class="btn custom-selector-btn long">12.1.0</label>
+                      <input type="radio" class="btn-check" id="VER31" name="Version" value="12.0.0">
+                      <label for="VER31" class="btn custom-selector-btn long">12.0.0</label>
+                      <input type="radio" class="btn-check" id="VER30" name="Version" value="11.0.0">
+                      <label for="VER30" class="btn custom-selector-btn long">11.0.0</label>
+                      <input type="radio" class="btn-check" id="VER29" name="Version" value="10.0.0">
+                      <label for="VER29" class="btn custom-selector-btn long">10.0.0</label>
+                      <input type="radio" class="btn-check" id="VER28" name="Version" value="9.0.0">
+                      <label for="VER28" class="btn custom-selector-btn long">9.0.0</label>
+                      <input type="radio" class="btn-check" id="VER27" name="Version" value="8.1.0">
+                      <label for="VER27" class="btn custom-selector-btn long">8.1.0</label>
+                      <input type="radio" class="btn-check" id="VER26" name="Version" value="8.0.0">
+                      <label for="VER26" class="btn custom-selector-btn long">8.0.0</label>
+                      <input type="radio" class="btn-check" id="VER25" name="Version" value="7.1.2">
+                      <label for="VER25" class="btn custom-selector-btn long">7.1.2</label>
+                      <input type="radio" class="btn-check" id="VER24" name="Version" value="7.1.1">
+                      <label for="VER24" class="btn custom-selector-btn long">7.1.1</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="version-label mb-2">API Version</div>
+                    <div class="d-flex flex-wrap gap-2">
+                      <input type="radio" class="btn-check" id="36" name="API" value="36">
+                      <label for="36" class="btn custom-selector-btn square">36</label>
+                      <input type="radio" class="btn-check" id="35" name="API" value="35">
+                      <label for="35" class="btn custom-selector-btn square">35</label>
+                      <input type="radio" class="btn-check" id="34" name="API" value="34">
+                      <label for="34" class="btn custom-selector-btn square">34</label>
+                      <input type="radio" class="btn-check" id="33" name="API" value="33">
+                      <label for="33" class="btn custom-selector-btn square">33</label>
+                      <input type="radio" class="btn-check" id="32" name="API" value="32">
+                      <label for="32" class="btn custom-selector-btn square">32</label>
+                      <input type="radio" class="btn-check" id="31" name="API" value="31">
+                      <label for="31" class="btn custom-selector-btn square">31</label>
+                      <input type="radio" class="btn-check" id="30" name="API" value="30">
+                      <label for="30" class="btn custom-selector-btn square">30</label>
+                      <input type="radio" class="btn-check" id="29" name="API" value="29">
+                      <label for="29" class="btn custom-selector-btn square">29</label>
+                      <input type="radio" class="btn-check" id="28" name="API" value="28">
+                      <label for="28" class="btn custom-selector-btn square">28</label>
+                      <input type="radio" class="btn-check" id="27" name="API" value="27">
+                      <label for="27" class="btn custom-selector-btn square">27</label>
+                      <input type="radio" class="btn-check" id="26" name="API" value="26">
+                      <label for="26" class="btn custom-selector-btn square">26</label>
+                      <input type="radio" class="btn-check" id="25" name="API" value="25">
+                      <label for="25" class="btn custom-selector-btn square">25</label>
+                      <input type="radio" class="btn-check" id="24" name="API" value="24">
+                      <label for="24" class="btn custom-selector-btn square">24</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ROW -->
+            <div class="card modern-input-card mb-4">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <span class="icon-form bg-pink-soft"><i class="fa-solid fa-lightbulb"></i></span>
+                  <p class="card-title fs-5 mb-0 fw-semibold">Select Free and Opensource Apps</p>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="AuroraStore">
+                    <input type="checkbox" class="btn-check" id="AuroraStore" name="AuroraStore" value="1">
+                    <label for="AuroraStore" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">AuroraStore</span>
+                        <small class="text-muted d-block mb-3">Alternate F-Droid App Store Client.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://f-droid.org/en/packages/com.aurora.store/">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                    <input type="hidden" value="0" name="AuroraExt">
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="FakeStore">
+                    <input type="checkbox" class="btn-check" id="FakeStore" name="FakeStore" value="1">
+                    <label for="FakeStore" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">FakeStore</span>
+                        <small class="text-muted d-block mb-3">Mocks Google Play Store.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://github.com/microg/FakeStore">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="FossDroid">
+                    <input type="checkbox" class="btn-check" id="FossDroid" name="FossDroid" value="1">
+                    <label for="FossDroid" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">F-Droid</span>
+                        <small class="text-muted d-block mb-3">Free and Opensource App Store.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://f-droid.org/en/packages/org.fdroid.fdroid/">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                    <input type="hidden" value="0" name="Extension">
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="FoxDroid">
+                    <input type="checkbox" class="btn-check" id="FoxDroid" name="FoxDroid" value="1">
+                    <label for="FoxDroid" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">FoxyDroid</span>
+                        <small class="text-muted d-block mb-3">Alternate F-Droid App Store Client.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://f-droid.org/en/packages/nya.kitsunyan.foxydroid/">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="NeoStore">
+                    <input type="checkbox" class="btn-check" id="NeoStore" name="NeoStore" value="1">
+                    <label for="NeoStore" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">NeoStore</span>
+                        <small class="text-muted d-block mb-3">Alternate F-Droid App Store Client.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://f-droid.org/en/packages/com.machiav3lli.fdroid/">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="PlayStore">
+                    <input type="checkbox" class="btn-check" id="PlayStore" name="PlayStore" value="1">
+                    <label for="PlayStore" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">PlayStore</span>
+                        <small class="text-muted d-block mb-3">Google App Store Client.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://play.google.com/store/apps">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="HeliBoard">
+                    <input type="checkbox" class="btn-check" id="HeliBoard" name="HeliBoard" value="1">
+                    <label for="HeliBoard" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">HeliBoard</span>
+                        <small class="text-muted d-block mb-3">Privacy Conscious Opensource Keyboard.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://f-droid.org/en/packages/helium314.keyboard/">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="FutoBoard">
+                    <input type="checkbox" class="btn-check" id="FutoBoard" name="FutoBoard" value="1">
+                    <label for="FutoBoard" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">FutoBoard</span>
+                        <small class="text-muted d-block mb-3">Modern Keyboard that Respects Privacy.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://keyboard.futo.org/">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="Bitwarden">
+                    <input type="checkbox" class="btn-check" id="Bitwarden" name="Bitwarden" value="1">
+                    <label for="Bitwarden" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">Bitwarden</span>
+                        <small class="text-muted d-block mb-3">Secure and Opensource Password Manager.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://bitwarden.com/">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="Cromite">
+                    <input type="checkbox" class="btn-check" id="Cromite" name="Cromite" value="1">
+                    <label for="Cromite" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">Cromite Browser</span>
+                        <small class="text-muted d-block mb-3">Cromite is a Chromium fork of Bromite.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://www.cromite.org/">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="CroView">
+                    <input type="checkbox" class="btn-check" id="CroView" name="CroView" value="1">
+                    <label for="CroView" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">Cromite WebView</span>
+                        <small class="text-muted d-block mb-3">WebView with Privacy Enhancements.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://www.cromite.org/">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="QuikSMS">
+                    <input type="checkbox" class="btn-check" id="QuikSMS" name="QuikSMS" value="1">
+                    <label for="QuikSMS" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">QuikSMS</span>
+                        <small class="text-muted d-block mb-3">Opensource Replacement to the Stock SMS.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://f-droid.org/en/packages/dev.octoshrimpy.quik.fdroid/">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="Davx5">
+                    <input type="checkbox" class="btn-check" id="Davx5" name="Davx5" value="1">
+                    <label for="Davx5" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">Davx5</span>
+                        <small class="text-muted d-block mb-3">Synchronize Calendars and Contacts.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://f-droid.org/en/packages/at.bitfire.davdroid/">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="Thunderbird">
+                    <input type="checkbox" class="btn-check" id="Thunderbird" name="Thunderbird" value="1">
+                    <label for="Thunderbird" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">Thunderbird</span>
+                        <small class="text-muted d-block mb-3">Opensource Privacy Focused Email App.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://f-droid.org/en/packages/net.thunderbird.android.beta/">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="K9mail">
+                    <input type="checkbox" class="btn-check" id="K9mail" name="K9mail" value="1">
+                    <label for="K9mail" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">K9mail</span>
+                        <small class="text-muted d-block mb-3">An Opensource Email Client.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://f-droid.org/en/packages/com.fsck.k9/">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="Vanadium">
+                    <input type="checkbox" class="btn-check" id="Vanadium" name="Vanadium" value="1">
+                    <label for="Vanadium" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">Vanadium Browser</span>
+                        <small class="text-muted d-block mb-3">Security Hardened Version of Chromium.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://github.com/GrapheneOS/Vanadium">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="VanView">
+                    <input type="checkbox" class="btn-check" id="VanView" name="VanView" value="1">
+                    <label for="VanView" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">Vanadium WebView</span>
+                        <small class="text-muted d-block mb-3">Security Hardened Version of Chromium.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://github.com/GrapheneOS/Vanadium">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                    <input type="hidden" value="0" name="Sandbox">
+                  </div>
+                  <!-- COLUMN -->
+                  <div class="col">
+                    <input type="hidden" value="0" name="Wellbeing">
+                    <input type="checkbox" class="btn-check" id="Wellbeing" name="Wellbeing" value="1">
+                    <label for="Wellbeing" class="app-selection-card d-flex flex-column h-100 p-3 rounded border text-start justify-content-between position-relative">
+                      <div class="d-flex align-items-start justify-content-between mb-2">
+                        <span class="check-icon border rounded-circle d-flex align-items-center justify-content-center text-white bg-light">
+                          <i class="fa-solid fa-check fs-7"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <span class="h6 d-block text-dark fw-medium mb-1">Wellbeing</span>
+                        <small class="text-muted d-block mb-3">Monitor and Manage Smartphone Usage.</small>
+                      </div>
+                      <div class="text-end z-3 mt-auto">
+                        <a class="btn btn-link p-0 text-decoration-none text-muted small hover-primary" href="https://github.com/akaMrNagar/Mindful">
+                          Learn more<i class="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                        </a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- ROW -->
+                </div>
+              </div>
+            </div>
+            <div class="alert info-banner mb-4">
+              <div class="d-flex gap-3">
+                <i class="fa-solid fa-circle-info fs-4 text-primary-emphasis mt-0"></i>
+                <div>
+                  <p class="mb-2 fw-medium text-dark">Base URL Configuration Info</p>
+                  <p class="mb-0 fs-6 text-secondary lh-base">
+                    This is the base URL, <a class="text-decoration-none disabled" href="https://build.bitgapps.io/">https://build.bitgapps.io/</a>, and to access custom build downloads, please append username after the base URL like this: <a class="text-decoration-none disabled" href="https://build.bitgapps.io/thehitman7/">https://build.bitgapps.io/thehitman7/</a>. You can also make further build requests under the same username. For now this service is free to use, because we are testing and making improvements in custom build system, this may change in the future for the better. You can also support us by means mentioned below. I hope the custom build system serves your needs well.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-end mt-4">
+              <button class="btn action-btn-secondary" type="reset">Reset Form</button>
+              <button class="btn action-btn-primary" type="submit">Generate Build Request</button>
+            </div>
+          </form>
+          <div id="serverResponse" class="alert d-none" role="alert"></div>
+          <div class="card bg-white border-0 shadow-md rounded-4 mt-3">
+            <div class="card-body p-4 p-md-5">
+              <div class="d-flex flex-column align-items-center text-center">
+                <p class="d-inline fs-2 animated-text mb-2">Access Your Custom Build</p>
+                <p class="text-muted small mb-4">Enter your username below to view your software package files instantly.</p>
+                <div class="input-group mb-3" style="max-width:450px">
+                  <input type="text" id="username" class="form-control" placeholder="Enter your username" aria-label="Username">
+                  <button class="btn btn-dark px-4" type="button" onclick="fetchBuildFiles()"><i class="fa-solid fa-folder-open me-2 small"></i>View Files</button>
+                </div>
+                <div id="file-viewer-zone" style="display:none; width:100%; max-width:500px">
+                  <p class="fs-5 mb-1 text-secondary">Your Files:</p>
+                  <ul id="file-list" class="list-group w-100 shadow-md"></ul>
+                </div>
+                <p id="error-text" class="text-danger mb-1" style="display:none"></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!---SECTION--->
-      <div class="px-3 my-0 py-3 text-center" style="background:#f0f0f0">
-        <span class="badge rounded-pill fs-5 text-wrap" style="background:#748DAE"><i class="bi bi-columns-gap me-2"></i>MicroGPlus Uninstaller</span>
-        <p class="mb-2 mt-2">
-          You can use this uninstaller to remove MicroGPlus installation with ease.
-          We also provide Google Contacts Sync Adapter as Addon.
-          Supports Android 16.0 to 7.1.x with regular updates and bugs fixed.
-          After getting API level of installed custom ROM, installer push relevant
-          Sync Adapter APK into system partition. This exclude the requirement of
-          different Sync Adapter addon for different API level.
-        </p>
-        <div class="col-md-6 mx-auto mb-2">
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a role="button" class="btn btn-dark btn-sm px-4 gap-3 border-2 active" href="https://github.com/BiTGApps/release/releases/download/20260517-122855-common/SyncAdapter-20260517-122855.zip"><i class="fa-solid fa-arrow-up-right-from-square fa-fade me-2"></i>SyncAdapter</a>
-            <a role="button" class="btn btn-outline-success btn-sm px-4 border-2" href="https://github.com/BiTGApps/release/releases/download/20260517-122855-common/uninstaller-20260517-122855.zip"><i class="fa-solid fa-arrow-up-right-from-square me-2"></i>MicroGPlus Uninstaller</a>
+      <!-- SECTION -->
+      <div class="px-1 px-md-4 px-lg-5 py-4">
+        <div class="container-fluid py-md-4 py-lg-4">
+          <div class="row mb-4 text-start">
+            <div class="col-12">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-4" style="width:56px; height:56px; background-color:#ecfdf5">
+                <i style="color:#059669" class="fa-solid fa-server fs-3"></i>
+              </div>
+              <h2 class="display-5 fw-bold rubik text-dark mb-3">Keep Us Online</h2>
+              <p class="text-muted fs-5 col-lg-7 px-0">
+                Your support directly funds our server infrastructure.
+              </p>
+            </div>
+          </div>
+          <div class="row g-4 py-3">
+            <!-- Column -->
+            <div class="col-lg-7">
+              <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                <div class="d-flex align-items-center mb-4">
+                  <div class="bg-secondary bg-opacity-10 text-secondary rounded-3 p-2 me-3" style="color:#748DAE !important">
+                    <i class="bi bi-columns-gap fs-4"></i>
+                  </div>
+                  <div>
+                    <h2 class="fs-4 fw-bold mb-0 text-dark">MicroGPlus Utilities</h2>
+                    <small class="text-muted">Uninstaller and Google Contacts Sync Adapter</small>
+                  </div>
+                </div>
+                <p class="text-secondary small mb-4" style="line-height:1.6">
+                  You can use our dedicated uninstaller tool to safely remove the MicroGPlus installation with ease. We also offer Google Contacts Sync Adapter
+                  as a standalone addon package. Tested and confirmed for Android 7.1.x to 12.1. It may work on Android 13 and above, but full compatibility is
+                  not confirmed.
+                </p>
+                <!-- Feature -->
+                <div class="p-3 bg-light rounded-3 mb-4">
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="badge bg-dark bg-opacity-10 text-dark border border-secondary border-opacity-25 me-2 text-wrap">Dynamic Injection</span>
+                    <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 text-wrap">Android 7.1.x - 16.0</span>
+                  </div>
+                  <p class="text-muted mb-0 font-monospace" style="font-size:0.8rem; line-height:1.5">
+                    The installer automatically detects the target API and architecture of your custom ROM environment, dynamically pushing the correct APK into the system partition.
+                  </p>
+                </div>
+                <div class="d-flex flex-column flex-sm-row gap-2 mt-auto">
+                  <a href="https://github.com/BiTGApps/release/releases/download/20260517-122855-common/SyncAdapter-20260517-122855.zip" class="btn btn-dark px-3 py-2.5 rounded-3 shadow-sm flex-grow-1 d-inline-flex align-items-center justify-content-center text-center">
+                    <i class="fa-solid fa-arrow-up-right-from-square small me-2 flex-shrink-0"></i>
+                    <span class="text-wrap">Download SyncAdapter</span>
+                  </a>
+                  <a href="https://github.com/BiTGApps/release/releases/download/20260517-122855-common/uninstaller-20260517-122855.zip" class="btn btn-outline-success px-3 py-2.5 rounded-3 flex-grow-1 d-inline-flex align-items-center justify-content-center text-center" style="border-width:2px">
+                    <i class="fa-solid fa-arrow-up-right-from-square small me-2 flex-shrink-0"></i>
+                    <span class="text-wrap">Get Uninstaller</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Column -->
+            <div class="col-lg-5">
+              <div class="card border-0 shadow-md rounded-4 p-4 h-100 text-center text-sm-start d-flex flex-column justify-content-between" style="background:linear-gradient(135deg, #fdfbf7 0%, #f7f9fb 100%); border-top:4px solid #ffc107">
+                <div>
+                  <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3 mb-4">
+                    <div class="bg-warning bg-opacity-10 text-warning rounded-circle p-3 d-inline-flex">
+                      <i class="fa-solid fa-heart-pulse fa-xl text-danger animate-pulse"></i>
+                    </div>
+                    <div>
+                      <h3 class="fs-5 fw-bold mb-1 text-dark">Support Independent Dev</h3>
+                      <p class="text-muted small mb-0">Maintained solo with hundreds of open-source hours</p>
+                    </div>
+                  </div>
+                  <p class="text-secondary small mb-4" style="line-height:1.6">
+                    Building, refining, and tracking edge cases across varying ROM codebases is entirely a solo effort. If MicroGPlus has kept your clean environment running smoothly, please consider sharing the project link with fellow users, sharing it helps immensly.
+                  </p>
+                  <p class="text-secondary small mb-0" style="line-height:1.6">
+                    Contributions are entirely optional but highly impactful. Your backing directly funds upstream development, continuous updates, and long-term ecosystem maintenance.
+                  </p>
+                </div>
+                <div class="pt-4 mt-3 border-top border-light d-flex flex-column flex-sm-row gap-2">
+                  <a href="https://www.paypal.me/kartikverma443" class="btn btn-warning px-4 py-2.5 rounded-3 fw-semibold text-dark shadow-sm flex-grow-1 d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-coffee me-2"></i>Donate to Project
+                  </a>
+                  <button class="btn btn-light px-4 py-2.5 rounded-3 text-secondary border flex-grow-1 d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-share-nodes me-2"></i>Share Project
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <p class="mb-0">
-          This project is maintained alone by me and putting in a lot of hours into it, to make it better.
-          If you find my work good and it make things better for you, do not forget to share MicroGPlus with others.
-          While not mandatory, donations encourage me to continue to further pursue this project and I'd deeply
-          appreciate them, if you feel generous.
-        </p>
       </div>
-      <!---SECTION--->
+      <!-- SECTION -->
       <div class="bg-dark text-white-50 px-4 py-1 text-center">
         <footer class="footer mt-auto">
           <div class="container">

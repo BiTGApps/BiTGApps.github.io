@@ -344,9 +344,10 @@
               <div class="bg-white border border-soft rounded-4 p-4 shadow-sm h-100">
                 <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom">
                   <h3 class="h6 fw-bold tracking-tight text-dark m-0">Android Versions</h3>
-                  <span class="text-xs text-muted font-mono-tech">API 25 - 36</span>
+                  <span class="text-xs text-muted font-mono-tech">API 25 - 37</span>
                 </div>
                 <div class="row g-2">
+                  <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 17.0</div></div>
                   <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 16.0</div></div>
                   <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 15.0</div></div>
                   <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 14.0</div></div>
@@ -354,10 +355,9 @@
                   <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 12.1</div></div>
                   <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 12.0</div></div>
                   <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 11.0</div></div>
-                  <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 10.0</div></div>
                 </div>
                 <div class="mt-3 text-center text-xs text-muted">
-                  <i class="bi bi-plus-circle me-1"></i>Legacy support for versions 9.0, 8.1, 8.0, and 7.1
+                  <i class="bi bi-plus-circle me-1"></i>Legacy support for versions 10.0, 9.0, 8.1, 8.0, and 7.1
                 </div>
               </div>
             </div>
@@ -902,6 +902,8 @@
                   <div class="col-12">
                     <div class="version-label mb-2">Android Version</div>
                     <div class="d-flex flex-wrap gap-2 mb-3">
+                      <input type="radio" class="btn-check" id="VER37" name="Version" value="17.0.0">
+                      <label for="VER37" class="btn custom-selector-btn long">17.0.0</label>
                       <input type="radio" class="btn-check" id="VER36" name="Version" value="16.0.0">
                       <label for="VER36" class="btn custom-selector-btn long">16.0.0</label>
                       <input type="radio" class="btn-check" id="VER35" name="Version" value="15.0.0">
@@ -933,6 +935,8 @@
                   <div class="col-12">
                     <div class="version-label mb-2">API Version</div>
                     <div class="d-flex flex-wrap gap-2">
+                      <input type="radio" class="btn-check" id="37" name="API" value="37">
+                      <label for="37" class="btn custom-selector-btn square">37</label>
                       <input type="radio" class="btn-check" id="36" name="API" value="36">
                       <label for="36" class="btn custom-selector-btn square">36</label>
                       <input type="radio" class="btn-check" id="35" name="API" value="35">
@@ -1429,7 +1433,7 @@
                 <div class="p-3 bg-light rounded-3 mb-4">
                   <div class="d-flex align-items-center mb-2">
                     <span class="badge bg-dark bg-opacity-10 text-dark border border-secondary border-opacity-25 me-2 text-wrap">Dynamic Injection</span>
-                    <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 text-wrap">Android 7.1.x - 16.0</span>
+                    <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 text-wrap">Android 7.1.x - 12.1</span>
                   </div>
                   <p class="text-muted mb-0 font-monospace" style="font-size:0.8rem; line-height:1.5">
                     The installer automatically detects the target API and architecture of your custom ROM environment, dynamically pushing the correct APK into the system partition.

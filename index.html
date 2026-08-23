@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
-    <link rel="stylesheet" href="assets/css/index.css?ver=0.9">
+    <link rel="stylesheet" href="assets/css/index.css?ver=0.9.0">
     <link rel="canonical" href="https://bitgapps.io">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -53,11 +53,11 @@
       gtag('js', new Date());
       gtag('config', 'G-76BW4XC058');
     </script>
-    <script src="assets/js/index.js?ver=0.9"></script>
-    <script src="assets/js/fetch.js?ver=0.9"></script>
-    <script src="assets/js/build.js?ver=0.9"></script>
-    <script src="assets/js/block.js?ver=0.9"></script>
-    <script src="assets/js/views.js?ver=0.9"></script>
+    <script src="assets/js/index.js?ver=0.9.0"></script>
+    <script src="assets/js/fetch.js?ver=0.9.0"></script>
+    <script src="assets/js/build.js?ver=0.9.0"></script>
+    <script src="assets/js/block.js?ver=0.9.0"></script>
+    <script src="assets/js/views.js?ver=0.9.0"></script>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -597,10 +597,10 @@
                       <span class="badge bg-primary-subtle text-primary-emphasis border border-primary-subtle px-3 py-2 rounded-pill fw-semibold">Stable Release</span>
                     </div>
                     <div class="text-secondary small d-flex align-items-center">
-                      <i class="fa-regular fa-calendar me-2"></i>May 17, 2026
+                      <i class="fa-regular fa-calendar me-2"></i>Aug 23, 2026
                     </div>
                   </div>
-                  <p class="card-title fs-4 fw-bold text-dark mb-4">Latest Release: Android 16</p>
+                  <p class="card-title fs-4 fw-bold text-dark mb-4">Latest Release: Android 17</p>
                   <div class="position-relative border-start border-2 border-light-subtle ps-4 ms-2">
                     <div class="mb-4 position-relative">
                       <div class="position-absolute bg-primary rounded-circle" style="width:12px; height:12px; left:-31px; top:2px"></div>
@@ -608,7 +608,8 @@
                         <i class="bi bi-arrow-clockwise me-2"></i>Updated
                       </h3>
                       <ul class="list-unstyled text-secondary lh-base mb-0 ps-1">
-                        <li class="mb-2">Latest changes from May Pixel OTA.</li>
+                        <li class="mb-2">Initial Stable Release of Android 17.</li>
+                        <li class="mb-2">Latest changes from August Pixel OTA.</li>
                         <li class="mb-2">Fixed rootfs running out of free space on Baklava.</li>
                         <li class="mb-2">Updated pre-bundled busybox with latest patches.</li>
                         <li class="mb-2">Refactor busybox backend and added 64-bit support.</li>
@@ -754,9 +755,12 @@
                   </select>
                 </div>
                 <hr>
-                <button type="button" class="btn btn-warning btn-sm" onclick="handleDownload()">
-                  <i class="bi bi-cloud-download me-1"></i>Download Selected File
-                </button>
+                <div class="d-flex flex-column d-md-inline-flex flex-md-row gap-2">
+                  <button type="button" class="btn btn-warning btn-sm" onclick="handleDownload()">
+                    <i class="bi bi-cloud-download me-1"></i>Download Selected File
+                  </button>
+                  <button type="button" class="btn btn-outline-dark btn-sm" onclick="resetDownloadForm()">Reset</button>
+                </div>
               </div>
             </div>
             <div class="col-sm-6">
@@ -788,9 +792,12 @@
                   </select>
                 </div>
                 <hr>
-                <button type="button" class="btn btn-warning btn-sm" onclick="handleDownloadSafe()">
-                  <i class="bi bi-cloud-download me-1"></i>Download Selected File
-                </button>
+                <div class="d-flex flex-column d-md-inline-flex flex-md-row gap-2">
+                  <button type="button" class="btn btn-warning btn-sm" onclick="handleDownloadSafe()">
+                    <i class="bi bi-cloud-download me-1"></i>Download Selected File
+                  </button>
+                  <button type="button" class="btn btn-outline-dark btn-sm" onclick="resetDownloadForm()">Reset</button>
+                </div>
               </div>
             </div>
           </div>
@@ -902,8 +909,7 @@
                     </div>
                     <input type="password" id="user-token" name="USER_TOKEN" class="form-control form-control-lg custom-input" placeholder="••••••••••••••••">
                     <div class="form-text mt-2 text-danger-emphasis fw-medium fs-7">
-                      <!-- <i class="fa-solid fa-circle-exclamation me-2"></i>Enter the secret builder token. -->
-                      <i class="fa-solid fa-circle-exclamation me-2"></i>This field is restricted for server admins.
+                      <i class="fa-solid fa-circle-exclamation me-2"></i>Enter the secret builder token.
                     </div>
                   </div>
                 </div>
@@ -1148,12 +1154,9 @@
               <p class="text-muted fs-5 col-lg-7 px-0">
                 Zero storage issues, clean removal options, and seamless ROM updates.
               </p>
-            </div>
-          </div>
-          <div class="alert alert-primary d-flex align-items-center justify-content-center border-0 rounded-3 mb-4 shadow-sm" role="alert">
-            <i class="bi bi-info-circle-fill me-2 fs-5"></i>
-            <div class="fw-medium text-center">
-              Flash via recovery (like TWRP, LineageOS Recovery, etc.) for the most stable installation.
+              <p class="text-primary small col-lg-7 px-0">
+                Flash via recovery (like TWRP, LineageOS Recovery, etc.) for the most stable installation.
+              </p>
             </div>
           </div>
           <div class="accordion accordion-flush rounded-3 shadow-sm border overflow-hidden">

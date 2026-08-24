@@ -93,9 +93,6 @@
               <a class="nav-link" href="https://forum.xda-developers.com/t/custom-gapps-bitgapps-for-android.4012165">Development</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://bitgapps.io/faq.html">FAQs</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="mailto:info@bitgapps.io">Contact</a>
             </li>
           </ul>
@@ -126,9 +123,6 @@
               </li>
               <li>
                 <a class="nav-link link-dark" href="https://forum.xda-developers.com/t/custom-gapps-bitgapps-for-android.4012165"><svg class="bi me-2" width="16" height="16"><use xlink:href="#instruction"/></svg>Development</a>
-              </li>
-              <li>
-                <a class="nav-link link-dark" href="https://bitgapps.io/faq.html"><svg class="bi me-2" width="16" height="16"><use xlink:href="#faq"/></svg>FAQs</a>
               </li>
               <li>
                 <a class="nav-link link-dark" href="mailto:info@bitgapps.io"><svg class="bi me-2" width="16" height="16"><use xlink:href="#contact"/></svg>Contact</a>
@@ -472,9 +466,8 @@
               <p class="text-secondary lh-base mb-3">
                 Google Apps should be installed via recovery immediately after installing Custom ROM.
                 If you reboot into system before installing Google Apps, you must factory reset and
-                then install them, otherwise expect crashes. Addons, if you want to use, should be
-                installed in same manner on top of BiTGApps.
-                Please read the <a class="text-decoration-none" href="https://bitgapps.io/faq.html">FAQ</a> before installation.
+                then install them, otherwise expect crashes. Addons should be installed in same manner
+                on top of BiTGApps.
               </p>
             </div>
           </div>
@@ -488,7 +481,7 @@
                     </span>
                   </div>
                   <p class="fs-6 fw-bold text-dark mb-2">Prevent partition mounting issues in some cases.</p>
-                  <p class="text-secondary lh-base mb-0">You should reboot to recovery after flashing Custom ROM for fresh installation.</p>
+                  <p class="text-secondary lh-base mb-0">Always loop back or reboot directly to recovery mode after flashing your Custom ROM for a fresh installation environment.</p>
                 </div>
               </div>
             </div>
@@ -565,12 +558,6 @@
                 </ol>
               </div>
             </div>
-            <div class="card-footer bg-white text-center py-3 border-0">
-              <span class="text-muted small">
-                <i class="fa-regular fa-circle-question me-1"></i>
-                Please read the <a class="text-decoration-none fw-medium" style="color:#1572A1" href="https://bitgapps.io/faq.html">FAQ</a> before beginning installation.
-              </span>
-            </div>
           </div>
         </div>
       </div>
@@ -585,6 +572,9 @@
               <h2 class="display-5 fw-bold rubik text-dark mb-3">Changelog</h2>
               <p class="text-muted fs-5 col-lg-7 px-0">
                 Keep track of our latest updates and improvements.
+              </p>
+              <p class="text-primary small col-lg-7 px-0">
+                Google Apps Package for Android 17 custom ROM is available now.
               </p>
             </div>
           </div>
@@ -608,8 +598,8 @@
                         <i class="bi bi-arrow-clockwise me-2"></i>Updated
                       </h3>
                       <ul class="list-unstyled text-secondary lh-base mb-0 ps-1">
-                        <li class="mb-2">Initial Stable Release of Android 17.</li>
-                        <li class="mb-2">Latest changes from August Pixel OTA.</li>
+                        <li class="mb-2">Initial Release of GApps Package for Android 17.</li>
+                        <li class="mb-2">Latest changes taken from August Pixel OTA.</li>
                         <li class="mb-2">Fixed rootfs running out of free space on Baklava.</li>
                         <li class="mb-2">Updated pre-bundled busybox with latest patches.</li>
                         <li class="mb-2">Refactor busybox backend and added 64-bit support.</li>
@@ -623,7 +613,7 @@
                       </h3>
                       <ul class="list-unstyled text-secondary lh-base mb-0 ps-1">
                         <li class="mb-2">Dropped uses sdk attribute from overlay manifest.</li>
-                        <li class="mb-2">Added five more variants for Android 16 (Addition).</li>
+                        <li class="mb-2">Added five more variants for Android 17 (Addition).</li>
                         <li class="mb-2">Show backup and restore progress during OTA update.</li>
                         <li class="mb-2">Added missing Privileged Permissions fixes bootloop.</li>
                         <li class="mb-2">Minor adaptation to installation stack for Baklava.</li>
@@ -1116,7 +1106,7 @@
                 <div>
                   <p class="mb-2 fw-medium text-dark">Base URL Configuration Info</p>
                   <p class="mb-0 fs-6 text-secondary lh-base">
-                    This is the base URL, <a class="text-decoration-none disabled" href="https://build.bitgapps.io/">https://build.bitgapps.io/</a>, and to access custom build downloads, please append username after the base URL like this: <a class="text-decoration-none disabled" href="https://build.bitgapps.io/thehitman7/">https://build.bitgapps.io/thehitman7/</a>. You can also make further build requests under the same username. For now this service is free to use, because we are testing and making improvements in custom build system, this may change in the future for the better. You can also support us by means mentioned below. I hope the custom build system serves your needs well.
+                    This is the base URL, <a class="text-decoration-none disabled" href="https://build.bitgapps.io/">build.bitgapps.io/</a>, and to access custom build downloads, please append username after the base URL like this: <a class="text-decoration-none disabled" href="https://build.bitgapps.io/thehitman7/">build.bitgapps.io/thehitman7/</a>. You can also make further build requests under the same username. For now this service is free to use, because we are testing and making improvements in custom build system, this may change in the future for the better.
                   </p>
                 </div>
               </div>
@@ -1311,10 +1301,9 @@
               </span>
               <h2 class="fw-bold text-dark tracking-tight mb-2" style="font-size:1.75rem">Seamlessly Sideload MicroGPlus</h2>
               <p class="text-body-secondary mx-auto mb-0 fs-6 lh-base">
-                We also offer MicroGPlus to sideload MicroG without much hassle into Custom Android OS.
                 MicroGPlus is a convenient way to sideload MicroG into custom ROM without having to deal with the extra hassle.
-                You can easily override between any MicroGPlus version without clean flash. You can also remove MicroG components
-                from custom ROM with our uninstaller too. Regular updates cover the latest MicroG version with bugs fixed on time.
+                You can easily override between any MicroGPlus version without clean flash. Regular updates cover the latest MicroG
+                version with bugs fixed on time.
               </p>
             </div>
             <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-5">
@@ -1381,7 +1370,6 @@
             <ul class="nav justify-content-center border-bottom border-dark-subtle border-1 pb-1 mb-3">
               <li class="nav-item"><a href="https://bitgapps.io" class="nav-link px-2 text-warning">Home</a></li>
               <li class="nav-item"><a href="https://forum.xda-developers.com/t/custom-gapps-bitgapps-for-android.4012165" class="nav-link px-2 text-warning">Development</a></li>
-              <li class="nav-item"><a href="https://bitgapps.io/faq.html" class="nav-link px-2 text-warning">FAQs</a></li>
               <li class="nav-item"><a href="https://bitgapps.io/about.html" class="nav-link px-2 text-warning">About</a></li>
             </ul>
             <p class="text-white text-center">

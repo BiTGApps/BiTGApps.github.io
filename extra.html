@@ -15,6 +15,32 @@
     <script src="assets/js/index.js?ver=0.9.1"></script>
     <script src="assets/js/block.js?ver=0.9.1"></script>
     <script src="assets/js/views.js?ver=0.9.1"></script>
+    <style>
+      /* Sticky Left Column */
+      @media (max-width: 991.98px) {
+        /* Lock the First Column Cells */
+        .table-responsive .table th:first-child,
+        .table-responsive .table td:first-child {
+          position: -webkit-sticky;
+          position: sticky;
+          left: 0;
+          z-index: 2;
+          box-shadow: 4px 0 8px rgba(0, 0, 0, 0.12);
+        }
+        .table-responsive .table tbody tr td:first-child {
+          background-color: #ffffff !important;
+        }
+        .table-responsive .table tbody tr.table-secondary td:first-child {
+          background-color: #e2e3e5 !important;
+          color: #41464b !important;
+        }
+        .table-responsive .table thead th:first-child {
+          background-color: #f8f9fa !important;
+          color: #212529 !important;
+          z-index: 3;
+        }
+      }
+    </style>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -80,6 +106,9 @@
               </li>
               <li>
                 <a class="nav-link link-dark" href="https://forum.xda-developers.com/t/custom-gapps-bitgapps-for-android.4012165"><svg class="bi me-2" width="16" height="16"><use xlink:href="#instruction"/></svg>Development</a>
+              </li>
+              <li>
+                <a class="nav-link link-dark" href="https://github.com/BiTGApps/BiTGApps/issues/new/choose" rel="noopener" target="_blank"><svg class="bi me-2" width="16" height="16"><use xlink:href="#faq"/></svg>Bug Report</a>
               </li>
               <li>
                 <a class="nav-link link-dark" href="mailto:info@bitgapps.io"><svg class="bi me-2" width="16" height="16"><use xlink:href="#contact"/></svg>Contact</a>
@@ -641,28 +670,144 @@
               </p>
             </div>
           </div>
-          <div class="d-flex align-items-center justify-content-center text-center px-4 py-3 mb-5 rounded-4 shadow-sm" style="background-color:#ffffff; border:1px solid rgba(220, 116, 116, 0.15)">
-            <p class="text-secondary small mb-0 fw-medium">
-              <i class="bi bi-heart-fill text-danger me-2"></i>You can support us by whitelisting our URL. The advertisement revenue supports the projects efforts and costs a little resources to keep online.
-            </p>
-          </div>
-          <div class="row g-3 g-md-4 g-lg-5 align-items-center">
-            <div class="col-lg-7 d-flex flex-column justify-content-center">
-              <div class="position-relative overflow-hidden rounded-4 p-3 bg-white shadow-sm transition-all duration-300 hover-lift border border-light-subtle">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modalFoss" class="d-block position-relative group text-decoration-none">
-                  <img alt="" class="img-fluid rounded-3 w-100" src="images/fosslist.png" style="transition:transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)">
-                  <div class="position-absolute inset-0 top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center bg-dark bg-opacity-10 opacity-0 hover-opacity-100 transition-all rounded-3" style="transition:0.3s ease">
-                    <span class="btn btn-sm btn-white shadow-sm rounded-pill px-3 py-2 border-0 fw-medium">
-                      <i class="bi bi-arrows-fullscreen me-3 small"></i>Click to Zoom
-                    </span>
-                  </div>
-                </a>
+          <div class="card border-0 bg-white shadow-sm p-4 mb-4 mx-auto w-100" style="border-radius:14px; background:#ffffff; border-left:4px solid #bbf0c5 !important">
+            <div class="d-flex align-items-center text-start gap-3">
+              <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:48px; height:48px">
+                <i class="bi bi-heart-fill fs-5"></i>
               </div>
-              <div class="text-center mt-3">
-                <p class="small mb-0 text-zoom"><i class="bi bi-info-circle me-2"></i>Click on the image to zoom</p>
+              <div>
+                <p class="fw-bold fs-6 text-dark mb-1">Help Keep the Lights On!</p>
+                <p class="text-muted small mb-0 lh-sm">
+                  You can support us by whitelisting our URL. The advertisement revenue supports the projects efforts and costs a little resources to keep online.
+                </p>
               </div>
             </div>
-            <div class="col-lg-5">
+          </div>
+          <div class="row g-4 g-lg-5 align-items-start align-items-lg-center">
+            <div class="col-lg-8">
+              <div class="p-3 p-md-4 rounded-4 bg-white shadow-md border border-light-subtle">
+                <div class="table-responsive border rounded">
+                  <table class="table table-bordered table-hover align-middle text-center mb-0" style="font-size:0.88rem">
+                    <thead class="align-middle">
+                      <tr>
+                        <th scope="col" class="text-start bg-light text-nowrap">Application / Component</th>
+                        <th scope="col" style="background-color:#cde7fd">BSP<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                        <th scope="col" style="background-color:#fde8cf">FDD<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                        <th scope="col" style="background-color:#fde0d2">FOX<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                        <th scope="col" style="background-color:#fed4d4">NEO<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                        <th scope="col" style="background-color:#d1ebd1">GPS<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                        <th scope="col" style="background-color:#f6eedb">NLP<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                        <th scope="col" style="background-color:#d4e8ee">AUR<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                        <th scope="col" style="background-color:#f9d8d6">NOU<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-secondary fw-bold text-start">
+                        <td colspan="9" class="py-2 text-uppercase text-secondary" style="font-size:0.75rem">microG Base</td>
+                      </tr>
+                      <tr>
+                        <td class="text-start fw-medium">MicroG GmsCore</td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                      </tr>
+                      <tr>
+                        <td class="text-start fw-medium">MicroG Services (GSF)</td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                      </tr>
+                      <tr class="table-secondary fw-bold text-start">
+                        <td colspan="9" class="py-2 text-uppercase text-secondary" style="font-size:0.75rem">Application Per Package</td>
+                      </tr>
+                      <tr>
+                        <td class="text-start fw-medium">Google Play Store</td>
+                        <td><i class="bi bi-circle-fill fs-6" style="color:#f97316"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill fs-6" style="color:#f97316"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                      </tr>
+                      <tr>
+                        <td class="text-start fw-medium">Droid-ify</td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                      </tr>
+                      <tr>
+                        <td class="text-start fw-medium">NeoStore</td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                      </tr>
+                      <tr>
+                        <td class="text-start fw-medium">AuroraStore</td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                      </tr>
+                      <tr>
+                        <td class="text-start fw-medium">F-Droid</td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                      </tr>
+                      <tr>
+                        <td class="text-start fw-medium">FakeStore</td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                        <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="row row-cols-1 g-2 mt-3 pt-2 text-muted small border-top">
+                  <div class="col d-flex align-items-center">
+                    <span class="me-2"><i class="bi bi-circle-fill fs-6" style="color:#f97316"></i></span>
+                    <span>Original Play Store used for In-App Purchase</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
               <div class="d-flex flex-column h-100 ps-lg-3">
                 <div class="mb-4 pb-3 border-bottom" style="border-color:rgba(220, 116, 116, 0.2) !important">
                   <h2 class="fs-4 fw-extrabold mb-1 text-dark tracking-tight">Select Package</h2>
@@ -1485,6 +1630,7 @@
             <ul class="nav justify-content-center border-bottom border-dark-subtle border-1 pb-1 mb-3">
               <li class="nav-item"><a href="https://bitgapps.io" class="nav-link px-2 text-warning">Home</a></li>
               <li class="nav-item"><a href="https://forum.xda-developers.com/t/custom-gapps-bitgapps-for-android.4012165" class="nav-link px-2 text-warning">Development</a></li>
+              <li class="nav-item"><a href="https://github.com/BiTGApps/BiTGApps" class="nav-link px-2 text-warning" rel="noopener" target="_blank">Docs &amp; Support</a></li>
               <li class="nav-item"><a href="https://bitgapps.io/about.html" class="nav-link px-2 text-warning">About</a></li>
             </ul>
             <p class="text-white text-center">

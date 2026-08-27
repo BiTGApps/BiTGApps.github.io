@@ -1,3 +1,4 @@
-User-agent: googlebot
+User-agent: *
+Allow: /
 
 Sitemap: https://bitgapps.io/sitemap.xml

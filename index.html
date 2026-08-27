@@ -58,6 +58,40 @@
     <script src="assets/js/build.js?ver=0.9.1"></script>
     <script src="assets/js/block.js?ver=0.9.1"></script>
     <script src="assets/js/views.js?ver=0.9.1"></script>
+    <style>
+      /* Sticky Left Column */
+      @media (max-width: 991.98px) {
+        /* Lock the First Column Cells */
+        .table-responsive .table th:first-child,
+        .table-responsive .table td:first-child {
+          position: -webkit-sticky;
+          position: sticky;
+          left: 0;
+          z-index: 2;
+          box-shadow: 4px 0 8px rgba(0, 0, 0, 0.12);
+        }
+        .table-responsive .table tbody tr td:first-child {
+          background-color: #ffffff !important;
+        }
+        .table-responsive .table tbody tr[style*="background-color: #f2eefb"] td:first-child,
+        .table-responsive .table tbody tr[style*="background-color:#f2eefb"] td:first-child {
+          background-color: #f2eefb !important;
+        }
+        .table-responsive .table tbody tr[style*="background-color: #e6f9ea"] td:first-child,
+        .table-responsive .table tbody tr[style*="background-color:#e6f9ea"] td:first-child {
+          background-color: #e6f9ea !important;
+        }
+        .table-responsive .table tbody tr.table-secondary td:first-child {
+          background-color: #e2e3e5 !important;
+          color: #41464b !important;
+        }
+        .table-responsive .table thead th:first-child {
+          background-color: #f8f9fa !important;
+          color: #212529 !important;
+          z-index: 3;
+        }
+      }
+    </style>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -123,6 +157,9 @@
               </li>
               <li>
                 <a class="nav-link link-dark" href="https://forum.xda-developers.com/t/custom-gapps-bitgapps-for-android.4012165"><svg class="bi me-2" width="16" height="16"><use xlink:href="#instruction"/></svg>Development</a>
+              </li>
+              <li>
+                <a class="nav-link link-dark" href="https://github.com/BiTGApps/BiTGApps/issues/new/choose" rel="noopener" target="_blank"><svg class="bi me-2" width="16" height="16"><use xlink:href="#faq"/></svg>Bug Report</a>
               </li>
               <li>
                 <a class="nav-link link-dark" href="mailto:info@bitgapps.io"><svg class="bi me-2" width="16" height="16"><use xlink:href="#contact"/></svg>Contact</a>
@@ -346,8 +383,58 @@
               <i class="bi bi-cpu text-primary fs-5"></i>
               <span>All Platforms and All Android Versions are Supported</span>
             </div>
-            <div class="card-body text-center p-4 bg-white">
-              <img alt="Google Apps Package" class="img-fluid mx-auto d-block rounded-3" style="max-width:500px; width:100%" src="images/support.png">
+            <div class="card-body p-4 bg-white">
+              <div class="row g-4 mb-3">
+                <!-- COLUMN -->
+                <div class="col-md-6">
+                  <div class="bg-white border border-soft rounded-4 p-4 shadow-sm h-100">
+                    <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom">
+                      <h3 class="h6 fw-bold tracking-tight text-dark m-0">Architectures</h3>
+                      <span class="text-xs text-muted font-mono-tech">PLATFORM</span>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                      <div class="d-flex align-items-center justify-content-between py-2 px-3 bg-light rounded-3">
+                        <span class="font-mono-tech text-sm fw-bold">ARM</span>
+                        <span class="text-success bg-success bg-opacity-10 px-2 py-1 rounded-circle text-xs"><i class="bi bi-check2"></i></span>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between py-2 px-3 bg-light rounded-3">
+                        <span class="font-mono-tech text-sm fw-bold">ARM64</span>
+                        <span class="text-success bg-success bg-opacity-10 px-2 py-1 rounded-circle text-xs"><i class="bi bi-check2"></i></span>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between py-2 px-3 bg-light rounded-3 opacity-50">
+                        <span class="font-mono-tech text-sm">x86</span>
+                        <span class="text-muted text-xs"><i class="bi bi-x"></i></span>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between py-2 px-3 bg-light rounded-3 opacity-50">
+                        <span class="font-mono-tech text-sm">x86-64</span>
+                        <span class="text-muted text-xs"><i class="bi bi-x"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- COLUMN -->
+                <div class="col-md-6">
+                  <div class="bg-white border border-soft rounded-4 p-4 shadow-sm h-100">
+                    <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom">
+                      <h3 class="h6 fw-bold tracking-tight text-dark m-0">Android Versions</h3>
+                      <span class="text-xs text-muted font-mono-tech">API 25 - 37</span>
+                    </div>
+                    <div class="row g-2">
+                      <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 17.0</div></div>
+                      <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 16.0</div></div>
+                      <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 15.0</div></div>
+                      <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 14.0</div></div>
+                      <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 13.0</div></div>
+                      <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 12.1</div></div>
+                      <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 12.0</div></div>
+                      <div class="col-6"><div class="p-2 bg-light rounded-3 text-sm"><span class="d-inline-block rounded-circle bg-success me-3" style="width:6px; height:6px"></span>Android 11.0</div></div>
+                    </div>
+                    <div class="mt-3 text-center text-xs text-muted">
+                      <i class="bi bi-plus-circle me-1"></i>Legacy support for versions 10.0, 9.0, 8.1, 8.0, and 7.1
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="card border-0 shadow-md rounded-4 mb-4 overflow-hidden">
@@ -1106,7 +1193,7 @@
                 <div>
                   <p class="mb-2 fw-medium text-dark">Base URL Configuration Info</p>
                   <p class="mb-0 fs-6 text-secondary lh-base">
-                    This is the base URL, <a class="text-decoration-none disabled" href="https://build.bitgapps.io/">build.bitgapps.io/</a>, and to access custom build downloads, please append username after the base URL like this: <a class="text-decoration-none disabled" href="https://build.bitgapps.io/thehitman7/">build.bitgapps.io/thehitman7/</a>. You can also make further build requests under the same username. For now this service is free to use, because we are testing and making improvements in custom build system, this may change in the future for the better.
+                    This is the base URL, <a class="text-decoration-none disabled" href="https://build.bitgapps.io/">https://build.bitgapps.io/</a>, and to access custom build downloads, please append username after the base URL like this: <a class="text-decoration-none disabled" href="https://build.bitgapps.io/thehitman7/">https://build.bitgapps.io/thehitman7/</a>. You can also make further build requests under the same username. For now this service is free to use, because we are testing and making improvements in custom build system, this may change in the future for the better.
                   </p>
                 </div>
               </div>
@@ -1213,69 +1300,375 @@
               </p>
             </div>
           </div>
-          <div class="p-4 p-md-5 rounded-4 bg-white shadow-md border border-light-subtle">
-            <div class="row align-items-center g-4">
-              <div class="col-lg-5 text-center text-lg-start">
-                <div class="d-inline-flex align-items-center justify-content-center bg-danger-subtle text-danger rounded-circle p-3 mb-3">
-                  <svg xmlns="http://w3.org" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-                  </svg>
-                </div>
-                <h3 class="fw-bold text-dark mb-3">Support Our Work</h3>
-                <p class="text-muted lh-base mb-0">
+          <div class="card border-0 bg-white shadow-sm p-4 mb-4 mx-auto w-100" style="border-radius:14px; background:#ffffff; border-left:4px solid #bbf0c5 !important">
+            <div class="d-flex align-items-center text-start gap-3">
+              <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:48px; height:48px">
+                <i class="bi bi-heart-fill fs-5"></i>
+              </div>
+              <div>
+                <p class="fw-bold fs-6 text-dark mb-1">Help Keep the Lights On!</p>
+                <p class="text-muted small mb-0 lh-sm">
                   You can support us by whitelisting our URL. The advertisement revenue supports the projects efforts and costs a little resources to keep online.
                 </p>
               </div>
-              <div class="col-lg-7">
-                <div class="row g-3 align-items-center">
-                  <div class="col-6">
-                    <div class="border-0 shadow-sm bg-body-tertiary p-2 rounded-3"
-                      style="transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: zoom-in;"
-                      onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 .5rem 1.5rem rgba(0,0,0,.1)'"
-                      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 .125rem .25rem rgba(0,0,0,.075)'"
-                      data-bs-toggle="modal" data-bs-target="#modalFull">
-                      <img alt="Google Apps Package" class="img-fluid rounded-2 border border-light-subtle w-100" src="images/list.png">
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="border-0 shadow-sm bg-body-tertiary p-2 rounded-3"
-                      style="transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: zoom-in;"
-                      onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 .5rem 1.5rem rgba(0,0,0,.1)'"
-                      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 .125rem .25rem rgba(0,0,0,.075)'"
-                      data-bs-toggle="modal" data-bs-target="#modalHive">
-                      <img alt="Google Apps Package" class="img-fluid rounded-2 border border-light-subtle w-100" src="images/hive.png">
-                    </div>
-                  </div>
-                </div>
-                <div class="text-center mt-3">
-                  <small class="text-muted d-inline-flex align-items-center gap-1">
-                    <svg xmlns="http://w3.org" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                    </svg>
-                    Click on the images to zoom
-                  </small>
-                </div>
+            </div>
+          </div>
+          <div class="p-3 p-md-4 rounded-4 bg-white shadow-md border border-light-subtle">
+            <div class="mb-4">
+              <h3 class="fw-bold">BiTGApps Package Comparison</h3>
+              <p class="text-muted">Compare BiTGApps Variants: Core, Mini, Omni, Roar, Nano, Atom, Pico, Full, and Tint.</p>
+            </div>
+            <div class="table-responsive border rounded">
+              <table class="table table-bordered table-hover align-middle text-center mb-0" style="font-size:0.88rem">
+                <thead class="align-middle">
+                  <tr>
+                    <th scope="col" class="text-start bg-light text-nowrap">Application / Component</th>
+                    <th scope="col" style="background-color:#cde7fd">Core<br><small class="text-uppercase text-muted fw-normal">Minimal</small></th>
+                    <th scope="col" style="background-color:#fde8cf">Mini<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                    <th scope="col" style="background-color:#fde0d2">Omni<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                    <th scope="col" style="background-color:#fed4d4">Roar<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                    <th scope="col" style="background-color:#d1ebd1">Nano<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                    <th scope="col" style="background-color:#f6eedb">Atom<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                    <th scope="col" style="background-color:#d4e8ee">Pico<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                    <th scope="col" style="background-color:#f9d8d6">Full<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                    <th scope="col" style="background-color:#e5daf6">Tint<br><small class="text-uppercase text-muted fw-normal">Variant</small></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-secondary fw-bold text-start">
+                    <td colspan="10" class="py-2 text-uppercase text-secondary" style="font-size:0.75rem">Nexus Factory Image / Google System Base</td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">ConfigUpdater</td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                  </tr>
+                  <tr style="background-color:#f2eefb">
+                    <td class="text-start fw-medium">GmsCoreSetupPrebuilt <sup class="text-danger"><i class="bi bi-asterisk"></i>1</sup></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">GoogleCalendarSyncAdapter</td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">GoogleContactsSyncAdapter</td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">GoogleExtServices</td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">GoogleExtShared</td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                  </tr>
+                  <tr style="background-color:#f2eefb">
+                    <td class="text-start fw-medium">GoogleLoginService <sup class="text-danger"><i class="bi bi-asterisk"></i>1</sup></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">GooglePlayStore</td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">GoogleServicesFramework (GSF)</td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                  </tr>
+                  <tr style="background-color:#e6f9ea">
+                    <td class="text-start fw-medium">GoogleSetupWizard <sup class="text-success"><i class="bi bi-asterisk"></i>2</sup></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">PrebuiltGmsCore (Google Play Services)</td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                  </tr>
+                  <tr class="table-secondary fw-bold text-start">
+                    <td colspan="10" class="py-2 text-uppercase text-secondary" style="font-size:0.75rem">Google Play Store Applications</td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Android Auto</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Google Assistant</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Google Calculator</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Google Calendar</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Google Chrome</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Google Contacts</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Google Dialer / Phone</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Google Drive</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Google DeskClock</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Gboard (Google Keyboard)</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Google Markup</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Google Messages</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Google Photos</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-danger fs-6"></i> <sup class="text-danger"><i class="bi bi-asterisk"></i>3</sup></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Google Text-to-Speech (TTS)</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start fw-medium">Google Wellbeing</td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-dash text-muted fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                    <td><i class="bi bi-circle-fill text-secondary fs-6"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-2 mt-3 pt-2 text-muted small border-top">
+              <div class="col d-flex align-items-center">
+                <span class="me-1"><i class="bi bi-circle-fill text-danger fs-6"></i></span>
+                <span><sup class="me-1"><i class="bi bi-asterisk"></i>3</sup>Replace stock / AOSP version in ROM</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modalFull" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body p-0 position-relative text-center">
-              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
-              <img src="images/list.png" alt="Google Apps Package" class="img-fluid rounded-3 shadow-lg">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modalHive" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body p-0 position-relative text-center">
-              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
-              <img src="images/hive.png" alt="Google Apps Package" class="img-fluid rounded-3 shadow-lg">
+              <div class="col d-flex align-items-center">
+                <span class="me-1"><i class="bi bi-circle-fill fs-6" style="color:#bbf0c5"></i></span>
+                <span><sup class="me-1"><i class="bi bi-asterisk"></i>2</sup>SetupWizard configured before installation</span>
+              </div>
+              <div class="col d-flex align-items-center">
+                <span class="me-1"><i class="bi bi-circle-fill fs-6" style="color:#d7c5f5"></i></span>
+                <span><sup class="me-1"><i class="bi bi-asterisk"></i>1</sup>Limited to Android Nougat (7.1) &amp; Oreo (8.x)</span>
+              </div>
             </div>
           </div>
         </div>
@@ -1370,6 +1763,7 @@
             <ul class="nav justify-content-center border-bottom border-dark-subtle border-1 pb-1 mb-3">
               <li class="nav-item"><a href="https://bitgapps.io" class="nav-link px-2 text-warning">Home</a></li>
               <li class="nav-item"><a href="https://forum.xda-developers.com/t/custom-gapps-bitgapps-for-android.4012165" class="nav-link px-2 text-warning">Development</a></li>
+              <li class="nav-item"><a href="https://github.com/BiTGApps/BiTGApps" class="nav-link px-2 text-warning" rel="noopener" target="_blank">Docs &amp; Support</a></li>
               <li class="nav-item"><a href="https://bitgapps.io/about.html" class="nav-link px-2 text-warning">About</a></li>
             </ul>
             <p class="text-white text-center">

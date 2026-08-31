@@ -570,14 +570,6 @@ lift-on-hover {
 
 .btn-white { background-color: #ffffff; color: #212529; }
 
-#modalFoss .btn-close {
-  filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
-  background-color: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  padding: 10px;
-  border-radius: 50%;
-}
-
 @media (max-width: 360px) {
   .btn-select {
     padding-left: 0.5rem !important;
@@ -587,5 +579,59 @@ lift-on-hover {
   .py-9 {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
+  }
+}
+
+/* Sticky Left Column */
+@media (max-width: 991.98px) {
+  /* Lock the First Column Cells */
+  .adsense-index-table .table-responsive .table th:first-child,
+  .adsense-index-table .table-responsive .table td:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.12);
+  }
+  .adsense-index-table .table-responsive .table tbody tr td:first-child {
+    background-color: #ffffff !important;
+  }
+  .adsense-index-table .table-responsive .table tbody tr[style*="background-color: #f2eefb"] td:first-child,
+  .adsense-index-table .table-responsive .table tbody tr[style*="background-color:#f2eefb"] td:first-child {
+    background-color: #f2eefb !important;
+  }
+  .adsense-index-table .table-responsive .table tbody tr[style*="background-color: #e6f9ea"] td:first-child,
+  .adsense-index-table .table-responsive .table tbody tr[style*="background-color:#e6f9ea"] td:first-child {
+    background-color: #e6f9ea !important;
+  }
+  .adsense-index-table .table-responsive .table tbody tr.table-secondary td:first-child {
+    background-color: #e2e3e5 !important;
+    color: #41464b !important;
+  }
+  .adsense-index-table .table-responsive .table thead th:first-child {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+    z-index: 3;
+  }
+  /* Lock the First Column Cells */
+  .adsense-extra-table .table-responsive .table th:first-child,
+  .adsense-extra-table .table-responsive .table td:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.12);
+  }
+  .adsense-extra-table .table-responsive .table tbody tr td:first-child {
+    background-color: #ffffff !important;
+  }
+  .adsense-extra-table .table-responsive .table tbody tr.table-secondary td:first-child {
+    background-color: #e2e3e5 !important;
+    color: #41464b !important;
+  }
+  .adsense-extra-table .table-responsive .table thead th:first-child {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+    z-index: 3;
   }
 }

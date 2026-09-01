@@ -220,24 +220,112 @@ function populateVersionsSafe() {
     updateDropdownSafe('version-1', versions, 'Select Version');
 }
 
-function handleDownloadSafe() {
+async function handleDownloadSafe() {
     const s = document.getElementById('software-1').value;
     const p = document.getElementById('platform-1').value;
     const v = document.getElementById('version-1').value;
+
+    const downloadBtn = document.querySelector("button[onclick='handleDownloadSafe()']");
 
     // Final fetch from the nested map
     const fileData = downloadLibrarySafe.get(s)?.get(p)?.get(v);
 
     // Send the specific match parameters down to the server
     if (fileData) {
-        const payload = JSON.stringify({
-            m1: fileData.match1,
-            m2: fileData.match2
-        });
-        const encoded = btoa(payload);
-        const serverUrl = "https://build.bitgapps.io/download.php";
-        window.location.href = `${serverUrl}?d=${encodeURIComponent(encoded)}`;
+        try {
+            if (downloadBtn) {
+                downloadBtn.disabled = true;
+                downloadBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>Preparing...`;
+            }
+
+            const response = await fetch(`https://build.bitgapps.io/download.php?action=token&m1=${encodeURIComponent(fileData.match1)}&m2=${encodeURIComponent(fileData.match2)}`);
+
+            if (!response.ok) {
+                throw new Error("Server refused to issue a secure token.");
+            }
+
+            const securePayload = await response.text();
+            window.location.href = `https://build.bitgapps.io/download.php?d=${encodeURIComponent(securePayload)}`;
+        } catch (error) {
+            alert("Error preparing download: " + error.message);
+        } finally {
+            if (downloadBtn) {
+                downloadBtn.disabled = false;
+                downloadBtn.innerHTML = `<i class="bi bi-cloud-download me-1"></i>Download Selected File`;
+            }
+        }
     } else {
         alert("Please select all options to fetch the download link.");
     }
+}
+
+let currentFileChecksumSafe = "";
+
+async function handleFetchChecksumSafe() {
+    const s = document.getElementById('software-1').value;
+    const p = document.getElementById('platform-1').value;
+    const v = document.getElementById('version-1').value;
+
+    const checksumBox = document.getElementById('checksum-box-safe');
+    const checksumView = document.getElementById('checksum-view-safe');
+    const checksumBtn = document.getElementById('checksum-btn-safe');
+    const saveHashBtn = document.getElementById('save-hash-btn-safe');
+
+    const fileData = downloadLibrarySafe.get(s)?.get(p)?.get(v);
+
+    if (!fileData) {
+        alert("Please select options before requesting a checksum.");
+        return;
+    }
+
+    try {
+        if (checksumBtn) {
+            checksumBtn.disabled = true;
+            checksumBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>Computing...`;
+        }
+        if (saveHashBtn) saveHashBtn.classList.add('d-none');
+
+        checksumBox.classList.remove('d-none');
+        checksumView.className = "text-muted";
+        checksumView.innerText = "Computing live SHA-256 stream hash from GitHub asset...";
+
+        const response = await fetch(`https://build.bitgapps.io/download.php?action=checksum&m1=${encodeURIComponent(fileData.match1)}&m2=${encodeURIComponent(fileData.match2)}`);
+
+        if (!response.ok) {
+            throw new Error(await response.text() || "Failed to process query.");
+        }
+
+        const data = await response.json();
+        currentFileChecksumSafe = data.hash;
+
+        checksumView.className = "";
+        checksumView.innerHTML = `<span class="text-success fw-bold">${data.type.toUpperCase()}:</span> <code>${data.hash}</code>`;
+
+        if (saveHashBtn) saveHashBtn.classList.remove('d-none');
+    } catch (error) {
+        checksumView.innerHTML = `<span class="text-danger">Error: ${error.message}</span>`;
+    } finally {
+        if (checksumBtn) {
+            checksumBtn.disabled = false;
+            checksumBtn.innerHTML = `<i class="bi bi-shield-check me-1"></i>Request File Checksum`;
+        }
+    }
+}
+
+function saveChecksumToClipboardSafe() {
+    if (!currentFileChecksumSafe) return;
+    navigator.clipboard.writeText(currentFileChecksumSafe).then(() => {
+        const saveHashBtn = document.getElementById('save-hash-btn-safe');
+        if (saveHashBtn) {
+            saveHashBtn.className = "btn btn-success btn-sm";
+            saveHashBtn.innerHTML = `<i class="bi bi-check-lg"></i> Saved!`;
+
+            setTimeout(() => {
+                saveHashBtn.className = "btn btn-outline-primary btn-sm";
+                saveHashBtn.innerHTML = `<i class="bi bi-clipboard"></i> Save`;
+            }, 2000);
+        }
+    }).catch(err => {
+        console.error("Clipboard operational block encountered: ", err);
+    });
 }

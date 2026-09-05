@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
-
 :root {
   --android-green: #16a34a;
   --android-green-light: #e8f5e9;
@@ -168,6 +162,11 @@ select > option.hidden { display: none; }
   background: #4d90fd;
 }
 
+@keyframes shine {
+  0% { background-position: 0% center; }
+  100% { background-position: 300% center; }
+}
+
 .animated-text {
   background: linear-gradient(90deg, #ED6485, #7f00ff, #6495ED, #ED6485);
   background-size: 300% auto;
@@ -176,11 +175,6 @@ select > option.hidden { display: none; }
   animation: shine 6s linear infinite;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-}
-
-@keyframes shine {
-  0% { background-position: 0% center; }
-  100% { background-position: 300% center; }
 }
 
 .transition-all {
@@ -294,15 +288,6 @@ lift-on-hover {
   background-color: #ffffff;
   border-color: var(--android-green);
   box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.12);
-}
-
-.selector-group {
-  display: flex;
-  gap: 8px;
-}
-
-.wrap-pill {
-  flex-wrap: wrap;
 }
 
 .custom-selector-btn {
@@ -509,15 +494,6 @@ lift-on-hover {
 
 .border-soft { border-color: rgba(0, 0, 0, 0.08) !important; }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: .4; }
-}
-
-.animate-blink {
-  animation: blink 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
 .fw-extrabold { font-weight: 800; }
 
 .tracking-tight { letter-spacing: -0.025em; }
@@ -530,13 +506,7 @@ lift-on-hover {
   padding-bottom: 0.625rem !important;
 }
 
-.text-zoom { color: #475569; font-weight: 500; }
-
 .text-thanks { color: #64748b; font-weight: 600; }
-
-.group:hover .hover-opacity-100 { opacity: 1 !important; }
-
-.group:hover img { transform: scale(1.01); }
 
 .btn-select {
   color: #4b5563;
@@ -584,7 +554,7 @@ lift-on-hover {
 
 /* Sticky Left Column */
 @media (max-width: 991.98px) {
-  /* Lock the First Column Cells */
+  /* Index: Lock the First Column Cells */
   .adsense-index-table .table-responsive .table th:first-child,
   .adsense-index-table .table-responsive .table td:first-child {
     position: -webkit-sticky;
@@ -613,7 +583,7 @@ lift-on-hover {
     color: #212529 !important;
     z-index: 3;
   }
-  /* Lock the First Column Cells */
+  /* Extra: Lock the First Column Cells */
   .adsense-extra-table .table-responsive .table th:first-child,
   .adsense-extra-table .table-responsive .table td:first-child {
     position: -webkit-sticky;

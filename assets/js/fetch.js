@@ -6,24 +6,36 @@
 
 const downloadLibrary = new Map([
     ['CORE', new Map([
+        ['ARM', new Map([
+            ['16.0', { match1: '-arm-',   match2: '-16.0.0-20260822-112657-CORE.zip' }]
+        ])],
         ['ARM64', new Map([
             ['17.0', { match1: '-arm64-', match2: '-17.0.0-20260822-193203-CORE.zip' }],
             ['16.0', { match1: '-arm64-', match2: '-16.0.0-20260822-141411-CORE.zip' }]
         ])]
     ])],
     ['MINI', new Map([
+        ['ARM', new Map([
+            ['16.0', { match1: '-arm-',   match2: '-16.0.0-20260822-112657-MINI.zip' }]
+        ])],
         ['ARM64', new Map([
             ['17.0', { match1: '-arm64-', match2: '-17.0.0-20260822-193203-MINI.zip' }],
             ['16.0', { match1: '-arm64-', match2: '-16.0.0-20260822-141411-MINI.zip' }]
         ])]
     ])],
     ['OMNI', new Map([
+        ['ARM', new Map([
+            ['16.0', { match1: '-arm-',   match2: '-16.0.0-20260822-112657-OMNI.zip' }]
+        ])],
         ['ARM64', new Map([
             ['17.0', { match1: '-arm64-', match2: '-17.0.0-20260822-193203-OMNI.zip' }],
             ['16.0', { match1: '-arm64-', match2: '-16.0.0-20260822-141411-OMNI.zip' }]
         ])]
     ])],
     ['ROAR', new Map([
+        ['ARM', new Map([
+            ['16.0', { match1: '-arm-',   match2: '-16.0.0-20260822-112657-ROAR.zip' }]
+        ])],
         ['ARM64', new Map([
             ['17.0', { match1: '-arm64-', match2: '-17.0.0-20260822-193203-ROAR.zip' }],
             ['16.0', { match1: '-arm64-', match2: '-16.0.0-20260822-141411-ROAR.zip' }]

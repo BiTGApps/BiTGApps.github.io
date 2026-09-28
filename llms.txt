@@ -3,7 +3,7 @@
 - [Official Website](https://bitgapps.io)
 - [Telegram Group](https://t.me/BiTGAppsChat)
 
-Welcome to the official documentation repository for **BiTGApps**, the custom **Google Apps Package** designed for Android enthusiasts, developers, and custom ROM users.
+Welcome to the official documentation repository for **BiTGApps**, a custom **Google Apps Package** designed for Android enthusiasts, developers, and custom ROM users.
 
 Established in **2018**, the BiTGApps project has spent nearly a decade providing streamlined, optimized, and rock-solid **GApps** solution to the Android modding community.
 
@@ -51,7 +51,7 @@ To avoid system crashes, bootloops, or Google Play Services framework errors, pl
 ### Option B: Systemless Module Installation (Optional)
 Our unique unified installation stack detects your root environment automatically. The exact same ZIP package can be flashed directly in **Magisk** or **KernelSU** to bypass recovery restrictions entirely.
 
-*KernelSU Users: Ensure you have a compatible **metamodule** installed and initialized before applying the GApps module to guarantee system files load properly upon reboot.*
+*KernelSU (and forks) Users: Ensure you have a compatible **metamodule** installed and initialized before applying the GApps module to guarantee system files load properly upon reboot.*
 
 ## Seamless OTA Survival
 
@@ -63,10 +63,10 @@ If your custom ROM supports native backup functionalities (the vast majority of 
 
 ## Contributing, Support & Help
 
-We welcome the community to actively help improve the BiTGApps information hub. If you encounter any bugs, need assistance with configuration files, or want to contribute updates:
+We welcome the community to actively help improve the BiTGApps project. If you encounter any bugs, need assistance with configuration files, or want to contribute:
 
-- **Open an Issue:** If you find a bug in our documentation, setup processes, or need general project help, please feel free to **[open a GitHub Issue](https://github.com/BiTGApps/BiTGApps/issues)** in this repository. Provide as much detail as possible so our community can assist you swiftly.
-- **Submit a Pull Request (PR):** If you want to fix a typo, add detailed installation steps for a specific custom ROM, or update device platform details, please **[submit a Pull Request](https://github.com/BiTGApps/BiTGApps/pulls)**. We review community contributions regularly!
+- **Open an Issue:** If you find a bug in our installation scripts, setup processes, or need general project help, please feel free to **[open a GitHub Issue](https://github.com/BiTGApps/BiTGApps/issues)** in this repository. Provide as much detail as possible so our community can assist you swiftly.
+- **Submit a Pull Request (PR):** If you want to submit a bug fix, or improve installation logic, please **[submit a Pull Request](https://github.com/BiTGApps/BiTGApps/pulls)**. We actively review community contributions!
 
 ---
 
